@@ -158,10 +158,20 @@ sources/0 = SubResource("TileSetAtlasSource_5gp1y")
 
 [node name="Level" type="Node2D"]
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Platforms"]
 tile_set = SubResource("TileSet_3u0d7")
 format = 2
-layer_0/tile_data = PackedInt32Array(524292, 262144, 3, 524293, 262144, 3, 524294, 262144, 3, 524295, 262144, 3, 524296, 262144, 3, 524297, 262144, 3, 524298, 262144, 3, 524299, 262144, 3, 524300, 262144, 3, 524301, 262144, 3, 524302, 262144, 3, 524303, 262144, 3, 524291, 262144, 3, 524290, 262144, 3, 524289, 262144, 3, 524288, 262144, 3, 589823, 262144, 3, 524304, 262144, 3, 524305, 196608, 2, 589822, 196608, 3, 393229, 131072, 3, 393228, 131072, 3, 262153, 131072, 3, 262152, 131072, 3, 262151, 131072, 3, 393230, 262144, 6, 262154, 262144, 6, 393227, 262144, 268435462, 262150, 262144, 268435462, 589840, 65536, 6, 655359, 65536, 5, 589824, 65536, 4, 589825, 65536, 4, 589826, 65536, 4, 589827, 65536, 4, 589828, 65536, 4, 589829, 65536, 4, 589830, 65536, 4, 589831, 65536, 4, 589832, 65536, 4, 589833, 65536, 4, 589834, 65536, 4, 589835, 65536, 4, 589836, 65536, 4, 589837, 65536, 4, 589838, 65536, 4, 589839, 65536, 4)
+layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
-[node name="GreenAlien" parent="." instance=ExtResource("2_qtgwv")]
-position = Vector2(561, 92)
+[node name="Decor" type="Node2D" parent="."]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="GreenAlien" parent="Player" instance=ExtResource("2_qtgwv")]
+position = Vector2(593, 442)
+
+[node name="Items" type="Node2D" parent="."]

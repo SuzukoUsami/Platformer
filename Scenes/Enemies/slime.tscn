@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://drhv7l1r7i6hp"]
+
+[ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
+[ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
+
+[node name="Slime" type="CharacterBody2D"]
+script = ExtResource("1_lci0w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ok30s")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-25, 14, -25, 1, -23, -3, -19, -8, -14, -12, -11, -14, 2, -14, 7, -12, 11, -9, 15, -4, 18, 2, 19, 7, 25, 11, 25, 14)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=15 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -10,9 +10,15 @@
 [ext_resource type="Texture2D" uid="uid://bvnpaesahit73" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud3.png" id="8_5mo28"]
 [ext_resource type="Texture2D" uid="uid://dr8etbg631mmj" path="res://graphics/Platformer Art Deluxe/Base pack/Items/rock.png" id="9_im46y"]
 [ext_resource type="Texture2D" uid="uid://c7fa38uxr3g27" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cactus.png" id="10_6rp0t"]
+[ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="11_ulk0w"]
+
+[sub_resource type="Curve2D" id="Curve2D_dsi5p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oma0m"]
 size = Vector2(114, 2601)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8131l"]
+size = Vector2(99, 2682)
 
 [node name="Level" instance=ExtResource("1_ldse4")]
 
@@ -322,11 +328,27 @@ scale = Vector2(1.12857, 1.21429)
 texture = ExtResource("10_6rp0t")
 flip_h = true
 
+[node name="Slime" parent="Enemies" index="0" instance=ExtResource("11_ulk0w")]
+position = Vector2(-798, 547)
+
+[node name="Path2D" type="Path2D" parent="Enemies/Slime" index="2"]
+position = Vector2(-6.08331, 0)
+scale = Vector2(0.986111, 1)
+curve = SubResource("Curve2D_dsi5p")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Enemies/Slime/Path2D" index="0"]
+position = Vector2(-294, -3)
+rotation = -3.1277
+
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(1403, 60)
+position = Vector2(-145, -325)
 
-[node name="Area2D" type="Area2D" parent="." index="6"]
+[node name="StaticBody2D" type="StaticBody2D" parent="." index="6"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" index="0"]
 position = Vector2(2491, -597.5)
 shape = SubResource("RectangleShape2D_oma0m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" index="1"]
+position = Vector2(-2692.5, -611)
+shape = SubResource("RectangleShape2D_8131l")

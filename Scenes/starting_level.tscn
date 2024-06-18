@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=18 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -10,7 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://bvnpaesahit73" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud3.png" id="8_5mo28"]
 [ext_resource type="Texture2D" uid="uid://dr8etbg631mmj" path="res://graphics/Platformer Art Deluxe/Base pack/Items/rock.png" id="9_im46y"]
 [ext_resource type="Texture2D" uid="uid://c7fa38uxr3g27" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cactus.png" id="10_6rp0t"]
+[ext_resource type="PackedScene" uid="uid://c5exh1x6ei5xj" path="res://Scenes/Items/coin.tscn" id="11_llr1q"]
 [ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="11_ulk0w"]
+[ext_resource type="PackedScene" uid="uid://bt2mnqr7bofiv" path="res://Scenes/Items/bronze_coin.tscn" id="13_jntn4"]
+[ext_resource type="PackedScene" uid="uid://bri80jmcd76op" path="res://Scenes/Items/silver_coin.tscn" id="13_rn7xw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oma0m"]
 size = Vector2(114, 2601)
@@ -553,6 +556,15 @@ texture = ExtResource("8_5mo28")
 
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(-149, -717)
+
+[node name="Coin" parent="Items" index="0" instance=ExtResource("11_llr1q")]
+position = Vector2(951, 526)
+
+[node name="BronzeCoin" parent="Items" index="1" instance=ExtResource("13_jntn4")]
+position = Vector2(1112, 525)
+
+[node name="SilverCoin" parent="Items" index="2" instance=ExtResource("13_rn7xw")]
+position = Vector2(1027, 526)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." index="6"]
 metadata/_edit_group_ = true

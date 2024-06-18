@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt2mnqr7bofiv"]
+
+[ext_resource type="PackedScene" uid="uid://c5exh1x6ei5xj" path="res://Scenes/Items/coin.tscn" id="1_tl8np"]
+[ext_resource type="Texture2D" uid="uid://dmaeh6cljpwub" path="res://graphics/Platformer Art Deluxe/Base pack/Items/coinBronze.png" id="2_vxd8o"]
+
+[node name="BronzeCoin" instance=ExtResource("1_tl8np")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_vxd8o")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5exh1x6ei5xj"]
+
+[ext_resource type="Script" path="res://Scenes/Items/coin.gd" id="1_586y5"]
+[ext_resource type="Texture2D" uid="uid://b8n4aioax5wmv" path="res://graphics/Platformer Art Deluxe/Base pack/Items/coinGold.png" id="1_im6ht"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c50ik"]
+radius = 18.0278
+
+[node name="Coin" type="Node2D"]
+script = ExtResource("1_586y5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_im6ht")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_c50ik")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

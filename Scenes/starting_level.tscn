@@ -24,7 +24,7 @@ size = Vector2(99, 2682)
 
 [sub_resource type="Curve2D" id="Curve2D_vga6b"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -797, 546, 0, 0, 0, 0, -1250, 546, 0, 0, 0, 0, -797, 546)
+"points": PackedVector2Array(0, 0, 0, 0, -797, 548, 0, 0, 0, 0, -1250, 548, 0, 0, 0, 0, -797, 548)
 }
 point_count = 3
 
@@ -583,7 +583,7 @@ shape = SubResource("RectangleShape2D_8131l")
 curve = SubResource("Curve2D_vga6b")
 
 [node name="Slime" parent="Path2D" index="0" instance=ExtResource("11_ulk0w")]
-position = Vector2(-797, 546)
+position = Vector2(-797, 548)
 rotates = false
 
 [node name="UI" parent="." index="8" instance=ExtResource("15_rvm1p")]

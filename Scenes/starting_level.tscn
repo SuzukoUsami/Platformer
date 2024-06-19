@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=19 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="11_ulk0w"]
 [ext_resource type="PackedScene" uid="uid://bt2mnqr7bofiv" path="res://Scenes/Items/bronze_coin.tscn" id="13_jntn4"]
 [ext_resource type="PackedScene" uid="uid://bri80jmcd76op" path="res://Scenes/Items/silver_coin.tscn" id="13_rn7xw"]
+[ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="15_rvm1p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oma0m"]
 size = Vector2(114, 2601)
@@ -30,7 +31,7 @@ point_count = 3
 [node name="Level" instance=ExtResource("1_ldse4")]
 
 [node name="Background" type="Sprite2D" parent="." index="0"]
-modulate = Color(0.492237, 0.492237, 0.492237, 1)
+visible = false
 position = Vector2(58.4998, -223.5)
 scale = Vector2(32.5352, 8.91797)
 texture = ExtResource("2_eu0wr")
@@ -584,3 +585,5 @@ curve = SubResource("Curve2D_vga6b")
 [node name="Slime" parent="Path2D" index="0" instance=ExtResource("11_ulk0w")]
 position = Vector2(-797, 546)
 rotates = false
+
+[node name="UI" parent="." index="8" instance=ExtResource("15_rvm1p")]

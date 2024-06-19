@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bri80jmcd76op"]
+[gd_scene load_steps=4 format=3 uid="uid://bri80jmcd76op"]
 
 [ext_resource type="PackedScene" uid="uid://c5exh1x6ei5xj" path="res://Scenes/Items/coin.tscn" id="1_r08dq"]
+[ext_resource type="Script" path="res://Scenes/Items/silver_coin.gd" id="2_v55kv"]
 [ext_resource type="Texture2D" uid="uid://cqklbpibc7wls" path="res://graphics/Platformer Art Deluxe/Base pack/Items/coinSilver.png" id="2_yxrqs"]
 
 [node name="SilverCoin" instance=ExtResource("1_r08dq")]
+script = ExtResource("2_v55kv")
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_yxrqs")

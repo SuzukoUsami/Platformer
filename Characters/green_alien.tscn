@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bduymlhywnur7" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen.png" id="1_yxqky"]
 
 [node name="GreenAlien" type="CharacterBody2D"]
-collision_mask = 7
+collision_mask = 31
 script = ExtResource("1_xi45j")
 
 [node name="Camera2D" type="Camera2D" parent="."]

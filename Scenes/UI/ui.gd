@@ -1,9 +1,15 @@
 extends CanvasLayer
 
-#color change
+# Coins color change
 var transparent: Color = Color("ffffff4e")
 var orginal: Color = Color("ffffff")
 
+#PLAYER LIFE
+@onready var heart_full = preload("res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartFull.png")
+@onready var heart_half = preload("res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartHalf.png")
+@onready var heart_empty = preload("res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartEmpty.png")
+
+#COINS
 @onready var coin_text: Label = $CoinCounter/Coin/CoinLabel
 @onready var coin_image: TextureRect = $CoinCounter/Coin/TextureRect
 
@@ -12,6 +18,7 @@ func _ready():
 	update_coin_text()
 
 
+#COINS 
 func update_coin_text():
 	coin_text.text = str(Globals.coins_amount)
 	update_color(Globals.coins_amount, coin_text, coin_image)

@@ -170,6 +170,8 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="Enemies" type="Node2D" parent="."]
 
+[node name="Traps" type="Node2D" parent="."]
+
 [node name="Player" type="Node2D" parent="."]
 
 [node name="GreenAlien" parent="Player" instance=ExtResource("2_qtgwv")]

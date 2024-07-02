@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dw4pir05774al"]
+
+[ext_resource type="Texture2D" uid="uid://ikdd065oc8bs" path="res://graphics/Platformer Art Deluxe/Base pack/Items/spikes.png" id="1_5h8b3"]
+
+[node name="Spikes" type="StaticBody2D"]
+collision_layer = 16
+collision_mask = 3
+
+[node name="SpikesImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_5h8b3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-35, 35, 36, 36, 24, 1, -24, 1)

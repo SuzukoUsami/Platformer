@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfqtwp6kdnpan"]
+
+[ext_resource type="Texture2D" uid="uid://d0lgvqrd1woaj" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk1.png" id="1_6o1cy"]
+[ext_resource type="Script" path="res://Scenes/Enemies/snail.gd" id="1_tvl7f"]
+
+[node name="Snail" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_tvl7f")
+
+[node name="SnailImage" type="Sprite2D" parent="."]
+texture = ExtResource("1_6o1cy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-24, 15, 26, 15, 25, -4, 18, -12, 10, -16, -3, -14, -9, -7, -12, 1, -19, 3, -23, 7)

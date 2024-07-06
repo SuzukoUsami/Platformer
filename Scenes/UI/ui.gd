@@ -30,19 +30,20 @@ func update_hearts_textures():
 	var hearts = hearts_container.get_children() # [TR, TR2, TR3]
 	
 	var temp_hp = Globals.health
-	for current_heart in range(len(hearts)):
+	# Loop for all heart containers and apply correct texture
+	for current_heart: TextureRect in hearts:
 		if temp_hp >= 2:
-			hearts[current_heart].texture = heart_full
+			current_heart.texture = heart_full
 			temp_hp -= 2
 			continue
 		
 		if temp_hp == 1:
-			hearts[current_heart].texture = heart_half
+			current_heart.texture = heart_half
 			temp_hp -= 1
 			continue
 		
 		if temp_hp == 0:
-			hearts[current_heart].texture = heart_empty
+			current_heart.texture = heart_empty
 			continue
 		
 

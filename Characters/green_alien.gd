@@ -7,6 +7,7 @@ var speed = 400.0
 var jump_speed = -550.0
 
 
+
 func hit():
 	Globals.health -= 1
 
@@ -26,6 +27,7 @@ func _physics_process(delta):
 	# Get the input direction.
 	var direction = Input.get_axis("left", "right")
 	velocity.x = direction * speed
+	
 
 	move_and_slide()
 	

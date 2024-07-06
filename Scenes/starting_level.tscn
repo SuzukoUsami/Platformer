@@ -572,7 +572,7 @@ position = Vector2(404, 547)
 position = Vector2(296, 527)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-149, -717)
+position = Vector2(-168, 102)
 
 [node name="InvisibleWalls" type="StaticBody2D" parent="." index="6"]
 metadata/_edit_group_ = true
@@ -598,7 +598,7 @@ position = Vector2(1930, 22)
 position = Vector2(763, 393)
 
 [node name="BronzeCoin2" parent="Items" index="3" instance=ExtResource("13_jntn4")]
-position = Vector2(-1045, 537)
+position = Vector2(693, 521)
 
 [node name="BronzeCoin3" parent="Items" index="4" instance=ExtResource("13_jntn4")]
 position = Vector2(636, -108)

@@ -9,9 +9,7 @@ var orginal: Color = Color("ffffff")
 @onready var heart_half = preload("res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartHalf.png")
 @onready var heart_empty = preload("res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartEmpty.png")
 
-@onready var health_text: Label = $HeartControl/HealthLabel
 @onready var hearts_container: HBoxContainer = $HeartControl/HeartsContainer
-#@onready var health_image: TextureRect = $HeartContainers/HBoxContainer/TextureRect
 
 #COINS
 @onready var coin_text: Label = $CoinCounter/Coin/CoinLabel
@@ -20,8 +18,7 @@ var orginal: Color = Color("ffffff")
 
 
 func _ready():
-	Globals.connect("health_change", update_health_text)
-	update_health_text()
+	Globals.connect("health_change", update_hearts_textures)
 	update_hearts_textures()
 	Globals.connect("amount_change", update_coin_text)
 	update_coin_text()
@@ -29,16 +26,25 @@ func _ready():
 	#health_image.texture = heart_full
 	
 # HEALTH
-func update_health_text():
-	health_text.text = str(Globals.health)
-
 func update_hearts_textures():
 	var hearts = hearts_container.get_children() # [TR, TR2, TR3]
-	print(hearts)
 	
-	for heart:TextureRect in hearts:
-		heart.texture = heart_full
-		pass
+	var temp_hp = Globals.health
+	for current_heart in range(len(hearts)):
+		if temp_hp >= 2:
+			hearts[current_heart].texture = heart_full
+			temp_hp -= 2
+			continue
+		
+		if temp_hp == 1:
+			hearts[current_heart].texture = heart_half
+			temp_hp -= 1
+			continue
+		
+		if temp_hp == 0:
+			hearts[current_heart].texture = heart_empty
+			continue
+		
 
 #COINS 
 func update_coin_text():

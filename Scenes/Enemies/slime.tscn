@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://drhv7l1r7i6hp"]
+[gd_scene load_steps=5 format=3 uid="uid://drhv7l1r7i6hp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uyxyr"]
-size = Vector2(34, 5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ks7l2"]
+size = Vector2(40, 28)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jrc8"]
+size = Vector2(46, 29.5)
 
 [node name="Slime" type="PathFollow2D" groups=["enemies"]]
 script = ExtResource("1_lci0w")
@@ -13,20 +16,21 @@ script = ExtResource("1_lci0w")
 position = Vector2(3, -2)
 collision_layer = 2
 collision_mask = 19
-metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(1, 2)
 texture = ExtResource("1_ok30s")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D"]
-polygon = PackedVector2Array(-25, 14, -25, 1, -23, -3, -19, -8, -14, -12, -11, -14, 2, -14, 7, -12, 11, -9, 15, -4, 18, 2, 19, 7, 25, 11, 25, 14)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-3, 2)
+shape = SubResource("RectangleShape2D_ks7l2")
 
 [node name="Hitbox" type="Area2D" parent="CharacterBody2D"]
 position = Vector2(-3, 2)
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hitbox"]
-position = Vector2(3, -14.5)
-shape = SubResource("RectangleShape2D_uyxyr")
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_6jrc8")
 
 [connection signal="body_entered" from="CharacterBody2D/Hitbox" to="." method="_on_hitbox_body_entered"]

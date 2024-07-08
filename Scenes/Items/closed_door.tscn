@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsk4n0tds5w5g"]
+
+[ext_resource type="Texture2D" uid="uid://c3flupludo3ga" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedMid.png" id="1_jrnm8"]
+[ext_resource type="Texture2D" uid="uid://dicqtkpf06fka" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedTop.png" id="2_mwxmp"]
+
+[node name="ClosedDoor" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 20)
+texture = ExtResource("1_jrnm8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(0, -50)
+texture = ExtResource("2_mwxmp")

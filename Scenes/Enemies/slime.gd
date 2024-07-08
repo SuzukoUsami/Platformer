@@ -13,7 +13,7 @@ func _on_hitbox_body_entered(body):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
 			queue_free()
-			body.bounce()
+			body.bounce(1)
 		else:
 			Globals.hit_player(body)
 	

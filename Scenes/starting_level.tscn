@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=27 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -19,6 +19,8 @@
 [ext_resource type="PackedScene" uid="uid://bt2mnqr7bofiv" path="res://Scenes/Items/bronze_coin.tscn" id="13_jntn4"]
 [ext_resource type="PackedScene" uid="uid://bri80jmcd76op" path="res://Scenes/Items/silver_coin.tscn" id="13_rn7xw"]
 [ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="15_rvm1p"]
+[ext_resource type="PackedScene" uid="uid://cs5p8tq8vvik6" path="res://Scenes/Enemies/fly_enemy.tscn" id="16_5l6tl"]
+[ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="17_m3klp"]
 [ext_resource type="PackedScene" uid="uid://2okjnqhife86" path="res://Scenes/Items/heart_item.tscn" id="18_nv4b5"]
 [ext_resource type="PackedScene" uid="uid://c5iqalxdfwa35" path="res://Scenes/Items/open_door.tscn" id="20_4cdg1"]
 
@@ -578,8 +580,14 @@ rotates = false
 [node name="Snail" parent="Enemies" index="1" instance=ExtResource("12_bipn5")]
 position = Vector2(404, 547)
 
+[node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("16_5l6tl")]
+position = Vector2(-834, 106)
+
 [node name="Spikes" parent="Traps" index="0" instance=ExtResource("11_ix08r")]
 position = Vector2(296, 527)
+
+[node name="Spring" parent="Traps" index="1" instance=ExtResource("17_m3klp")]
+position = Vector2(1444, 110)
 
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(-168, 102)

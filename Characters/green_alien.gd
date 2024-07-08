@@ -15,8 +15,8 @@ func hit():
 # Get the gravity from the project settings so you can sync with rigid body nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-func bounce():
-	velocity.y = jump_speed
+func bounce(bounce_factor):
+	velocity.y = jump_speed * bounce_factor
 
 
 func _physics_process(delta):
@@ -30,6 +30,7 @@ func _physics_process(delta):
 	# Get the input direction.
 	var direction = Input.get_axis("left", "right")
 	velocity.x = direction * speed
+	Globals.player_position = global_position
 	
 
 	move_and_slide()

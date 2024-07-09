@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dd76gmwkyl0aj"]
+[gd_scene load_steps=23 format=3 uid="uid://dd76gmwkyl0aj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_bhm12"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dr8etbg631mmj" path="res://graphics/Platformer Art Deluxe/Base pack/Items/rock.png" id="9_lo7qv"]
 [ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="10_hxy30"]
 [ext_resource type="PackedScene" uid="uid://dw4pir05774al" path="res://Scenes/Traps/spikes.tscn" id="10_yj2al"]
+[ext_resource type="PackedScene" uid="uid://cs5p8tq8vvik6" path="res://Scenes/Enemies/fly_enemy.tscn" id="11_e5cin"]
 [ext_resource type="PackedScene" uid="uid://bt2mnqr7bofiv" path="res://Scenes/Items/bronze_coin.tscn" id="11_n0nqg"]
 [ext_resource type="PackedScene" uid="uid://bri80jmcd76op" path="res://Scenes/Items/silver_coin.tscn" id="12_7mv4g"]
 [ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="12_ftp16"]
@@ -116,6 +117,9 @@ curve = SubResource("Curve2D_mriki")
 [node name="Slime" parent="Enemies/Path2D" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-2905, 618)
 rotates = false
+
+[node name="FlyEnemy" parent="Enemies" index="1" instance=ExtResource("11_e5cin")]
+position = Vector2(-2712, -74)
 
 [node name="Spikes" parent="Traps" index="0" instance=ExtResource("10_yj2al")]
 position = Vector2(-1156, 350)

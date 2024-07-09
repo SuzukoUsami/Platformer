@@ -1,0 +1,83 @@
+[gd_scene load_steps=16 format=3 uid="uid://bcbbgqpnecb6k"]
+
+[ext_resource type="Texture2D" uid="uid://xtx56wgxg3fj" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk01.png" id="1_rot7r"]
+[ext_resource type="Texture2D" uid="uid://tju50ymw3cdn" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk02.png" id="2_virh7"]
+[ext_resource type="Texture2D" uid="uid://crd23pbja5ynh" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk03.png" id="3_0vlgp"]
+[ext_resource type="Texture2D" uid="uid://dehtjy2p75apl" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk04.png" id="4_6ta01"]
+[ext_resource type="Texture2D" uid="uid://dnm4d7xp6c5pd" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk05.png" id="5_8p8c0"]
+[ext_resource type="Texture2D" uid="uid://d4fk7y3l3rsle" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk06.png" id="6_yaqey"]
+[ext_resource type="Texture2D" uid="uid://b7npsfl8rei70" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk07.png" id="7_ykn8u"]
+[ext_resource type="Texture2D" uid="uid://bsbqo1spg1mc6" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk09.png" id="8_bx2cp"]
+[ext_resource type="Texture2D" uid="uid://cs5xpm2ildcy" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk08.png" id="9_moxqn"]
+[ext_resource type="Texture2D" uid="uid://dtrvlc6s2ccpf" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk10.png" id="10_uc1lc"]
+[ext_resource type="Texture2D" uid="uid://c1fof2k68wt86" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk11.png" id="11_ajw7u"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_60lvw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rot7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_virh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_0vlgp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6ta01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8p8c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yaqey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ykn8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bx2cp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_moxqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uc1lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ajw7u")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6pc81"]
+size = Vector2(56, 88)
+
+[sub_resource type="Animation" id="Animation_gthua"]
+resource_name = "walk"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_32wp5"]
+_data = {
+"walk": SubResource("Animation_gthua")
+}
+
+[node name="Player1" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_60lvw")
+animation = &"walk"
+frame = 7
+frame_progress = 0.459378
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_6pc81")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_32wp5")
+}

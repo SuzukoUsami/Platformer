@@ -1,16 +1,75 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6vbh08828p0p"]
+[gd_scene load_steps=15 format=3 uid="uid://c6vbh08828p0p"]
 
 [ext_resource type="Script" path="res://Characters/green_alien.gd" id="1_xi45j"]
 [ext_resource type="Texture2D" uid="uid://bduymlhywnur7" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen.png" id="1_yxqky"]
+[ext_resource type="Texture2D" uid="uid://xtx56wgxg3fj" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk01.png" id="2_atbmk"]
+[ext_resource type="Texture2D" uid="uid://tju50ymw3cdn" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk02.png" id="3_1v8eu"]
+[ext_resource type="Texture2D" uid="uid://crd23pbja5ynh" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk03.png" id="4_f2itl"]
+[ext_resource type="Texture2D" uid="uid://dehtjy2p75apl" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk04.png" id="5_ca0gr"]
+[ext_resource type="Texture2D" uid="uid://dnm4d7xp6c5pd" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk05.png" id="6_yee0q"]
+[ext_resource type="Texture2D" uid="uid://d4fk7y3l3rsle" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk06.png" id="7_dtixt"]
+[ext_resource type="Texture2D" uid="uid://b7npsfl8rei70" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk07.png" id="8_m2a0v"]
+[ext_resource type="Texture2D" uid="uid://bsbqo1spg1mc6" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk09.png" id="9_1762u"]
+[ext_resource type="Texture2D" uid="uid://cs5xpm2ildcy" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk08.png" id="10_sr7du"]
+[ext_resource type="Texture2D" uid="uid://dtrvlc6s2ccpf" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk10.png" id="11_1oh8w"]
+[ext_resource type="Texture2D" uid="uid://c1fof2k68wt86" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk11.png" id="12_roypt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q57uv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_1762u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1oh8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_roypt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_atbmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1v8eu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f2itl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ca0gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_yee0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dtixt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m2a0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sr7du")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 15.0
+}]
 
 [node name="GreenAlien" type="CharacterBody2D"]
 collision_mask = 31
 script = ExtResource("1_xi45j")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 1)
+sprite_frames = SubResource("SpriteFrames_q57uv")
+animation = &"walk"
+frame_progress = 0.976156
+
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("1_yxqky")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]

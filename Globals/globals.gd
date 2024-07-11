@@ -11,7 +11,7 @@ var health: int = 6:
 func hit_player(body):
 	health -= 1
 	if health < 1 and body.name == "GreenAlien":
-		body.queue_free()
+		body.get_node("CollisionPolygon2D").queue_free()
 		#body.get_tree().reload_current_scene()
 
 var coins_amount: int = 0:

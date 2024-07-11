@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=31 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -25,6 +25,21 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="19_wsu7j"]
 [ext_resource type="PackedScene" uid="uid://c5iqalxdfwa35" path="res://Scenes/Items/open_door.tscn" id="20_4cdg1"]
 
+[sub_resource type="Animation" id="Animation_tv3mf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1720, 450)]
+}
+
 [sub_resource type="Animation" id="Animation_arr2a"]
 resource_name = "move"
 length = 6.0
@@ -43,21 +58,6 @@ tracks/0/keys = {
 "values": [Vector2(1720, 450), Vector2(2326, 450)]
 }
 
-[sub_resource type="Animation" id="Animation_tv3mf"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1720, 450)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oni1m"]
 _data = {
 "RESET": SubResource("Animation_tv3mf"),
@@ -69,6 +69,9 @@ size = Vector2(114, 2601)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8131l"]
 size = Vector2(99, 2682)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q58u"]
+size = Vector2(20, 96.5)
 
 [node name="Level" instance=ExtResource("1_ldse4")]
 
@@ -604,48 +607,6 @@ flip_h = true
 position = Vector2(1692.5, -366)
 texture = ExtResource("8_5mo28")
 
-[node name="Slime" parent="Enemies" index="0" instance=ExtResource("11_ulk0w")]
-position = Vector2(-797, 548)
-
-[node name="Snail" parent="Enemies" index="1" instance=ExtResource("12_bipn5")]
-position = Vector2(404, 547)
-
-[node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("16_5l6tl")]
-position = Vector2(-1740, -234)
-
-[node name="Spikes" parent="Traps" index="0" instance=ExtResource("11_ix08r")]
-position = Vector2(296, 527)
-
-[node name="Spring" parent="Traps" index="1" instance=ExtResource("17_m3klp")]
-position = Vector2(1444, 110)
-
-[node name="MovingPlatformMedium" parent="Traps" index="2" instance=ExtResource("19_wsu7j")]
-position = Vector2(1720, 450)
-rotation = -0.00205761
-
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="Traps/MovingPlatformMedium" index="5"]
-libraries = {
-"": SubResource("AnimationLibrary_oni1m")
-}
-autoplay = "move"
-
-[node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(1289, 499)
-
-[node name="InvisibleWalls" type="StaticBody2D" parent="." index="8"]
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InvisibleWalls" index="0"]
-position = Vector2(2491, -597.5)
-shape = SubResource("RectangleShape2D_oma0m")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="InvisibleWalls" index="1"]
-position = Vector2(-2692.5, -611)
-shape = SubResource("RectangleShape2D_8131l")
-
-[node name="UI" parent="." index="9" instance=ExtResource("15_rvm1p")]
-
 [node name="Coin" parent="Items" index="0" instance=ExtResource("11_llr1q")]
 position = Vector2(1379, 120)
 
@@ -669,3 +630,53 @@ position = Vector2(-2400, 536)
 
 [node name="Heart_item" parent="Items" index="7" instance=ExtResource("18_nv4b5")]
 position = Vector2(530, 484)
+
+[node name="Slime" parent="Enemies" index="0" instance=ExtResource("11_ulk0w")]
+position = Vector2(-788, 547)
+
+[node name="Snail" parent="Enemies" index="1" instance=ExtResource("12_bipn5")]
+position = Vector2(404, 547)
+
+[node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("16_5l6tl")]
+position = Vector2(97, -588)
+
+[node name="Spikes" parent="Traps" index="0" instance=ExtResource("11_ix08r")]
+position = Vector2(296, 527)
+
+[node name="Spring" parent="Traps" index="1" instance=ExtResource("17_m3klp")]
+position = Vector2(1444, 110)
+
+[node name="MovingPlatformMedium" parent="Traps" index="2" instance=ExtResource("19_wsu7j")]
+position = Vector2(1720, 450)
+rotation = -0.00205761
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Traps/MovingPlatformMedium" index="5"]
+libraries = {
+"": SubResource("AnimationLibrary_oni1m")
+}
+autoplay = "move"
+
+[node name="UI" parent="." index="8" instance=ExtResource("15_rvm1p")]
+
+[node name="GreenAlien" parent="Player" index="0"]
+position = Vector2(-291, 218)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
+position = Vector2(2491, -597.5)
+shape = SubResource("RectangleShape2D_oma0m")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="1"]
+position = Vector2(-2692.5, -611)
+shape = SubResource("RectangleShape2D_8131l")
+
+[node name="EnemiesInvisibleWalls" parent="." index="11"]
+collision_layer = 32
+collision_mask = 2
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="EnemiesInvisibleWalls" index="0"]
+position = Vector2(-1267, 516)
+shape = SubResource("RectangleShape2D_2q58u")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnemiesInvisibleWalls" index="1"]
+position = Vector2(-696, 514)
+shape = SubResource("RectangleShape2D_2q58u")

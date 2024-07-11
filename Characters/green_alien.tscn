@@ -63,7 +63,7 @@ script = ExtResource("1_xi45j")
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_q57uv")
 animation = &"walk"
-frame_progress = 0.976156
+frame_progress = 0.838747
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)

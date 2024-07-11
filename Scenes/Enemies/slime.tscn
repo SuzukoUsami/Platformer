@@ -10,6 +10,7 @@ size = Vector2(40, 28)
 size = Vector2(46, 29.5)
 
 [node name="Slime" type="PathFollow2D" groups=["enemies"]]
+rotates = false
 script = ExtResource("1_lci0w")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]

@@ -1,8 +1,13 @@
  # My tiny todo list ^^
  ### ideas:
- - moving platforms,
- - when player have colected certain amount of conins allow to open the door to next level,
+ - when player have colected certain amount of coins allow to open the door to next level,
+ - save system,
+ - block traps, when stepped on block disappears or changing to spikes,
+ - enemies dead animation,
+ - vulnerability time for player with white shader,
+
 
  ### fix:
  - purple slime moonwalking,
  - reset coins and health amount between levels,
+ - platforms moving by code,

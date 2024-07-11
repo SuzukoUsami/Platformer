@@ -10,7 +10,7 @@ var jump_speed = -550.0
 
 
 func _process(_delta):
-	if Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left"):
+	if Input.is_action_pressed("right") or Input.is_action_pressed("left"):
 		walk_animation.play("walk")
 	elif Input.is_action_just_released("right") or Input.is_action_just_released("left"):
 		walk_animation.stop()

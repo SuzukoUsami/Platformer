@@ -116,7 +116,6 @@ curve = SubResource("Curve2D_mriki")
 
 [node name="Slime" parent="Enemies/Path2D" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-2905, 618)
-rotates = false
 
 [node name="FlyEnemy" parent="Enemies" index="1" instance=ExtResource("11_e5cin")]
 position = Vector2(-2712, -74)

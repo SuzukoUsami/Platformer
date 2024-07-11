@@ -9,29 +9,21 @@ size = Vector2(40, 28)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jrc8"]
 size = Vector2(46, 29.5)
 
-[node name="Slime" type="PathFollow2D" groups=["enemies"]]
-rotates = false
+[node name="Slime" type="CharacterBody2D" groups=["enemies"]]
 script = ExtResource("1_lci0w")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(3, -2)
-collision_layer = 2
-collision_mask = 19
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-position = Vector2(1, 2)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4, 0)
 texture = ExtResource("1_ok30s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-3, 2)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ks7l2")
 
-[node name="Hitbox" type="Area2D" parent="CharacterBody2D"]
-position = Vector2(-3, 2)
+[node name="Hitbox" type="Area2D" parent="."]
 collision_layer = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Hitbox"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 position = Vector2(0, -0.25)
 shape = SubResource("RectangleShape2D_6jrc8")
 
-[connection signal="body_entered" from="CharacterBody2D/Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

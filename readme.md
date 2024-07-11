@@ -8,6 +8,6 @@
 
 
  ### fix:
- - purple slime moonwalking,
+ - purple slime stop moonwalking,
+ - moving purple slime by code,
  - reset coins and health amount between levels,
- - platforms moving by code,

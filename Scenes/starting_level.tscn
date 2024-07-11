@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=30 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ldse4"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
@@ -25,17 +25,44 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="19_wsu7j"]
 [ext_resource type="PackedScene" uid="uid://c5iqalxdfwa35" path="res://Scenes/Items/open_door.tscn" id="20_4cdg1"]
 
-[sub_resource type="Curve2D" id="Curve2D_vga6b"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, -797, 548, 0, 0, 0, 0, -1250, 548, 0, 0, 0, 0, -797, 548)
+[sub_resource type="Animation" id="Animation_arr2a"]
+resource_name = "move"
+length = 6.0
+loop_mode = 2
+step = 1.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1720, 450), Vector2(2326, 450)]
 }
-point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_2kbbe"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1668, 425, 0, 0, 0, 0, 2404, 425, 0, 0, 0, 0, 1666, 425)
+[sub_resource type="Animation" id="Animation_tv3mf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1720, 450)]
 }
-point_count = 3
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oni1m"]
+_data = {
+"RESET": SubResource("Animation_tv3mf"),
+"move": SubResource("Animation_arr2a")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oma0m"]
 size = Vector2(114, 2601)
@@ -577,17 +604,14 @@ flip_h = true
 position = Vector2(1692.5, -366)
 texture = ExtResource("8_5mo28")
 
-[node name="Path2D" type="Path2D" parent="Enemies" index="0"]
-curve = SubResource("Curve2D_vga6b")
-
-[node name="Slime" parent="Enemies/Path2D" index="0" instance=ExtResource("11_ulk0w")]
+[node name="Slime" parent="Enemies" index="0" instance=ExtResource("11_ulk0w")]
 position = Vector2(-797, 548)
 
 [node name="Snail" parent="Enemies" index="1" instance=ExtResource("12_bipn5")]
 position = Vector2(404, 547)
 
 [node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("16_5l6tl")]
-position = Vector2(-834, 106)
+position = Vector2(-1740, -234)
 
 [node name="Spikes" parent="Traps" index="0" instance=ExtResource("11_ix08r")]
 position = Vector2(296, 527)
@@ -595,12 +619,15 @@ position = Vector2(296, 527)
 [node name="Spring" parent="Traps" index="1" instance=ExtResource("17_m3klp")]
 position = Vector2(1444, 110)
 
-[node name="Path2D" type="Path2D" parent="Traps" index="2"]
-curve = SubResource("Curve2D_2kbbe")
-
-[node name="MovingPlatformMedium" parent="Traps/Path2D" index="0" instance=ExtResource("19_wsu7j")]
-position = Vector2(1668, 425)
+[node name="MovingPlatformMedium" parent="Traps" index="2" instance=ExtResource("19_wsu7j")]
+position = Vector2(1720, 450)
 rotation = -0.00205761
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Traps/MovingPlatformMedium" index="5"]
+libraries = {
+"": SubResource("AnimationLibrary_oni1m")
+}
+autoplay = "move"
 
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(1289, 499)

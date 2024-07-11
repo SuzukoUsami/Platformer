@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends Node2D
 
 var speed = 60
 var direction = -1

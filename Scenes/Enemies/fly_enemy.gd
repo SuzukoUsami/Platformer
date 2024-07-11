@@ -1,16 +1,24 @@
 extends CharacterBody2D
 
+@onready var sprite_2d = $Sprite2D
+
 var speed = 175
 var active: bool = false
 
+
 func _process(_delta):
+	print(sprite_2d)
 	var direction = (Globals.player_position - position).normalized()
 	velocity = direction * speed
 	if active:
 		move_and_slide()
-		#look_at(Vector2(Globals.player_position.x,position.y))
-		#var kitku: Vector2 = Vector2(0.5,0.6)
-
+		
+	if Globals.player_position.x - position.x >= 0:
+		sprite_2d.set_flip_h(true)
+	elif Globals.player_position.x - position.x <= 0:
+		sprite_2d.set_flip_h(false)
+	
+	
 
 func _on_notice_area_body_entered(_body):
 	active = true

@@ -638,7 +638,7 @@ position = Vector2(-788, 547)
 position = Vector2(404, 547)
 
 [node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("16_5l6tl")]
-position = Vector2(97, -588)
+position = Vector2(-2110, 58)
 
 [node name="Spikes" parent="Traps" index="0" instance=ExtResource("11_ix08r")]
 position = Vector2(296, 527)
@@ -659,7 +659,7 @@ autoplay = "move"
 [node name="UI" parent="." index="8" instance=ExtResource("15_rvm1p")]
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-291, 218)
+position = Vector2(-1536, 494)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)

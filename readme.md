@@ -10,6 +10,7 @@
  - coins drops from enemies,
  - enemy that shoots projectiles,
  - music and sound effects,
+ - controller input,
 
 
  ### fix:

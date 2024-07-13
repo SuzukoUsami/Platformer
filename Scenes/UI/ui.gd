@@ -23,8 +23,6 @@ func _ready():
 	Globals.connect("amount_change", update_coin_text)
 	update_coin_text()
 	
-	#health_image.texture = heart_full
-	
 # HEALTH
 func update_hearts_textures():
 	var hearts = hearts_container.get_children() # [TR, TR2, TR3]

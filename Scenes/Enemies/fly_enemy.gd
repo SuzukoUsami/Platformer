@@ -7,7 +7,6 @@ var active: bool = false
 
 
 func _process(_delta):
-	print(sprite_2d)
 	var direction = (Globals.player_position - position).normalized()
 	velocity = direction * speed
 	if active:
@@ -25,7 +24,7 @@ func _on_notice_area_body_entered(_body):
 
 
 func _on_hit_area_body_entered(body):
-	if (body.name == "GreenAlien"):
+	if (body.name == Globals.PLAYER_NAME):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
 			queue_free()

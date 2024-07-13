@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="12_ftp16"]
 [ext_resource type="PackedScene" uid="uid://c5exh1x6ei5xj" path="res://Scenes/Items/coin.tscn" id="13_1evug"]
 [ext_resource type="PackedScene" uid="uid://2okjnqhife86" path="res://Scenes/Items/heart_item.tscn" id="15_67cci"]
-[ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/closed_door.tscn" id="17_x1k5s"]
+[ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="17_x1k5s"]
 
 [sub_resource type="Curve2D" id="Curve2D_mriki"]
 _data = {

@@ -19,7 +19,7 @@ func _process(delta):
 	position.x += speed * delta * direction
 
 func _on_hitbox_body_entered(body):
-	if (body.name == "GreenAlien"):
+	if (body.name == Globals.PLAYER_NAME):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
 			queue_free()

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_eu0wr"]
 [ext_resource type="Texture2D" uid="uid://b7x3wc8ifrt1h" path="res://graphics/Platformer Art Deluxe/Base pack/Items/bush.png" id="2_sytpl"]
 [ext_resource type="Texture2D" uid="uid://bh5q3diqmwdbl" path="res://graphics/Platformer Art Deluxe/Base pack/Items/plant.png" id="3_j3tqr"]
-[ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/closed_door.tscn" id="4_fq2o8"]
+[ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="4_fq2o8"]
 [ext_resource type="Texture2D" uid="uid://b1bhh4fq13cyy" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/fence.png" id="4_ma25k"]
 [ext_resource type="Texture2D" uid="uid://co0i4bktalmyk" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud1.png" id="6_a1wuo"]
 [ext_resource type="Texture2D" uid="uid://dqhe5f7tksk3b" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud2.png" id="7_ysvkf"]
@@ -614,7 +614,7 @@ position = Vector2(1379, 120)
 position = Vector2(1930, 22)
 
 [node name="BronzeCoin" parent="Items" index="2" instance=ExtResource("13_jntn4")]
-position = Vector2(763, 393)
+position = Vector2(1790, 526)
 
 [node name="BronzeCoin2" parent="Items" index="3" instance=ExtResource("13_jntn4")]
 position = Vector2(693, 521)
@@ -623,7 +623,7 @@ position = Vector2(693, 521)
 position = Vector2(636, -108)
 
 [node name="SilverCoin" parent="Items" index="5" instance=ExtResource("13_rn7xw")]
-position = Vector2(1111, 255)
+position = Vector2(1701, 524)
 
 [node name="SilverCoin2" parent="Items" index="6" instance=ExtResource("13_rn7xw")]
 position = Vector2(-2400, 536)
@@ -659,7 +659,7 @@ autoplay = "move"
 [node name="UI" parent="." index="8" instance=ExtResource("15_rvm1p")]
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1536, 494)
+position = Vector2(1371, 492)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)

@@ -3,6 +3,8 @@ extends Node
 signal amount_change
 signal health_change
 
+const PLAYER_NAME = "GreenAlien"
+
 var health: int = 6:
 	set(value):
 		health = value
@@ -10,7 +12,7 @@ var health: int = 6:
 
 func hit_player(body):
 	health -= 1
-	if health < 1 and body.name == "GreenAlien":
+	if health < 1 and body.name == Globals.PLAYER_NAME:
 		body.get_node("CollisionPolygon2D").queue_free()
 		#body.get_tree().reload_current_scene()
 

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://du5n0dmjvsucj"]
+
+[ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_d4uvr"]
+[ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="2_sp7u6"]
+
+[node name="Level3" instance=ExtResource("1_d4uvr")]
+
+[node name="TileMap" parent="Platforms" index="0"]
+layer_0/tile_data = PackedInt32Array(524296, 262144, 3, 524295, 131072, 3, 524294, 131072, 3, 524293, 131072, 3, 524297, 131072, 3, 524298, 131072, 3, 524299, 131072, 3)
+
+[node name="Door" parent="." index="1" instance=ExtResource("2_sp7u6")]
+position = Vector2(413, 508)
+metadata/required_coins = 20
+metadata/target_level = "res://Scenes/UI/main_menu.tscn"
+
+[node name="GreenAlien" parent="Player" index="0"]
+position = Vector2(612, 436)

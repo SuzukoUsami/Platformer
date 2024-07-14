@@ -1,6 +1,5 @@
 extends Node2D
 
-
 const DOOR_CLOSED_MID = preload("res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedMid.png")
 const DOOR_CLOSED_TOP = preload("res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedTop.png")
 
@@ -13,31 +12,40 @@ const DOOR_OPEN_TOP = preload("res://graphics/Platformer Art Deluxe/Base pack/Ti
 @onready var label = $HBoxContainer/Label
 @onready var particles = $GPUParticles2D
 
-var required_coins : int = 15
+signal player_used_door(target_level)
+
+var required_coins : int 
+var target_level : String 
+
 
 func _ready():
-
+	required_coins =  get_meta("required_coins", 0)
+	target_level = get_meta("target_level", "res://Scenes/UI/main_menu.tscn")
+	
 	Globals.connect("amount_change", update_coins_amount)
 	update_coins_amount()
 	label.text = str(required_coins)
 	
+
 
 func update_coins_amount():
 	if(Globals.coins_amount >= required_coins):
 		sprite_mid.texture = DOOR_OPEN_MID
 		sprite_top.texture = DOOR_OPEN_TOP
 		particles.visible = true
-	else:
+	else: 
 		sprite_mid.texture = DOOR_CLOSED_MID
 		sprite_top.texture = DOOR_CLOSED_TOP
 		particles.visible = false
 	pass
 
+func change_level():
+	Globals.change_level(target_level)
 
 func _on_area_2d_body_entered(body):
 	if body.name == Globals.PLAYER_NAME:
 		if Globals.coins_amount >= required_coins:
-			print("You may pass through the door")
+			call_deferred("change_level")
 		else:
 			ui.visible = true
 

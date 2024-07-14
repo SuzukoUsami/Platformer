@@ -1,7 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://c6vbh08828p0p"]
+[gd_scene load_steps=14 format=3 uid="uid://c6vbh08828p0p"]
 
 [ext_resource type="Script" path="res://Characters/green_alien.gd" id="1_xi45j"]
-[ext_resource type="Texture2D" uid="uid://bduymlhywnur7" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen.png" id="1_yxqky"]
 [ext_resource type="Texture2D" uid="uid://xtx56wgxg3fj" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk01.png" id="2_atbmk"]
 [ext_resource type="Texture2D" uid="uid://tju50ymw3cdn" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk02.png" id="3_1v8eu"]
 [ext_resource type="Texture2D" uid="uid://crd23pbja5ynh" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk03.png" id="4_f2itl"]
@@ -64,13 +63,12 @@ position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_q57uv")
 animation = &"walk"
 frame_progress = 0.838747
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("1_yxqky")
-
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
 polygon = PackedVector2Array(-19, 46, 18, 46, 21, 27, 22, 11, 29, -7, 28, -25, 21, -34, 10, -41, 0, -44, -12, -43, -22, -36, -29, -24, -29, -4, -25, 9, -22, 27)
+metadata/_edit_lock_ = true

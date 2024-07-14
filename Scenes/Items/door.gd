@@ -18,9 +18,10 @@ var required_coins : int
 var target_level : String 
 
 
-func _ready():
+func _ready(): 
 	required_coins =  get_meta("required_coins", 0)
 	target_level = get_meta("target_level", "res://Scenes/UI/main_menu.tscn")
+	Globals.door_position = global_position
 	
 	Globals.connect("amount_change", update_coins_amount)
 	update_coins_amount()

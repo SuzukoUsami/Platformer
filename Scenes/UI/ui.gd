@@ -15,8 +15,6 @@ var orginal: Color = Color("ffffff")
 @onready var coin_text: Label = $CoinCounter/Coin/CoinLabel
 @onready var coin_image: TextureRect = $CoinCounter/Coin/TextureRect
 
-
-
 func _ready():
 	Globals.connect("health_change", update_hearts_textures)
 	update_hearts_textures()

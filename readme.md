@@ -12,6 +12,9 @@
  - controller input,
  - stars for completing % of the level,
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
+ - red fly,
+ - random traps,
+ - movement animation for characters,
 
 
  ### fix:

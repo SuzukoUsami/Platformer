@@ -1,5 +1,6 @@
  # My tiny todo list ^^
  ### ideas:
+ - increase player gravity when holding down key
  - block traps, when stepped on block disappears or changing to spikes,
  - enemies dead animation,
  - player dead animation,

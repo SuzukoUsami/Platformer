@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyx7eviatg2my"]
+
+[ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_gtlhh"]
+[ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="2_vx5ql"]
+
+[node name="Level4" instance=ExtResource("1_gtlhh")]
+
+[node name="TileMap" parent="Platforms" index="0"]
+layer_0/tile_data = PackedInt32Array(524296, 262144, 3, 524297, 262144, 3, 524298, 262144, 3, 524299, 262144, 3, 524300, 262144, 3, 524301, 262144, 3, 524302, 262144, 3, 524303, 262144, 3, 524295, 262144, 3, 524294, 262144, 3, 327691, 262144, 3, 327692, 262144, 3, 327693, 262144, 3)
+
+[node name="Slime" parent="Enemies" index="0" instance=ExtResource("2_vx5ql")]
+position = Vector2(876, 323)

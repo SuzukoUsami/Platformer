@@ -633,7 +633,7 @@ position = Vector2(530, 484)
 position = Vector2(-788, 547)
 
 [node name="Snail" parent="Enemies" index="1" instance=ExtResource("17_ryprp")]
-position = Vector2(404, 547)
+position = Vector2(789, -83)
 
 [node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("11_e5cin")]
 position = Vector2(-2110, 58)

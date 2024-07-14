@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8mka5ysiimhv"]
+
+[ext_resource type="Texture2D" uid="uid://dtnda7nkoc4ni" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/grassHalfLeft.png" id="1_kqu0s"]
+[ext_resource type="Texture2D" uid="uid://cyfvk42g48yfp" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/grassHalfRight.png" id="2_08cfx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d6dfe"]
+size = Vector2(140, 8)
+
+[node name="Moving_platform_short" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-36, 34)
+texture = ExtResource("1_kqu0s")
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 11.9706)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(34, 34)
+texture = ExtResource("2_08cfx")
+region_enabled = true
+region_rect = Rect2(0, 0, 70, 11.9609)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 32)
+shape = SubResource("RectangleShape2D_d6dfe")
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

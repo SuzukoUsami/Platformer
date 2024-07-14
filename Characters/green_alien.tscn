@@ -69,6 +69,5 @@ metadata/_edit_lock_ = true
 offset = Vector2(0, -25)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-visible = false
 polygon = PackedVector2Array(-19, 46, 18, 46, 21, 27, 22, 11, 29, -7, 28, -25, 21, -34, 10, -41, 0, -44, -12, -43, -22, -36, -29, -24, -29, -4, -25, 9, -22, 27)
 metadata/_edit_lock_ = true

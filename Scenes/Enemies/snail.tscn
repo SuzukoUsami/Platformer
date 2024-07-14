@@ -1,15 +1,60 @@
-[gd_scene load_steps=3 format=3 uid="uid://cfqtwp6kdnpan"]
+[gd_scene load_steps=5 format=3 uid="uid://cfqtwp6kdnpan"]
 
 [ext_resource type="Texture2D" uid="uid://d0lgvqrd1woaj" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk1.png" id="1_6o1cy"]
 [ext_resource type="Script" path="res://Scenes/Enemies/snail.gd" id="1_tvl7f"]
 
-[node name="Snail" type="CharacterBody2D" groups=["enemies"]]
-collision_layer = 2
-collision_mask = 3
-script = ExtResource("1_tvl7f")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r46p1"]
+size = Vector2(44, 30)
 
-[node name="SnailImage" type="Sprite2D" parent="."]
+[sub_resource type="CircleShape2D" id="CircleShape2D_yxbii"]
+radius = 241.008
+
+[node name="Snail" type="Node2D" groups=["enemies"]]
+script = ExtResource("1_tvl7f")
+metadata/auto_move = true
+
+[node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_6o1cy")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-24, 15, 26, 15, 25, -4, 18, -12, 10, -16, -3, -14, -9, -7, -12, 1, -19, 3, -23, 7)
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+shape = SubResource("RectangleShape2D_r46p1")
+
+[node name="RayCastDownLeft" type="RayCast2D" parent="."]
+position = Vector2(30, 0)
+target_position = Vector2(0, 40)
+collision_mask = 4
+
+[node name="RayCastDownRight" type="RayCast2D" parent="."]
+position = Vector2(-30, 0)
+target_position = Vector2(0, 40)
+collision_mask = 4
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(30, 0)
+collision_mask = 36
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-30, 0)
+collision_mask = 36
+
+[node name="NoticeArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
+shape = SubResource("CircleShape2D_yxbii")
+
+[node name="NoticeTimer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[node name="HidingTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
+[connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
+[connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
+[connection signal="timeout" from="NoticeTimer" to="." method="_on_notice_timer_timeout"]
+[connection signal="timeout" from="HidingTimer" to="." method="_on_hiding_timer_timeout"]

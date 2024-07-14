@@ -648,7 +648,7 @@ position = Vector2(1444, 110)
 position = Vector2(1720, 450)
 rotation = -0.00205761
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="Traps/MovingPlatformMedium" index="5"]
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="Traps/MovingPlatformMedium" index="4"]
 libraries = {
 "": SubResource("AnimationLibrary_oni1m")
 }

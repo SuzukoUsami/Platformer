@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var walk_animation = $AnimatedSprite2D
+@onready var animation = $AnimatedSprite2D
 
 # Vertical impulse applied to the character upon bouncing over a mob in meters per second.
 @export var bounce_impulse = 16
@@ -9,22 +9,26 @@ var speed = 400.0
 var jump_speed = -550.0
 
 
+
 func _process(_delta):
 	if Input.is_action_pressed("right") or Input.is_action_pressed("left"):
-		walk_animation.play("walk")
+		animation.play("walk")
 	elif Input.is_action_just_released("right") or Input.is_action_just_released("left"):
-		walk_animation.stop()
+		animation.stop()
 		
 
 	if Input.is_action_just_pressed("right"):
-		walk_animation.set_flip_h(false)
+		animation.set_flip_h(false)
 	elif Input.is_action_just_pressed("left"):
-		walk_animation.set_flip_h(true)
+		animation.set_flip_h(true)
 	
 
-func hit():
-	Globals.health -= 1
-
+func hit_shader():
+	#Globals.health -= 1
+	#animation.play("hit_player")
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
+	$HitShaderTimer.start()
+	
 
 # Get the gravity from the project settings so you can sync with rigid body nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -52,3 +56,7 @@ func _physics_process(delta):
 
 	move_and_slide()
 
+
+
+func _on_hit_shader_timer_timeout():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)

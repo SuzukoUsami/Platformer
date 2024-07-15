@@ -1,8 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://drhv7l1r7i6hp"]
+[gd_scene load_steps=8 format=3 uid="uid://drhv7l1r7i6hp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
+[ext_resource type="Shader" path="res://Characters/green_alien.gdshader" id="2_ni4nf"]
 [ext_resource type="Texture2D" uid="uid://dhe4j4nyj7v4y" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk2.png" id="3_6rlry"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_avkd5"]
+shader = ExtResource("2_ni4nf")
+shader_parameter/color = Color(1, 0.0705882, 0, 1)
+shader_parameter/progress = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dq8l8"]
 animations = [{
@@ -26,6 +32,7 @@ script = ExtResource("1_lci0w")
 metadata/auto_move = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_avkd5")
 sprite_frames = SubResource("SpriteFrames_dq8l8")
 animation = &"walk"
 autoplay = "walk"
@@ -58,4 +65,8 @@ position = Vector2(-30, 0)
 target_position = Vector2(0, 40)
 collision_mask = 4
 
+[node name="HitShaderTimer" type="Timer" parent="."]
+wait_time = 0.2
+
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]

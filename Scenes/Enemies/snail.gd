@@ -37,8 +37,8 @@ func _on_hit_box_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME and not is_hiding):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
-			queue_free()
-			body.bounce(1)
+				queue_free()
+				body.bounce(1)
 		else:
 			Globals.hit_player(body)
 
@@ -47,7 +47,7 @@ func _on_notice_area_body_entered(body):
 		notice_timer.start()
 		pass
 
-func _on_notice_area_body_exited(body):
+func _on_notice_area_body_exited(_body):
 	notice_timer.stop()
 	hiding_timer.start()
 

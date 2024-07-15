@@ -1,5 +1,6 @@
-[gd_scene load_steps=14 format=3 uid="uid://c6vbh08828p0p"]
+[gd_scene load_steps=16 format=3 uid="uid://c6vbh08828p0p"]
 
+[ext_resource type="Shader" path="res://Characters/green_alien.gdshader" id="1_ci8un"]
 [ext_resource type="Script" path="res://Characters/green_alien.gd" id="1_xi45j"]
 [ext_resource type="Texture2D" uid="uid://xtx56wgxg3fj" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk01.png" id="2_atbmk"]
 [ext_resource type="Texture2D" uid="uid://tju50ymw3cdn" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk02.png" id="3_1v8eu"]
@@ -12,6 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://cs5xpm2ildcy" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk08.png" id="10_sr7du"]
 [ext_resource type="Texture2D" uid="uid://dtrvlc6s2ccpf" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk10.png" id="11_1oh8w"]
 [ext_resource type="Texture2D" uid="uid://c1fof2k68wt86" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk11.png" id="12_roypt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b2xjp"]
+shader = ExtResource("1_ci8un")
+shader_parameter/color = Color(1, 0.176471, 0.192157, 1)
+shader_parameter/progress = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q57uv"]
 animations = [{
@@ -59,11 +65,11 @@ collision_mask = 31
 script = ExtResource("1_xi45j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_b2xjp")
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_q57uv")
 animation = &"walk"
-frame_progress = 0.696601
-metadata/_edit_lock_ = true
+frame_progress = 0.847212
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)
@@ -71,4 +77,8 @@ offset = Vector2(0, -25)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 visible = false
 polygon = PackedVector2Array(-19, 46, 18, 46, 21, 27, 22, 11, 29, -7, 28, -25, 21, -34, 10, -41, 0, -44, -12, -43, -22, -36, -29, -24, -29, -4, -25, 9, -22, 27)
-metadata/_edit_lock_ = true
+
+[node name="HitShaderTimer" type="Timer" parent="."]
+wait_time = 0.1
+
+[connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]

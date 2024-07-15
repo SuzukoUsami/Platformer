@@ -2122,7 +2122,7 @@ libraries = {
 autoplay = "move"
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1490, -1015)
+position = Vector2(-3846, 725)
 
 [node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
 

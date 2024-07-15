@@ -30,8 +30,13 @@ func _on_hitbox_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
-			queue_free()
+			$AnimatedSprite2D.material.set_shader_parameter("progress", 0.6)
+			$HitShaderTimer.start()
+			#queue_free()
 			body.bounce(1)
 		else:
 			Globals.hit_player(body)
-	
+
+
+func _on_hit_shader_timer_timeout():
+	queue_free()

@@ -15,6 +15,7 @@
  - red fly,
  - random traps,
  - movement animation for characters,
+ - secret rooms,
 
 
  ### fix:

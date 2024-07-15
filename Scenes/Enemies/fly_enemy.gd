@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@onready var sprite_2d = $Sprite2D
+@onready var sprite_2d = $AnimatedSprite2D
 
 var speed = 175
 var active: bool = false

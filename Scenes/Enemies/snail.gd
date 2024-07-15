@@ -3,7 +3,7 @@ extends Node2D
 @onready var ray_cast_left = $RayCastLeft
 @onready var ray_cast_down_left = $RayCastDownLeft
 @onready var ray_cast_down_right = $RayCastDownRight
-@onready var sprite = $Sprite
+@onready var sprite = $Sprite2D
 @onready var notice_timer = $NoticeTimer
 @onready var hiding_timer = $HidingTimer
 

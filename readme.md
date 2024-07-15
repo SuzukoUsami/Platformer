@@ -1,8 +1,8 @@
  # My tiny todo list ^^
  ### ideas:
  - increase player gravity when holding down key
- - block traps, when stepped on block disappears or changing to spikes,
- - enemies dead animation,
+ - block traps, when stepped on block disappears or changes to spikes,
+ - enemies dead animation with white shader,
  - player dead animation,
  - vulnerability time for player with white shader,
  - shop for life,
@@ -14,9 +14,11 @@
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
  - red fly,
  - random traps,
- - movement animation for characters,
  - secret rooms,
 
 
  ### fix:
+- better enemy movement animations,
+- movement animation for snail,
+-
 

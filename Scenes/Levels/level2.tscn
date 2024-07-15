@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dd76gmwkyl0aj"]
+[gd_scene load_steps=37 format=3 uid="uid://dd76gmwkyl0aj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_egcuc"]
 [ext_resource type="Texture2D" uid="uid://bt5fp65w85mk4" path="res://graphics/Platformer Art Deluxe/Base pack/bg.png" id="2_ev20v"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="18_6hqm0"]
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="19_mgipf"]
 [ext_resource type="PackedScene" uid="uid://c8mka5ysiimhv" path="res://Scenes/Traps/moving_platform_short.tscn" id="19_q5b5h"]
+[ext_resource type="PackedScene" uid="uid://cfqtwp6kdnpan" path="res://Scenes/Enemies/snail.tscn" id="20_nqwu0"]
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="20_rib1g"]
 
 [sub_resource type="Animation" id="Animation_fogva"]
@@ -1845,7 +1846,10 @@ position = Vector2(-3472, 719)
 [node name="Coin2" parent="Items" index="7" instance=ExtResource("12_4vjol")]
 position = Vector2(-1158, 700)
 
-[node name="Heart_item" parent="Items" index="8" instance=ExtResource("13_6v5hx")]
+[node name="Coin3" parent="Items" index="8" instance=ExtResource("12_4vjol")]
+position = Vector2(3647, 718)
+
+[node name="Heart_item" parent="Items" index="9" instance=ExtResource("13_6v5hx")]
 position = Vector2(-1264, 451)
 
 [node name="Slime" parent="Enemies" index="0" instance=ExtResource("14_1s3vn")]
@@ -1871,6 +1875,9 @@ position = Vector2(-2804, -1668)
 
 [node name="FlyEnemy4" parent="Enemies" index="7" instance=ExtResource("15_1uqgh")]
 position = Vector2(-1820, -1780)
+
+[node name="Snail" parent="Enemies" index="8" instance=ExtResource("20_nqwu0")]
+position = Vector2(-340, 336)
 
 [node name="SpikesTraps" type="Node2D" parent="Traps" index="0"]
 
@@ -2000,6 +2007,87 @@ position = Vector2(1578, 736)
 [node name="Spikes40" parent="Traps/SpikesTraps" index="41" instance=ExtResource("16_5oxqi")]
 position = Vector2(1647, 736)
 
+[node name="Spikes43" parent="Traps/SpikesTraps" index="42" instance=ExtResource("16_5oxqi")]
+position = Vector2(1716, 736)
+
+[node name="Spikes44" parent="Traps/SpikesTraps" index="43" instance=ExtResource("16_5oxqi")]
+position = Vector2(1786, 736)
+
+[node name="Spikes45" parent="Traps/SpikesTraps" index="44" instance=ExtResource("16_5oxqi")]
+position = Vector2(1856, 736)
+
+[node name="Spikes46" parent="Traps/SpikesTraps" index="45" instance=ExtResource("16_5oxqi")]
+position = Vector2(1926, 736)
+
+[node name="Spikes47" parent="Traps/SpikesTraps" index="46" instance=ExtResource("16_5oxqi")]
+position = Vector2(1996, 736)
+
+[node name="Spikes48" parent="Traps/SpikesTraps" index="47" instance=ExtResource("16_5oxqi")]
+position = Vector2(2065, 736)
+
+[node name="Spikes49" parent="Traps/SpikesTraps" index="48" instance=ExtResource("16_5oxqi")]
+position = Vector2(2135, 736)
+
+[node name="Spikes50" parent="Traps/SpikesTraps" index="49" instance=ExtResource("16_5oxqi")]
+position = Vector2(2417, 736)
+
+[node name="Spikes51" parent="Traps/SpikesTraps" index="50" instance=ExtResource("16_5oxqi")]
+position = Vector2(2347, 736)
+
+[node name="Spikes52" parent="Traps/SpikesTraps" index="51" instance=ExtResource("16_5oxqi")]
+position = Vector2(2277, 736)
+
+[node name="Spikes53" parent="Traps/SpikesTraps" index="52" instance=ExtResource("16_5oxqi")]
+position = Vector2(2206, 736)
+
+[node name="Spikes54" parent="Traps/SpikesTraps" index="53" instance=ExtResource("16_5oxqi")]
+position = Vector2(2487, 736)
+
+[node name="Spikes55" parent="Traps/SpikesTraps" index="54" instance=ExtResource("16_5oxqi")]
+position = Vector2(2557, 736)
+
+[node name="Spikes56" parent="Traps/SpikesTraps" index="55" instance=ExtResource("16_5oxqi")]
+position = Vector2(2627, 736)
+
+[node name="Spikes57" parent="Traps/SpikesTraps" index="56" instance=ExtResource("16_5oxqi")]
+position = Vector2(2697, 736)
+
+[node name="Spikes58" parent="Traps/SpikesTraps" index="57" instance=ExtResource("16_5oxqi")]
+position = Vector2(2767, 736)
+
+[node name="Spikes59" parent="Traps/SpikesTraps" index="58" instance=ExtResource("16_5oxqi")]
+position = Vector2(2837, 736)
+
+[node name="Spikes60" parent="Traps/SpikesTraps" index="59" instance=ExtResource("16_5oxqi")]
+position = Vector2(2907, 736)
+
+[node name="Spikes61" parent="Traps/SpikesTraps" index="60" instance=ExtResource("16_5oxqi")]
+position = Vector2(2976, 736)
+
+[node name="Spikes62" parent="Traps/SpikesTraps" index="61" instance=ExtResource("16_5oxqi")]
+position = Vector2(3046, 736)
+
+[node name="Spikes63" parent="Traps/SpikesTraps" index="62" instance=ExtResource("16_5oxqi")]
+position = Vector2(3116, 736)
+
+[node name="Spikes64" parent="Traps/SpikesTraps" index="63" instance=ExtResource("16_5oxqi")]
+position = Vector2(3186, 736)
+
+[node name="Spikes65" parent="Traps/SpikesTraps" index="64" instance=ExtResource("16_5oxqi")]
+position = Vector2(3256, 736)
+
+[node name="Spikes66" parent="Traps/SpikesTraps" index="65" instance=ExtResource("16_5oxqi")]
+position = Vector2(3326, 736)
+
+[node name="Spikes67" parent="Traps/SpikesTraps" index="66" instance=ExtResource("16_5oxqi")]
+position = Vector2(3396, 736)
+
+[node name="Spikes68" parent="Traps/SpikesTraps" index="67" instance=ExtResource("16_5oxqi")]
+position = Vector2(3466, 736)
+
+[node name="Spikes69" parent="Traps/SpikesTraps" index="68" instance=ExtResource("16_5oxqi")]
+position = Vector2(3535, 736)
+
 [node name="Spring" parent="Traps" index="1" instance=ExtResource("17_oenhp")]
 position = Vector2(-3357, 740)
 
@@ -2034,7 +2122,7 @@ libraries = {
 autoplay = "move"
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(2808, -2248)
+position = Vector2(-1490, -1015)
 
 [node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
 

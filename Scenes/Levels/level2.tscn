@@ -1868,7 +1868,7 @@ position = Vector2(1099, 338)
 position = Vector2(-3873, 216)
 
 [node name="FlyEnemy2" parent="Enemies" index="5" instance=ExtResource("15_1uqgh")]
-position = Vector2(-118, -17)
+position = Vector2(37, 127)
 
 [node name="FlyEnemy3" parent="Enemies" index="6" instance=ExtResource("15_1uqgh")]
 position = Vector2(-2804, -1668)
@@ -2121,12 +2121,12 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-3846, 725)
-
 [node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
 
-[node name="PlayerInvisibleWalls" parent="." index="9"]
+[node name="GreenAlien" parent="Player" index="0"]
+position = Vector2(-2235, -903)
+
+[node name="PlayerInvisibleWalls" parent="." index="10"]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2137,3 +2137,6 @@ shape = SubResource("RectangleShape2D_byv0g")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="1"]
 position = Vector2(-4403.5, -1736)
 shape = SubResource("RectangleShape2D_wfe0r")
+
+[node name="EnemiesInvisibleWalls" parent="." index="11"]
+position = Vector2(56, -5)

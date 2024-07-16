@@ -5,7 +5,7 @@
  - enemies dead animation with white shader,
  - player dead animation,
  - vulnerability time for player,
- - shop for life,
+ - shop for life?
  - coins drops from enemies,
  - enemy that shoots projectiles,
  - music and sound effects,
@@ -14,7 +14,7 @@
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
  - red fly,
  - random traps,
- - secret rooms,
+ - hidden snail blocks the player,
 
 
  ### fix:

@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
-[ext_resource type="Shader" path="res://Characters/green_alien.gdshader" id="2_ni4nf"]
+[ext_resource type="Shader" path="res://Scenes/Enemies/slime.gdshader" id="2_nittn"]
 [ext_resource type="Texture2D" uid="uid://dhe4j4nyj7v4y" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk2.png" id="3_6rlry"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_avkd5"]
-shader = ExtResource("2_ni4nf")
-shader_parameter/color = Color(1, 0.0705882, 0, 1)
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rxlwf"]
+shader = ExtResource("2_nittn")
+shader_parameter/color = Color(1, 0.176471, 0.192157, 1)
 shader_parameter/progress = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dq8l8"]
@@ -32,7 +32,7 @@ script = ExtResource("1_lci0w")
 metadata/auto_move = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_avkd5")
+material = SubResource("ShaderMaterial_rxlwf")
 sprite_frames = SubResource("SpriteFrames_dq8l8")
 animation = &"walk"
 autoplay = "walk"

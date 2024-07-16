@@ -53,9 +53,7 @@ func _physics_process(delta):
 	velocity.x = direction * speed
 	Globals.player_position = global_position
 	
-
 	move_and_slide()
-
 
 
 func _on_hit_shader_timer_timeout():

@@ -43,7 +43,6 @@ func _on_hitbox_body_entered(body):
 			body.bounce(1)
 		else:
 			body.hit_player()
-			body.knockback()
 
 
 func _on_hit_shader_timer_timeout():

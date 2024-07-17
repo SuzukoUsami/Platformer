@@ -30,6 +30,7 @@ func hit_player():
 		#print_debug(vulnerability)
 		vulnerability = false
 		Globals.health -= 1
+		knockback()
 		$VulnerabilityTimer.start()
 		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
 		$HitShaderTimer.start()
@@ -43,9 +44,6 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func bounce(bounce_factor):
 	velocity.y = jump_speed * bounce_factor
-	
-#func bounce_away(bounce_factor):
-	#velocity.x = speed * bounce_factor
 	
 
 func _physics_process(delta):
@@ -70,7 +68,6 @@ func _physics_process(delta):
 func knockback():
 	var knockback_direction = Vector2(velocity.normalized().x * -knockback_power, jump_speed * .8)
 	velocity = knockback_direction
-	#move_and_slide()
 
 func _on_hit_shader_timer_timeout():
 	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)

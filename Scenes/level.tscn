@@ -166,8 +166,6 @@ tile_set = SubResource("TileSet_3u0d7")
 format = 2
 layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
-[node name="SecretRoom" type="Node2D" parent="."]
-
 [node name="Decor" type="Node2D" parent="."]
 
 [node name="Items" type="Node2D" parent="."]
@@ -175,6 +173,10 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Traps" type="Node2D" parent="."]
+
+[node name="SecretRoom" type="Node2D" parent="."]
+
+[node name="SecretAreas" type="Area2D" parent="SecretRoom"]
 
 [node name="Player" type="Node2D" parent="."]
 

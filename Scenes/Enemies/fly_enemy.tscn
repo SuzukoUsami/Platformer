@@ -27,6 +27,7 @@ size = Vector2(32, 32)
 radius = 520.062
 
 [node name="FlyEnemy" type="CharacterBody2D" groups=["enemies"]]
+collision_layer = 2
 script = ExtResource("1_31irm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -45,6 +46,7 @@ collision_layer = 2
 shape = SubResource("RectangleShape2D_nksb4")
 
 [node name="NoticeArea" type="Area2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
 shape = SubResource("CircleShape2D_xisd0")

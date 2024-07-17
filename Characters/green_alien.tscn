@@ -80,5 +80,10 @@ polygon = PackedVector2Array(-19, 46, 18, 46, 21, 27, 22, 11, 29, -7, 28, -25, 2
 
 [node name="HitShaderTimer" type="Timer" parent="."]
 wait_time = 0.1
+one_shot = true
+
+[node name="VulnerabilityTimer" type="Timer" parent="."]
+one_shot = true
 
 [connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
+[connection signal="timeout" from="VulnerabilityTimer" to="." method="_on_vulnerability_timer_timeout"]

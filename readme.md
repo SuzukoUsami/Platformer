@@ -4,7 +4,6 @@
  - enemies dead animation with white shader,
  - player dead animation,
  - player hit animation,
- - vulnerability time for player?
  - shop for health containers,
  - coins drops from enemies,
  - enemy that shoots projectiles,
@@ -24,6 +23,6 @@
 - better enemy movement animations,
 - movement animation for snail,
 - error when player kills snail,
-- FlyEnemy and FlyEmemy2 on level 2 are (sometimes) flying towards player right away when the scene is loaded,
+- FlyEnemy on level 2 are flying towards player right away when the scene is loaded,
 - player konckback,
 

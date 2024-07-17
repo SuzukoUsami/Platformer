@@ -10,6 +10,7 @@ extends CharacterBody2D
 var speed = 400.0
 var jump_speed = -550.0
 
+var vulnerability: bool = true
 
 
 func _process(_delta):
@@ -23,14 +24,19 @@ func _process(_delta):
 		animation.set_flip_h(false)
 	elif Input.is_action_just_pressed("left"):
 		animation.set_flip_h(true)
-	
 
-func hit_shader():
-	#Globals.health -= 1
-	#animation.play("hit_player")
-	$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
-	$HitShaderTimer.start()
-	
+func hit_player():
+	if vulnerability:
+		#print_debug(vulnerability)
+		vulnerability = false
+		Globals.health -= 1
+		$VulnerabilityTimer.start()
+		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
+		$HitShaderTimer.start()
+		
+	if Globals.health < 1:
+		$CollisionPolygon2D.queue_free()
+
 
 # Get the gravity from the project settings so you can sync with rigid body nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -38,9 +44,8 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func bounce(bounce_factor):
 	velocity.y = jump_speed * bounce_factor
 	
-#func bounce_away(bounce_factor):
-	#velocity.x = speed * bounce_factor
-	
+
+
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -67,3 +72,7 @@ func _physics_process(delta):
 
 func _on_hit_shader_timer_timeout():
 	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)
+
+
+func _on_vulnerability_timer_timeout():
+	vulnerability = true

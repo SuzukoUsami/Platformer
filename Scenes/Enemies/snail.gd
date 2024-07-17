@@ -40,7 +40,7 @@ func _on_hit_box_body_entered(body):
 				queue_free()
 				body.bounce(1)
 		else:
-			Globals.hit_player(body)
+			body.hit_player()
 
 func _on_notice_area_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):

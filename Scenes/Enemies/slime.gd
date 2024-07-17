@@ -6,8 +6,6 @@ extends Node2D
 @onready var sprite_slime = $AnimatedSprite2D
 
 
-
-
 const shader = preload("res://Characters/green_alien.gdshader")
 
 var speed = 60
@@ -40,7 +38,7 @@ func _on_hitbox_body_entered(body):
 			#queue_free()
 			body.bounce(1)
 		else:
-			Globals.hit_player(body)
+			body.hit_player()
 			#body.knockback()
 
 

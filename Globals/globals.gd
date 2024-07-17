@@ -20,10 +20,10 @@ var coins_amount: int = 0:
 		coins_amount = value
 		amount_change.emit()
 
-func hit_player(body):
-	health -= 1
-	if health < 1 and body.name == Globals.PLAYER_NAME:
-		body.get_node("CollisionPolygon2D").queue_free()
+#func hit_player(body):
+	#health -= 1
+	#if health < 1 and body.name == Globals.PLAYER_NAME:
+		#body.get_node("CollisionPolygon2D").queue_free()
 		
 
 func change_level(target_level: String) -> void:

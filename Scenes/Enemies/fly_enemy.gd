@@ -30,8 +30,7 @@ func _on_hit_area_body_entered(body):
 			queue_free()
 			body.bounce(1)
 		else:
-			Globals.hit_player(body)
-			#body.bounce_away(1)
+			body.hit_player()
 
 
 

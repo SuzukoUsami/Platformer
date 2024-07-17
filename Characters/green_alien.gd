@@ -5,6 +5,8 @@ extends CharacterBody2D
 # Vertical impulse applied to the character upon bouncing over a mob in meters per second.
 @export var bounce_impulse = 16
 
+@export var knockback_power: int = 500
+
 var speed = 400.0
 var jump_speed = -550.0
 
@@ -55,6 +57,13 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+#func knockback():
+	#var knockback_direction = -velocity.normalized() * knockback_power
+	#velocity = knockback_direction
+	#print_debug(velocity)
+	#print_debug(position)
+	#move_and_slide()
+	#print_debug(position)
 
 func _on_hit_shader_timer_timeout():
 	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)

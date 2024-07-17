@@ -1,12 +1,11 @@
  # My tiny todo list ^^
  ### ideas:
- - increase player gravity when holding down key
- - block traps, when stepped on block disappears or changes to spikes,
+ - increase player gravity when holding down key,
  - enemies dead animation with white shader,
  - player dead animation,
  - player hit animation,
  - vulnerability time for player?
- - shop for life?
+ - shop for health containers,
  - coins drops from enemies,
  - enemy that shoots projectiles,
  - music and sound effects,
@@ -17,6 +16,8 @@
  - random traps,
  - hidden snail blocks the player,
  - luceg, just luceg,
+ - add snek,
+ - sword attack?
 
 
  ### fix:
@@ -24,4 +25,5 @@
 - movement animation for snail,
 - error when player kills snail,
 - FlyEnemy and FlyEmemy2 on level 2 are (sometimes) flying towards player right away when the scene is loaded,
+- player konckback,
 

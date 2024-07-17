@@ -5,6 +5,9 @@ extends Node2D
 @onready var ray_cast_down_right = $RayCastDownRight
 @onready var sprite_slime = $AnimatedSprite2D
 
+
+
+
 const shader = preload("res://Characters/green_alien.gdshader")
 
 var speed = 60
@@ -32,13 +35,13 @@ func _on_hitbox_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
-			print("shader set")
 			$AnimatedSprite2D.material.set_shader_parameter("progress", 0.6)
 			$HitShaderTimer.start()
 			#queue_free()
 			body.bounce(1)
 		else:
 			Globals.hit_player(body)
+			#body.knockback()
 
 
 func _on_hit_shader_timer_timeout():

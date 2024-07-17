@@ -37,25 +37,33 @@ func _on_hit_box_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME and not is_hiding):
 		var y_delta = position.y - body.position.y
 		if (y_delta > 40):
-				queue_free()
 				body.bounce(1)
+				queue_free()
 		else:
 			body.hit_player()
 
 func _on_notice_area_body_entered(body):
+	if is_queued_for_deletion():
+		return
 	if (body.name == Globals.PLAYER_NAME):
 		notice_timer.start()
 		pass
 
 func _on_notice_area_body_exited(_body):
+	if is_queued_for_deletion():
+		return
 	notice_timer.stop()
 	hiding_timer.start()
 
 func _on_notice_timer_timeout():
+	if is_queued_for_deletion():
+		return
 	is_hiding = true
 	sprite.texture = SNAIL_SHELL
 
 func _on_hiding_timer_timeout():
+	if is_queued_for_deletion():
+		return
 	is_hiding = false
 	sprite.texture = SNAIL_WALK_1
 

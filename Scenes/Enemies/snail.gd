@@ -15,6 +15,7 @@ var direction: int = -1
 var is_hiding: bool = false
 
 var auto_move: bool
+var switched_direction_in_prev_frame: bool = false
 
 func _ready():
 	auto_move = get_meta("auto_move", true)
@@ -30,8 +31,11 @@ func _process(delta):
 		position.x += speed * delta * direction
 
 func switch_direction() -> void:
-	direction *= -1
-	sprite.set_flip_h(not sprite.flip_h)
+	if switched_direction_in_prev_frame:
+		switched_direction_in_prev_frame = false
+	else:
+		direction *= -1
+		sprite.set_flip_h(not sprite.flip_h)
 
 func _on_hit_box_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME and not is_hiding):

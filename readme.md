@@ -4,6 +4,8 @@
  - enemies dead animation with white shader,
  - player dead animation,
  - player hit animation,
+ - fly chaotic movement
+ - fly particles animation to simulate wind
  - shop for health containers,
  - coins drops from enemies,
  - enemy that shoots projectiles,

@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://bciovw0ray6wp"]
+[gd_scene load_steps=7 format=3 uid="uid://bciovw0ray6wp"]
 
+[ext_resource type="Script" path="res://Scenes/Enemies/fire_worm.gd" id="1_mts4c"]
 [ext_resource type="Texture2D" uid="uid://c012xpcsegnmp" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava.png" id="1_ngyw2"]
 [ext_resource type="Texture2D" uid="uid://bqeoyfq85w4t8" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava_ani.png" id="2_m718d"]
 
@@ -20,7 +21,11 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_rpm8g"]
 radius = 325.055
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0ru"]
+size = Vector2(45, 142)
+
 [node name="FireWorm" type="Node2D"]
+script = ExtResource("1_mts4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_k3iql")
@@ -31,3 +36,13 @@ frame_progress = 0.845926
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
 shape = SubResource("CircleShape2D_rpm8g")
+
+[node name="HitArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_0u0ru")
+
+[connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
+[connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
+[connection signal="body_entered" from="HitArea" to="." method="_on_hit_area_body_entered"]

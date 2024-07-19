@@ -1,6 +1,5 @@
  # My tiny todo list ^^
  ### ideas:
- - increase player gravity when holding down key,
  - enemies dead animation with white shader,
  - player dead animation,
  - fly chaotic movement,
@@ -18,10 +17,8 @@
  - luceg, just luceg,
  - add snek,
  - sword attack?
-
+ - better enemy movement animations,
 
  ### fix:
-- better enemy movement animations,
-- movement animation for snail,
-- FlyEnemy on level 2 are flying towards player right away when the scene is loaded,
+
 

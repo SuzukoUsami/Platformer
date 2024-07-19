@@ -3,7 +3,7 @@ extends Node2D
 @onready var ray_cast_down = $RayCastDown
 @onready var sprite = $AnimatedSprite2D
 
-const shader = preload("res://Characters/green_alien.gdshader")
+#const shader = preload("res://Characters/green_alien.gdshader")
 
 var speed = 60
 var direction = -1

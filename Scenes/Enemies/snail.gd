@@ -1,8 +1,6 @@
 extends Node2D
-@onready var ray_cast_right = $RayCastRight
 @onready var ray_cast_left = $RayCastLeft
-@onready var ray_cast_down_left = $RayCastDownLeft
-@onready var ray_cast_down_right = $RayCastDownRight
+@onready var ray_cast_down = $RayCastDown
 @onready var sprite = $Sprite2D
 @onready var notice_timer = $NoticeTimer
 @onready var hiding_timer = $HidingTimer
@@ -15,27 +13,25 @@ var direction: int = -1
 var is_hiding: bool = false
 
 var auto_move: bool
-var switched_direction_in_prev_frame: bool = false
 
 func _ready():
 	auto_move = get_meta("auto_move", true)
 
-func _process(delta):
-	if ray_cast_right.is_colliding() or ray_cast_left.is_colliding():
+func _physics_process(delta):
+	if ray_cast_left.is_colliding():
 		switch_direction()
 		
-	if auto_move and (not ray_cast_down_left.is_colliding() or not ray_cast_down_right.is_colliding()):
-			switch_direction()
+	if auto_move and not ray_cast_down.is_colliding():
+		switch_direction()
 		
 	if not is_hiding:
 		position.x += speed * delta * direction
 
 func switch_direction() -> void:
-	if switched_direction_in_prev_frame:
-		switched_direction_in_prev_frame = false
-	else:
-		direction *= -1
-		sprite.set_flip_h(not sprite.flip_h)
+	ray_cast_down.position.x *= -1
+	ray_cast_left.rotate(PI)
+	direction *= -1
+	sprite.set_flip_h(not sprite.flip_h)
 
 func _on_hit_box_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME and not is_hiding):

@@ -30,8 +30,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r46p1"]
 size = Vector2(44, 30)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_yxbii"]
-radius = 241.008
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ywinw"]
+radius = 119.44
+height = 500.0
 
 [node name="Snail" type="Node2D" groups=["enemies"]]
 script = ExtResource("1_tvl7f")
@@ -39,7 +40,7 @@ metadata/auto_move = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jyeqj")
-animation = &"hidden"
+animation = &"walk"
 autoplay = "walk"
 
 [node name="HitBox" type="Area2D" parent="."]
@@ -61,7 +62,8 @@ collision_mask = 36
 [node name="NoticeArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
-shape = SubResource("CircleShape2D_yxbii")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_ywinw")
 
 [node name="NoticeTimer" type="Timer" parent="."]
 wait_time = 0.7

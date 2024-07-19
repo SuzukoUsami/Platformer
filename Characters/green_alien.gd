@@ -7,9 +7,10 @@ extends CharacterBody2D
 
 @export var knockback_power: int = 4000
 
-var speed = 40 #400.0
+var speed = 40
 var max_speed = 400
 var jump_speed = -550.0
+var fall_acceleration = 2
 var vulnerability: bool = true
 
 
@@ -27,7 +28,6 @@ func _process(_delta):
 
 func hit_player():
 	if vulnerability:
-		#print_debug(vulnerability)
 		vulnerability = false
 		Globals.health -= 1
 		knockback()
@@ -47,13 +47,17 @@ func bounce(bounce_factor):
 	
 
 func _physics_process(delta):
+	
 	# Add the gravity.
-	velocity.y += gravity * delta
+	if Input.is_action_pressed("down") and not is_on_floor():
+		velocity.y += gravity * delta * fall_acceleration
+	else:
+		velocity.y += gravity * delta
 
 	# Handle Jump.
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = jump_speed
-
+	
 	# Get the input direction.
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
 		var direction = Input.get_axis("left", "right")

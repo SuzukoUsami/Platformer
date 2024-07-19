@@ -2280,7 +2280,7 @@ position = Vector2(-2850, -783)
 position = Vector2(1099, 338)
 
 [node name="FlyEnemy" parent="Enemies" index="4" instance=ExtResource("15_1uqgh")]
-position = Vector2(-3873, 216)
+position = Vector2(-3880, 297)
 
 [node name="FlyEnemy2" parent="Enemies" index="5" instance=ExtResource("15_1uqgh")]
 position = Vector2(718, -104)

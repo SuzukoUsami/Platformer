@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://45t2di4g7d75"]
+
+[ext_resource type="Texture2D" uid="uid://btlg2ubtm12xo" path="res://graphics/Platformer Art Deluxe/Request pack/Tiles/laserRedBurst.png" id="1_5eqqg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qemc4"]
+radius = 22.2036
+
+[node name="FireProjectile" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -1)
+texture = ExtResource("1_5eqqg")
+
+[node name="Hit" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hit"]
+shape = SubResource("CircleShape2D_qemc4")

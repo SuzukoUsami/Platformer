@@ -1,12 +1,9 @@
 extends Node2D
 @onready var ray_cast_left = $RayCastLeft
 @onready var ray_cast_down = $RayCastDown
-@onready var sprite = $Sprite2D
+@onready var sprite = $AnimatedSprite2D
 @onready var notice_timer = $NoticeTimer
 @onready var hiding_timer = $HidingTimer
-
-const SNAIL_WALK_1 = preload("res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk1.png")
-const SNAIL_SHELL = preload("res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailShell.png")
 
 var speed: int = 40
 var direction: int = -1
@@ -59,13 +56,13 @@ func _on_notice_timer_timeout():
 	if is_queued_for_deletion():
 		return
 	is_hiding = true
-	sprite.texture = SNAIL_SHELL
+	sprite.play("hidden")
 
 func _on_hiding_timer_timeout():
 	if is_queued_for_deletion():
 		return
 	is_hiding = false
-	sprite.texture = SNAIL_WALK_1
+	sprite.play("walk")
 
 
 

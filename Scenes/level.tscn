@@ -170,13 +170,13 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="Items" type="Node2D" parent="."]
 
-[node name="Enemies" type="Node2D" parent="."]
-
 [node name="Traps" type="Node2D" parent="."]
 
 [node name="SecretRoom" type="Node2D" parent="."]
 
 [node name="SecretAreas" type="Area2D" parent="SecretRoom"]
+
+[node name="Enemies" type="Node2D" parent="."]
 
 [node name="Player" type="Node2D" parent="."]
 

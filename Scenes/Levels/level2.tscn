@@ -1971,33 +1971,6 @@ position = Vector2(-1264, 451)
 [node name="Heart_item2" parent="Items" index="11" instance=ExtResource("13_6v5hx")]
 position = Vector2(-1140, -904)
 
-[node name="Slime" parent="Enemies" index="0" instance=ExtResource("14_1s3vn")]
-position = Vector2(-2887, 618)
-
-[node name="Slime3" parent="Enemies" index="1" instance=ExtResource("14_1s3vn")]
-position = Vector2(-1719, -783)
-
-[node name="Slime4" parent="Enemies" index="2" instance=ExtResource("14_1s3vn")]
-position = Vector2(-2850, -783)
-
-[node name="Slime2" parent="Enemies" index="3" instance=ExtResource("14_1s3vn")]
-position = Vector2(1099, 338)
-
-[node name="FlyEnemy" parent="Enemies" index="4" instance=ExtResource("15_1uqgh")]
-position = Vector2(-3873, 216)
-
-[node name="FlyEnemy2" parent="Enemies" index="5" instance=ExtResource("15_1uqgh")]
-position = Vector2(718, -104)
-
-[node name="FlyEnemy3" parent="Enemies" index="6" instance=ExtResource("15_1uqgh")]
-position = Vector2(-2804, -1668)
-
-[node name="FlyEnemy4" parent="Enemies" index="7" instance=ExtResource("15_1uqgh")]
-position = Vector2(-1820, -1780)
-
-[node name="Snail" parent="Enemies" index="8" instance=ExtResource("20_nqwu0")]
-position = Vector2(-462, 336)
-
 [node name="SpikesTraps" type="Node2D" parent="Traps" index="0"]
 
 [node name="Spikes" parent="Traps/SpikesTraps" index="0" instance=ExtResource("16_5oxqi")]
@@ -2293,6 +2266,33 @@ shape = SubResource("RectangleShape2D_nxc8o")
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="SecretRoom/SecretAreas" index="3"]
 position = Vector2(3045, -875)
 shape = SubResource("RectangleShape2D_00pjr")
+
+[node name="Slime" parent="Enemies" index="0" instance=ExtResource("14_1s3vn")]
+position = Vector2(-2887, 618)
+
+[node name="Slime3" parent="Enemies" index="1" instance=ExtResource("14_1s3vn")]
+position = Vector2(-1719, -783)
+
+[node name="Slime4" parent="Enemies" index="2" instance=ExtResource("14_1s3vn")]
+position = Vector2(-2850, -783)
+
+[node name="Slime2" parent="Enemies" index="3" instance=ExtResource("14_1s3vn")]
+position = Vector2(1099, 338)
+
+[node name="FlyEnemy" parent="Enemies" index="4" instance=ExtResource("15_1uqgh")]
+position = Vector2(-3873, 216)
+
+[node name="FlyEnemy2" parent="Enemies" index="5" instance=ExtResource("15_1uqgh")]
+position = Vector2(718, -104)
+
+[node name="FlyEnemy3" parent="Enemies" index="6" instance=ExtResource("15_1uqgh")]
+position = Vector2(-2804, -1668)
+
+[node name="FlyEnemy4" parent="Enemies" index="7" instance=ExtResource("15_1uqgh")]
+position = Vector2(-1820, -1780)
+
+[node name="Snail" parent="Enemies" index="8" instance=ExtResource("20_nqwu0")]
+position = Vector2(-462, 336)
 
 [node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
 

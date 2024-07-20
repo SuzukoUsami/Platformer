@@ -7,6 +7,9 @@ class_name AutoMoveComponent
 
 var direction = -1 #Change to enum
 
+func _ready():
+	assert(sprite, "sprite not attached in AutoMoveComponent!")
+
 func get_direction() -> int:
 	return direction
  

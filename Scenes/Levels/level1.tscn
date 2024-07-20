@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=39 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1.gd" id="2_b7tuh"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="22_77vvn"]
 [ext_resource type="PackedScene" uid="uid://bciovw0ray6wp" path="res://Scenes/Enemies/fire_worm.tscn" id="22_gat3g"]
 [ext_resource type="PackedScene" uid="uid://45t2di4g7d75" path="res://Scenes/Projectiles/fire_projectile.tscn" id="27_ofnae"]
+[ext_resource type="PackedScene" uid="uid://cho0vwu6j0da6" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl6t1"]
 texture = ExtResource("3_oxry1")
@@ -790,8 +791,8 @@ position = Vector2(-1575, 528)
 position = Vector2(-1394, 398)
 
 [node name="PlayerInvisibleWalls" parent="." index="9"]
-metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
@@ -811,9 +812,8 @@ metadata/_edit_lock_ = true
 position = Vector2(-1267, 516)
 shape = SubResource("RectangleShape2D_2q58u")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="EnemiesInvisibleWalls" index="1"]
-position = Vector2(-696, 514)
-shape = SubResource("RectangleShape2D_2q58u")
+[node name="Spider" parent="." index="11" instance=ExtResource("28_jj0mk")]
+position = Vector2(-1335, 535)
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]
 [connection signal="body_exited" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_exited"]

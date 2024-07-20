@@ -27,7 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://c8mka5ysiimhv" path="res://Scenes/Traps/moving_platform_short.tscn" id="19_q5b5h"]
 [ext_resource type="PackedScene" uid="uid://cfqtwp6kdnpan" path="res://Scenes/Enemies/snail.tscn" id="20_nqwu0"]
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="20_rib1g"]
-[ext_resource type="PackedScene" uid="uid://bx4p580173qd" path="res://Scenes/Traps/scp2137.tscn" id="24_v40d7"]
+[ext_resource type="PackedScene" path="res://Scenes/Traps/scp2137.tscn" id="24_v40d7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_st0mr"]
 texture = ExtResource("4_dlgoe")

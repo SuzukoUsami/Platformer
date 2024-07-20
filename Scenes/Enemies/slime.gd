@@ -1,32 +1,13 @@
 extends Node2D
-@onready var ray_cast_left = $RayCastLeft
-@onready var ray_cast_down = $RayCastDown
-@onready var sprite = $AnimatedSprite2D
 
-#const shader = preload("res://Characters/green_alien.gdshader")
+@onready var sprite = $AnimatedSprite2D
+@onready var auto_move_component = $AutoMoveComponent
 
 var speed = 60
-var direction = -1
-
-var auto_move: bool
-
-func _ready():
-	auto_move = get_meta("auto_move", true)
 
 func _physics_process(delta):
-	if ray_cast_left.is_colliding():
-		switch_direction()
-		
-	if auto_move and not ray_cast_down.is_colliding():
-		switch_direction()
-	
-	position.x += speed * delta * direction
-
-func switch_direction() -> void:
-	ray_cast_down.position.x *= -1
-	ray_cast_left.rotate(PI)
-	direction *= -1
-	sprite.set_flip_h(not sprite.flip_h)
+	auto_move_component.handle_direction_switch()
+	position.x += speed * delta * auto_move_component.get_direction()
 
 func _on_hitbox_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):

@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cfqtwp6kdnpan"]
+[gd_scene load_steps=9 format=3 uid="uid://cfqtwp6kdnpan"]
 
 [ext_resource type="Texture2D" uid="uid://d0lgvqrd1woaj" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk1.png" id="1_6o1cy"]
 [ext_resource type="Script" path="res://Scenes/Enemies/snail.gd" id="1_tvl7f"]
 [ext_resource type="Texture2D" uid="uid://cmpun5aqgiftu" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailShell.png" id="2_8vjsr"]
 [ext_resource type="Texture2D" uid="uid://byboresksowe2" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk2.png" id="3_vrkxw"]
+[ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="5_3mm8e"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jyeqj"]
 animations = [{
@@ -50,15 +51,6 @@ collision_mask = 33
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
 shape = SubResource("RectangleShape2D_r46p1")
 
-[node name="RayCastDown" type="RayCast2D" parent="."]
-position = Vector2(-30, 0)
-target_position = Vector2(0, 40)
-collision_mask = 4
-
-[node name="RayCastLeft" type="RayCast2D" parent="."]
-target_position = Vector2(-30, 0)
-collision_mask = 36
-
 [node name="NoticeArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
@@ -72,8 +64,13 @@ one_shot = true
 [node name="HidingTimer" type="Timer" parent="."]
 one_shot = true
 
+[node name="AutoMoveComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("5_3mm8e")]
+sprite = NodePath("../AnimatedSprite2D")
+
 [connection signal="body_entered" from="HitBox" to="." method="_on_hit_box_body_entered"]
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
 [connection signal="timeout" from="NoticeTimer" to="." method="_on_notice_timer_timeout"]
 [connection signal="timeout" from="HidingTimer" to="." method="_on_hiding_timer_timeout"]
+
+[editable path="AutoMoveComponent"]

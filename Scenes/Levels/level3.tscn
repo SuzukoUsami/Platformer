@@ -1,19 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://du5n0dmjvsucj"]
+[gd_scene load_steps=5 format=3 uid="uid://du5n0dmjvsucj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_d4uvr"]
+[ext_resource type="PackedScene" uid="uid://dalqx826lbyyv" path="res://Scenes/Levels/parallax.tscn" id="2_m0sl7"]
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="2_sp7u6"]
 [ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="3_8dnsy"]
 
 [node name="Level3" instance=ExtResource("1_d4uvr")]
 
 [node name="TileMap" parent="Platforms" index="0"]
-layer_0/tile_data = PackedInt32Array(524296, 262144, 3, 524295, 131072, 3, 524294, 131072, 3, 524293, 131072, 3, 524297, 131072, 3, 524298, 131072, 3, 524299, 131072, 3)
+layer_0/tile_data = PackedInt32Array(458752, 131072, 3, 458753, 131072, 3, 458754, 131072, 3, 458755, 131072, 3, 458756, 131072, 3, 458757, 131072, 3, 458758, 131072, 3, 458759, 131072, 3, 458760, 131072, 3, 458761, 131072, 3, 458762, 131072, 3, 458763, 131072, 3, 458764, 131072, 3, 458765, 131072, 3, 458766, 131072, 3, 458767, 131072, 3, 458768, 131072, 3, 458769, 131072, 3, 458770, 131072, 3, 458771, 131072, 3)
+
+[node name="Parallax" parent="Platforms" index="1" instance=ExtResource("2_m0sl7")]
+position = Vector2(361, 426)
 
 [node name="Door" parent="." index="1" instance=ExtResource("2_sp7u6")]
-position = Vector2(413, 508)
+position = Vector2(-241, 404)
 metadata/target_level = "res://Scenes/UI/main_menu.tscn"
 
-[node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(612, 436)
-
 [node name="UI" parent="." index="7" instance=ExtResource("3_8dnsy")]
+visible = false
+
+[node name="GreenAlien" parent="Player" index="0"]
+position = Vector2(368, 254)

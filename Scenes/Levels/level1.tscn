@@ -27,7 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="22_77vvn"]
 [ext_resource type="PackedScene" uid="uid://bciovw0ray6wp" path="res://Scenes/Enemies/fire_worm.tscn" id="22_gat3g"]
 [ext_resource type="PackedScene" uid="uid://45t2di4g7d75" path="res://Scenes/Projectiles/fire_projectile.tscn" id="27_ofnae"]
-[ext_resource type="PackedScene" uid="uid://cho0vwu6j0da6" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
+[ext_resource type="PackedScene" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl6t1"]
 texture = ExtResource("3_oxry1")

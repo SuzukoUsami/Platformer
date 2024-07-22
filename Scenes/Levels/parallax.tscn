@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dalqx826lbyyv"]
+
+[ext_resource type="Texture2D" uid="uid://dnh3esslybvu0" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/Backgrounds/bg_grasslands.png" id="1_ffsra"]
+[ext_resource type="Texture2D" uid="uid://c5gt0o36tdiq8" path="res://graphics/PNG/pink-cloud-pixilart.png" id="2_i24u0"]
+
+[node name="Parallax" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="BackgroundMountains" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+motion_scale = Vector2(0.25, 0.25)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BackgroundMountains"]
+scale = Vector2(1.125, 1.125)
+texture = ExtResource("1_ffsra")
+centered = false
+
+[node name="PinkCloud" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/PinkCloud"]
+position = Vector2(1105, 54)
+texture = ExtResource("2_i24u0")

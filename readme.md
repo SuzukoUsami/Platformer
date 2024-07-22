@@ -17,5 +17,5 @@
  - better enemy movement animations,
 
  ### fix:
-
+ - parallax layer,
 

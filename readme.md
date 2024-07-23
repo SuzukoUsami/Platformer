@@ -8,14 +8,15 @@
  - coins drops from enemies,
  - enemy that shoots projectiles,
  - music and sound effects,
- - stars for completing % of the level?
+ - achievments,
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
  - red fly,
  - snail shell blocks the player,
+ - spider enemy,
  - add snek,
- - sword attack?
  - better enemy movement animations,
+ - sword attack?
+
 
  ### fix:
- - parallax layer,
 

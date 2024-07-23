@@ -7,6 +7,8 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_ppadg"]
 font_size = 21
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xudjc"]
 size = Vector2(80, 104)

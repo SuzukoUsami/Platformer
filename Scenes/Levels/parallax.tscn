@@ -6,6 +6,9 @@
 [node name="Parallax" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2(0, -900)
+transform = Transform2D(1, 0, 0, 1, 0, -900)
+scroll_ignore_camera_zoom = true
 
 [node name="BackgroundMountains" type="ParallaxLayer" parent="ParallaxBackground"]
 texture_filter = 1
@@ -13,11 +16,13 @@ motion_scale = Vector2(0.25, 0.25)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BackgroundMountains"]
-scale = Vector2(1.125, 1.125)
+texture_filter = 2
+scale = Vector2(3.215, 3.215)
 texture = ExtResource("1_ffsra")
 centered = false
 
 [node name="PinkCloud" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/PinkCloud"]

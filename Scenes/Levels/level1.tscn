@@ -762,7 +762,7 @@ position = Vector2(-788, 547)
 position = Vector2(789, -83)
 
 [node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("11_e5cin")]
-position = Vector2(-587, -393)
+position = Vector2(-723, 279)
 
 [node name="Slime2" parent="Enemies" index="3" instance=ExtResource("10_hxy30")]
 position = Vector2(998, 270)
@@ -777,7 +777,7 @@ position = Vector2(-1575, 528)
 position = Vector2(-1335, 535)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-168, 123)
+position = Vector2(-171, 161)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)

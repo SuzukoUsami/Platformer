@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cs5p8tq8vvik6"]
+[gd_scene load_steps=9 format=3 uid="uid://cs5p8tq8vvik6"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/fly_enemy.gd" id="1_31irm"]
 [ext_resource type="Texture2D" uid="uid://c1wf2dmaso7ya" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/flyFly1.png" id="1_t8akn"]
@@ -26,6 +26,26 @@ size = Vector2(32, 32)
 [sub_resource type="CircleShape2D" id="CircleShape2D_xisd0"]
 radius = 520.062
 
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_pdvq7"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+emission_shape_offset = Vector3(-5, 0, 0)
+emission_shape = 2
+emission_sphere_radius = 11.0
+angle_min = 342.0
+angle_max = 630.0
+spread = 75.0
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+gravity = Vector3(20, 20, 0)
+scale_min = 2.0
+scale_max = 3.0
+color = Color(0.763809, 0.763808, 0.763809, 1)
+hue_variation_min = 0.01
+hue_variation_max = 0.02
+turbulence_enabled = true
+turbulence_noise_scale = 6.0
+
 [node name="FlyEnemy" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 2
 script = ExtResource("1_31irm")
@@ -40,16 +60,29 @@ shape = SubResource("CircleShape2D_lylp2")
 disabled = true
 
 [node name="HitArea" type="Area2D" parent="."]
+visible = false
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
 shape = SubResource("RectangleShape2D_nksb4")
 
 [node name="NoticeArea" type="Area2D" parent="."]
+visible = false
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
 shape = SubResource("CircleShape2D_xisd0")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
+amount = 20
+process_material = SubResource("ParticleProcessMaterial_pdvq7")
+lifetime = 3.0
+speed_scale = 1.5
+randomness = 1.0
+trail_lifetime = 0.2
+trail_sections = 3
+trail_section_subdivisions = 1
 
 [connection signal="body_entered" from="HitArea" to="." method="_on_hit_area_body_entered"]
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]

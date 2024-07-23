@@ -18,8 +18,9 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_rpm8g"]
-radius = 325.055
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w3bw6"]
+radius = 100.0
+height = 544.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0ru"]
 size = Vector2(45, 142)
@@ -33,15 +34,26 @@ autoplay = "default"
 frame_progress = 0.845926
 
 [node name="NoticeArea" type="Area2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
-shape = SubResource("CircleShape2D_rpm8g")
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_w3bw6")
 
 [node name="HitArea" type="Area2D" parent="."]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_0u0ru")
+
+[node name="ProjectileSpawnPosition" type="Node2D" parent="."]
+
+[node name="Marker2D" type="Marker2D" parent="ProjectileSpawnPosition"]
+position = Vector2(-13, -37)
+
+[node name="Marker2D2" type="Marker2D" parent="ProjectileSpawnPosition"]
+position = Vector2(13, -37)
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]

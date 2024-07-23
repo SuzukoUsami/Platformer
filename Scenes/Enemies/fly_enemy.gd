@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @onready var sprite_2d = $AnimatedSprite2D
+@onready var particles = $GPUParticles2D
+
 
 var speed = 175
 var active: bool = false
@@ -21,6 +23,7 @@ func _process(_delta):
 func _on_notice_area_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):
 		active = true
+		particles.visible = true
 
 
 func _on_hit_area_body_entered(body):

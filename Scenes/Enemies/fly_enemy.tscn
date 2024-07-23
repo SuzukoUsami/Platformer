@@ -60,21 +60,19 @@ shape = SubResource("CircleShape2D_lylp2")
 disabled = true
 
 [node name="HitArea" type="Area2D" parent="."]
-visible = false
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
 shape = SubResource("RectangleShape2D_nksb4")
 
 [node name="NoticeArea" type="Area2D" parent="."]
-visible = false
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
 shape = SubResource("CircleShape2D_xisd0")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-visible = false
+emitting = false
 amount = 20
 process_material = SubResource("ParticleProcessMaterial_pdvq7")
 lifetime = 3.0

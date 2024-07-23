@@ -5,7 +5,6 @@
  - fly chaotic movement,
  - shop for health containers,
  - coins drops from enemies,
- - enemy that shoots projectiles,
  - music and sound effects,
  - achievments,
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
@@ -19,4 +18,5 @@
 
 
  ### fix:
+ - fire worm shooting projectile,
 

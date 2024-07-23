@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var speed: int = 1
+@export var speed: int = 10
 
-var direction:  Vector2 #= Vector2.UP
+var direction:  Vector2 = Vector2.UP
 
 func _ready():
 	$SelfDestructTimer.start()

@@ -25,7 +25,7 @@ height = 544.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0ru"]
 size = Vector2(45, 142)
 
-[node name="FireWorm" type="Node2D"]
+[node name="FireWorm" type="Node2D" groups=["Enemies", "FireWorms"]]
 script = ExtResource("1_mts4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

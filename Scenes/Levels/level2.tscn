@@ -2313,6 +2313,8 @@ shape = SubResource("RectangleShape2D_00pjr")
 position = Vector2(-3183.75, -2414)
 shape = SubResource("RectangleShape2D_j8b2u")
 
+[node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
+
 [node name="Slime" parent="Enemies" index="0" instance=ExtResource("14_1s3vn")]
 position = Vector2(-2887, 618)
 
@@ -2340,12 +2342,10 @@ position = Vector2(-1789, -1769)
 [node name="Snail" parent="Enemies" index="8" instance=ExtResource("20_nqwu0")]
 position = Vector2(-462, 336)
 
-[node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
-
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(-4252, 704)
 
-[node name="PlayerInvisibleWalls" parent="." index="10"]
+[node name="PlayerInvisibleWalls" parent="." index="11"]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2357,7 +2357,7 @@ shape = SubResource("RectangleShape2D_byv0g")
 position = Vector2(-4403.5, -1736)
 shape = SubResource("RectangleShape2D_wfe0r")
 
-[node name="EnemiesInvisibleWalls" parent="." index="11"]
+[node name="EnemiesInvisibleWalls" parent="." index="12"]
 position = Vector2(56, -5)
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]

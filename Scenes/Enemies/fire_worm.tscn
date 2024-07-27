@@ -55,6 +55,8 @@ position = Vector2(-13, -37)
 [node name="Marker2D2" type="Marker2D" parent="ProjectileSpawnPosition"]
 position = Vector2(13, -37)
 
+[node name="Projectiles" type="Node2D" parent="."]
+
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
 [connection signal="body_entered" from="HitArea" to="." method="_on_hit_area_body_entered"]

@@ -57,7 +57,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 15.0
+"speed": 20.0
 }]
 
 [node name="GreenAlien" type="CharacterBody2D"]
@@ -69,7 +69,7 @@ material = SubResource("ShaderMaterial_b2xjp")
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_q57uv")
 animation = &"walk"
-frame_progress = 0.847212
+frame_progress = 0.855232
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)

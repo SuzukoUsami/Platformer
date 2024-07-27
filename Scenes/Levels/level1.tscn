@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=38 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1.gd" id="2_b7tuh"]
@@ -26,7 +26,6 @@
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="17_x1k5s"]
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="22_77vvn"]
 [ext_resource type="PackedScene" uid="uid://bciovw0ray6wp" path="res://Scenes/Enemies/fire_worm.tscn" id="22_gat3g"]
-[ext_resource type="PackedScene" uid="uid://45t2di4g7d75" path="res://Scenes/Projectiles/fire_projectile.tscn" id="27_ofnae"]
 [ext_resource type="PackedScene" uid="uid://cho0vwu6j0da6" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl6t1"]
@@ -755,8 +754,8 @@ polygon = PackedVector2Array(-1753, 420, -1754, 561, -2101, 559, -2101, 350, -18
 
 [node name="UI" parent="." index="6" instance=ExtResource("2_n2oet")]
 
-[node name="FireProjectile" parent="Projectiles" index="0" instance=ExtResource("27_ofnae")]
-position = Vector2(-1575, 528)
+[node name="Projectiles" parent="." index="7"]
+visible = false
 
 [node name="Slime" parent="Enemies" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-788, 547)
@@ -765,7 +764,7 @@ position = Vector2(-788, 547)
 position = Vector2(789, -83)
 
 [node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("11_e5cin")]
-position = Vector2(-723, 279)
+position = Vector2(-715, -72)
 
 [node name="Slime2" parent="Enemies" index="3" instance=ExtResource("10_hxy30")]
 position = Vector2(998, 270)
@@ -774,10 +773,13 @@ position = Vector2(998, 270)
 position = Vector2(-1943, 208)
 
 [node name="Spider" parent="Enemies" index="5" instance=ExtResource("28_jj0mk")]
-position = Vector2(-1335, 535)
+position = Vector2(-2530, 538)
+
+[node name="FireWorm2" parent="Enemies" index="6" instance=ExtResource("22_gat3g")]
+position = Vector2(-1314, 491)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1527, 361)
+position = Vector2(-1679, 356)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
@@ -797,4 +799,3 @@ shape = SubResource("RectangleShape2D_2q58u")
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]
 [connection signal="body_exited" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_exited"]
-[connection signal="fire_projectile" from="Enemies/FireWorm" to="." method="_on_fire_worm_fire_projectile"]

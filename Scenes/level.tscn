@@ -168,6 +168,8 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="Decor" type="Node2D" parent="."]
 
+[node name="Animated" type="Node2D" parent="Decor"]
+
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Coins" type="Node2D" parent="Items"]

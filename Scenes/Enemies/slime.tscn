@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://drhv7l1r7i6hp"]
+[gd_scene load_steps=10 format=3 uid="uid://drhv7l1r7i6hp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
 [ext_resource type="Shader" path="res://Scenes/Enemies/slime.gdshader" id="2_nittn"]
 [ext_resource type="Texture2D" uid="uid://dhe4j4nyj7v4y" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk2.png" id="3_6rlry"]
 [ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="5_0eaw5"]
+[ext_resource type="Script" path="res://Scenes/Components/CoinDropComponent.gd" id="6_7ctta"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rxlwf"]
 resource_local_to_scene = true
@@ -54,6 +55,9 @@ wait_time = 0.2
 
 [node name="AutoMoveComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("5_0eaw5")]
 sprite = NodePath("../AnimatedSprite2D")
+
+[node name="CoinDropComponent" type="Node2D" parent="."]
+script = ExtResource("6_7ctta")
 
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]

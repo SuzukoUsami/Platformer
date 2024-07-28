@@ -5,8 +5,6 @@ var fire_projectile_scene: PackedScene = preload("res://Scenes/Projectiles/fire_
 var active: bool = false
 var shoot: bool = true
 
-func _ready():
-	pass
 
 func  create_fire_projectile(pos, direction):
 	var fire_projectile = fire_projectile_scene.instantiate()

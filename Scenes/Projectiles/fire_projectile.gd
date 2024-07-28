@@ -1,14 +1,13 @@
 extends Node2D
 
-@export var speed: int = 100
+@export var speed: int = 150
 
-var direction:  Vector2 #= Vector2.UP
+var direction:  Vector2
 
 func _ready():
 	$SelfDestructTimer.start()
 
 func _process(delta):
-	print(position, direction, speed)
 	position += direction * speed * delta
 
 
@@ -19,5 +18,5 @@ func _on_hit_body_entered(body):
 
 
 func _on_self_destruct_timer_timeout():
-	#queue_free()
+	queue_free()
 	pass

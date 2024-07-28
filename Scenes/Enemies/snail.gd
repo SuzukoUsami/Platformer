@@ -14,14 +14,9 @@ func _physics_process(delta):
 	if not is_hiding:
 		position.x += speed * delta * auto_move_component.get_direction()
 
-func _on_hit_box_body_entered(body):
-	if (body.name == Globals.PLAYER_NAME and not is_hiding):
-		var y_delta = position.y - body.position.y
-		if (y_delta > 40):
-				body.bounce(1)
-				queue_free()
-		else:
-			body.hit_player()
+func _on_hit_box_component_going_to_die():
+	if not is_hiding:
+		queue_free()
 
 func _on_notice_area_body_entered(body):
 	if is_queued_for_deletion():
@@ -47,6 +42,3 @@ func _on_hiding_timer_timeout():
 		return
 	is_hiding = false
 	sprite.play("walk")
-
-
-

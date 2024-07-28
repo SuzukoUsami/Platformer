@@ -1,16 +1,19 @@
-extends Node2D
+extends Area2D
 class_name HitboxComponent
 
-@export var Health:int
+signal going_to_die
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+@export var instant_death: bool = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func die():
-	pass
-	
+func _on_body_entered(body):
+	if (body.name == Globals.PLAYER_NAME):
+		var y_delta = global_position.y - body.position.y
+		if (y_delta > 40):
+				body.bounce(1)
+				
+				if instant_death:
+					get_parent().queue_free()
+				else: 
+					going_to_die.emit()
+		else:
+			body.hit_player()

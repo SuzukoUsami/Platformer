@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://drhv7l1r7i6hp"]
+[gd_scene load_steps=11 format=3 uid="uid://drhv7l1r7i6hp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
 [ext_resource type="Shader" path="res://Scenes/Enemies/slime.gdshader" id="2_nittn"]
 [ext_resource type="Texture2D" uid="uid://dhe4j4nyj7v4y" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk2.png" id="3_6rlry"]
 [ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="5_0eaw5"]
+[ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="5_7hskp"]
 [ext_resource type="Script" path="res://Scenes/Components/CoinDropComponent.gd" id="6_7ctta"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rxlwf"]
@@ -41,13 +42,11 @@ animation = &"walk"
 autoplay = "walk"
 frame_progress = 0.518299
 
-[node name="Hitbox" type="Area2D" parent="."]
-visible = false
-collision_layer = 2
-collision_mask = 33
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+[node name="HitboxComponent" type="Area2D" parent="."]
 position = Vector2(-1, -0.25)
+script = ExtResource("5_7hskp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 shape = SubResource("RectangleShape2D_6jrc8")
 
 [node name="HitShaderTimer" type="Timer" parent="."]
@@ -59,7 +58,6 @@ sprite = NodePath("../AnimatedSprite2D")
 [node name="CoinDropComponent" type="Node2D" parent="."]
 script = ExtResource("6_7ctta")
 
-[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
 [connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
 
 [editable path="AutoMoveComponent"]

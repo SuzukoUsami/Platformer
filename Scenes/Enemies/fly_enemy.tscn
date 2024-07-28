@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cs5p8tq8vvik6"]
+[gd_scene load_steps=10 format=3 uid="uid://cs5p8tq8vvik6"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/fly_enemy.gd" id="1_31irm"]
 [ext_resource type="Texture2D" uid="uid://c1wf2dmaso7ya" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/flyFly1.png" id="1_t8akn"]
 [ext_resource type="Texture2D" uid="uid://de8fj0mju83ft" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/flyFly2.png" id="3_2u2ck"]
+[ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="4_6v3fd"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m62ou"]
 animations = [{
@@ -19,9 +20,6 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lylp2"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nksb4"]
-size = Vector2(32, 32)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xisd0"]
 radius = 520.062
@@ -46,6 +44,9 @@ hue_variation_max = 0.02
 turbulence_enabled = true
 turbulence_noise_scale = 6.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nksb4"]
+size = Vector2(32, 32)
+
 [node name="FlyEnemy" type="CharacterBody2D" groups=["enemies"]]
 collision_layer = 2
 script = ExtResource("1_31irm")
@@ -58,12 +59,6 @@ frame_progress = 0.84372
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_lylp2")
 disabled = true
-
-[node name="HitArea" type="Area2D" parent="."]
-collision_layer = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
-shape = SubResource("RectangleShape2D_nksb4")
 
 [node name="NoticeArea" type="Area2D" parent="."]
 collision_layer = 2
@@ -82,5 +77,10 @@ trail_lifetime = 0.2
 trail_sections = 3
 trail_section_subdivisions = 1
 
-[connection signal="body_entered" from="HitArea" to="." method="_on_hit_area_body_entered"]
+[node name="HitboxComponent" type="Area2D" parent="."]
+script = ExtResource("4_6v3fd")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="HitboxComponent"]
+shape = SubResource("RectangleShape2D_nksb4")
+
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]

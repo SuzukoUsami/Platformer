@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bciovw0ray6wp"]
+[gd_scene load_steps=8 format=3 uid="uid://bciovw0ray6wp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/fire_worm.gd" id="1_mts4c"]
 [ext_resource type="Texture2D" uid="uid://c012xpcsegnmp" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava.png" id="1_ngyw2"]
 [ext_resource type="Texture2D" uid="uid://bqeoyfq85w4t8" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava_ani.png" id="2_m718d"]
+[ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="4_ov4dh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3iql"]
 animations = [{
@@ -40,13 +41,6 @@ collision_layer = 2
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_w3bw6")
 
-[node name="HitArea" type="Area2D" parent="."]
-collision_layer = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HitArea"]
-position = Vector2(0.5, 0)
-shape = SubResource("RectangleShape2D_0u0ru")
-
 [node name="ProjectileSpawnPosition" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="ProjectileSpawnPosition"]
@@ -57,6 +51,12 @@ position = Vector2(13, -37)
 
 [node name="Projectiles" type="Node2D" parent="."]
 
+[node name="HitboxComponent" type="Area2D" parent="."]
+script = ExtResource("4_ov4dh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_0u0ru")
+
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
-[connection signal="body_entered" from="HitArea" to="." method="_on_hit_area_body_entered"]

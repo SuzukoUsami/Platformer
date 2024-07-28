@@ -3,10 +3,8 @@ extends CharacterBody2D
 @onready var sprite_2d = $AnimatedSprite2D
 @onready var particles = $GPUParticles2D
 
-
 var speed = 175
 var active: bool = false
-
 
 func _process(_delta):
 	var direction = (Globals.player_position - position).normalized()
@@ -24,16 +22,3 @@ func _on_notice_area_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):
 		active = true
 		particles.emitting = true
-
-
-func _on_hit_area_body_entered(body):
-	if (body.name == Globals.PLAYER_NAME):
-		var y_delta = position.y - body.position.y
-		if (y_delta > 40):
-			queue_free()
-			body.bounce(1)
-		else:
-			body.hit_player()
-
-
-

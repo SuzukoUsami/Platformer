@@ -695,34 +695,40 @@ texture = ExtResource("10_se682")
 [node name="Snek" parent="Decor/Animated" index="0" instance=ExtResource("5_vo364")]
 position = Vector2(1163, -3)
 
-[node name="Coin" parent="Items" index="0" instance=ExtResource("13_1evug")]
-position = Vector2(-2066, 445)
-
-[node name="Coin2" parent="Items" index="1" instance=ExtResource("13_1evug")]
-position = Vector2(1930, 22)
-
-[node name="BronzeCoin" parent="Items" index="2" instance=ExtResource("11_n0nqg")]
-position = Vector2(-106, 316)
-
-[node name="BronzeCoin2" parent="Items" index="3" instance=ExtResource("11_n0nqg")]
-position = Vector2(693, 521)
-
-[node name="BronzeCoin3" parent="Items" index="4" instance=ExtResource("11_n0nqg")]
-position = Vector2(636, -108)
-
-[node name="SilverCoin" parent="Items" index="5" instance=ExtResource("12_7mv4g")]
-position = Vector2(-267, 371)
-
-[node name="SilverCoin2" parent="Items" index="6" instance=ExtResource("12_7mv4g")]
-position = Vector2(-2400, 536)
-
-[node name="Heart_item" parent="Items" index="7" instance=ExtResource("15_67cci")]
-position = Vector2(530, 484)
-
-[node name="Door" parent="Items" index="8" instance=ExtResource("17_x1k5s")]
+[node name="Door" parent="Items" index="0" instance=ExtResource("17_x1k5s")]
 position = Vector2(1862.5, 510)
 metadata/required_coins = 15
 metadata/target_level = "res://Scenes/Levels/level2.tscn"
+
+[node name="Coin" parent="Items/Coins" index="0" instance=ExtResource("13_1evug")]
+position = Vector2(-2066, 445)
+
+[node name="Coin2" parent="Items/Coins" index="1" instance=ExtResource("13_1evug")]
+position = Vector2(1930, 22)
+
+[node name="BronzeCoin" parent="Items/Coins" index="2" instance=ExtResource("11_n0nqg")]
+position = Vector2(-106, 316)
+
+[node name="BronzeCoin2" parent="Items/Coins" index="3" instance=ExtResource("11_n0nqg")]
+position = Vector2(693, 521)
+
+[node name="BronzeCoin3" parent="Items/Coins" index="4" instance=ExtResource("11_n0nqg")]
+position = Vector2(636, -108)
+
+[node name="SilverCoin" parent="Items/Coins" index="5" instance=ExtResource("12_7mv4g")]
+position = Vector2(-267, 371)
+
+[node name="SilverCoin2" parent="Items/Coins" index="6" instance=ExtResource("12_7mv4g")]
+position = Vector2(-2400, 536)
+
+[node name="Heart_item" parent="Items/Hearts" index="0" instance=ExtResource("15_67cci")]
+position = Vector2(530, 484)
+
+[node name="Heart_item2" parent="Items/Hearts" index="1" instance=ExtResource("15_67cci")]
+position = Vector2(-2066, 384)
+
+[node name="Heart_item3" parent="Items/Hearts" index="2" instance=ExtResource("15_67cci")]
+position = Vector2(2387, 519)
 
 [node name="MovingPlatformMedium" parent="Traps" index="0" instance=ExtResource("22_77vvn")]
 position = Vector2(1720, 450)
@@ -736,46 +742,43 @@ autoplay = "move"
 
 [node name="SpikesTraps" type="Node2D" parent="Traps" index="1"]
 
-[node name="Spikes" parent="Traps/SpikesTraps" index="0" instance=ExtResource("10_yj2al")]
-position = Vector2(296, 527)
-
-[node name="Spikes2" parent="Traps/SpikesTraps" index="1" instance=ExtResource("10_yj2al")]
+[node name="Spikes2" parent="Traps/SpikesTraps" index="0" instance=ExtResource("10_yj2al")]
 position = Vector2(-1931, 525)
 
-[node name="Spikes4" parent="Traps/SpikesTraps" index="2" instance=ExtResource("10_yj2al")]
+[node name="Spikes4" parent="Traps/SpikesTraps" index="1" instance=ExtResource("10_yj2al")]
 position = Vector2(-1863, 525)
 
-[node name="Spikes3" parent="Traps/SpikesTraps" index="3" instance=ExtResource("10_yj2al")]
+[node name="Spikes3" parent="Traps/SpikesTraps" index="2" instance=ExtResource("10_yj2al")]
 position = Vector2(-2000, 525)
 
-[node name="Spikes5" parent="Traps/SpikesTraps" index="4" instance=ExtResource("10_yj2al")]
+[node name="Spikes5" parent="Traps/SpikesTraps" index="3" instance=ExtResource("10_yj2al")]
 position = Vector2(-456, 525)
 
-[node name="Spikes6" parent="Traps/SpikesTraps" index="5" instance=ExtResource("10_yj2al")]
+[node name="Spikes6" parent="Traps/SpikesTraps" index="4" instance=ExtResource("10_yj2al")]
 position = Vector2(-386, 525)
 
-[node name="Spikes7" parent="Traps/SpikesTraps" index="6" instance=ExtResource("10_yj2al")]
+[node name="Spikes7" parent="Traps/SpikesTraps" index="5" instance=ExtResource("10_yj2al")]
 position = Vector2(-316, 525)
 
-[node name="Spikes8" parent="Traps/SpikesTraps" index="7" instance=ExtResource("10_yj2al")]
+[node name="Spikes8" parent="Traps/SpikesTraps" index="6" instance=ExtResource("10_yj2al")]
 position = Vector2(-246, 525)
 
-[node name="Spikes10" parent="Traps/SpikesTraps" index="8" instance=ExtResource("10_yj2al")]
+[node name="Spikes10" parent="Traps/SpikesTraps" index="7" instance=ExtResource("10_yj2al")]
 position = Vector2(-106, 525)
 
-[node name="Spikes11" parent="Traps/SpikesTraps" index="9" instance=ExtResource("10_yj2al")]
+[node name="Spikes11" parent="Traps/SpikesTraps" index="8" instance=ExtResource("10_yj2al")]
 position = Vector2(-36, 525)
 
-[node name="Spikes12" parent="Traps/SpikesTraps" index="10" instance=ExtResource("10_yj2al")]
+[node name="Spikes12" parent="Traps/SpikesTraps" index="9" instance=ExtResource("10_yj2al")]
 position = Vector2(34, 525)
 
-[node name="Spikes13" parent="Traps/SpikesTraps" index="11" instance=ExtResource("10_yj2al")]
+[node name="Spikes13" parent="Traps/SpikesTraps" index="10" instance=ExtResource("10_yj2al")]
 position = Vector2(104, 525)
 
-[node name="Spring" parent="Traps/SpikesTraps" index="12" instance=ExtResource("12_ftp16")]
+[node name="Spring" parent="Traps/SpikesTraps" index="11" instance=ExtResource("12_ftp16")]
 position = Vector2(1444, 110)
 
-[node name="Spring2" parent="Traps/SpikesTraps" index="13" instance=ExtResource("12_ftp16")]
+[node name="Spring2" parent="Traps/SpikesTraps" index="12" instance=ExtResource("12_ftp16")]
 position = Vector2(-176, 529)
 
 [node name="SecretTileMap" type="TileMap" parent="SecretRoom" index="0"]

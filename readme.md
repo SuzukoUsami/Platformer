@@ -9,7 +9,6 @@
  - achievments,
  - if player has collected exact amount of coins(or more), arrow shows way to the doors,
  - red fly,
- - snail shell blocks the player,
  - spider enemy,
  - better enemy movement animations,
  - sword attack?

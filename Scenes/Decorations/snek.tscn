@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://blhjrr07y8myr"]
+
+[ext_resource type="Script" path="res://Scenes/Decorations/snek.gd" id="1_fupid"]
+[ext_resource type="Texture2D" uid="uid://w7ss2r470ud7" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snake.png" id="1_o6yb3"]
+[ext_resource type="Texture2D" uid="uid://n0vvwj40m7qm" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snake_walk.png" id="2_om45f"]
+[ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="3_w7ncc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0f7xx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o6yb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_om45f")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[node name="Snek" type="Node2D"]
+script = ExtResource("1_fupid")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_0f7xx")
+animation = &"walk"
+autoplay = "walk"
+frame = 1
+frame_progress = 0.819519
+
+[node name="AutoMoveComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("3_w7ncc")]
+sprite = NodePath("../AnimatedSprite2D")
+
+[node name="RayCastLeft" parent="AutoMoveComponent" index="0"]
+target_position = Vector2(-23, 0)
+
+[node name="RayCastDown" parent="AutoMoveComponent" index="1"]
+position = Vector2(-26, 0)
+
+[editable path="AutoMoveComponent"]

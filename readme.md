@@ -11,7 +11,6 @@
  - red fly,
  - snail shell blocks the player,
  - spider enemy,
- - add snek,
  - better enemy movement animations,
  - sword attack?
  - animate going to the next level,

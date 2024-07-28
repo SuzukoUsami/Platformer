@@ -65,14 +65,12 @@ text = "25"
 label_settings = SubResource("LabelSettings_ppadg")
 
 [node name="Area2D" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_xudjc")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-visible = false
 amount = 80
 process_material = SubResource("ParticleProcessMaterial_xyw00")
 lifetime = 3.0

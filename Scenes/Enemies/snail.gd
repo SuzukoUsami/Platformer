@@ -14,7 +14,7 @@ func _physics_process(delta):
 	if not is_hiding:
 		position.x += speed * delta * auto_move_component.get_direction()
 
-func _on_hit_box_component_going_to_die():
+func _on_hitbox_component_going_to_die():
 	if not is_hiding:
 		queue_free()
 

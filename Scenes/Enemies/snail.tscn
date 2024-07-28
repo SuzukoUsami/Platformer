@@ -69,6 +69,7 @@ one_shot = true
 [node name="AutoMoveComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("5_3mm8e")]
 sprite = NodePath("../AnimatedSprite2D")
 
+[connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
 [connection signal="timeout" from="NoticeTimer" to="." method="_on_notice_timer_timeout"]

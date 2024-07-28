@@ -3,9 +3,6 @@ extends Node
 signal amount_change
 signal health_change
 
-func _ready():
-	pass
-
 const PLAYER_NAME = "GreenAlien"
 
 var current_level: String = "res://Scenes/Levels/level1.tscn"
@@ -20,12 +17,6 @@ var coins_amount: int = 0:
 		coins_amount = value
 		amount_change.emit()
 
-#func hit_player(body):
-	#health -= 1
-	#if health < 1 and body.name == Globals.PLAYER_NAME:
-		#body.get_node("CollisionPolygon2D").queue_free()
-		
-
 func change_level(target_level: String) -> void:
 	get_tree().change_scene_to_file(target_level)
 	coins_amount = 0
@@ -35,8 +26,6 @@ func change_level(target_level: String) -> void:
 	
 var target
 
-
-	
 func save_game():
 	#print(last_completed_level)
 	var config = ConfigFile.new()
@@ -54,9 +43,6 @@ func load_game():
 	print(last_save)
 
 	change_level(last_save)
-	#print(last_save)
-
-
 
 var player_position: Vector2
 var door_position: Vector2

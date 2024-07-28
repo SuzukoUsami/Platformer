@@ -9,7 +9,3 @@ func _on_secret_areas_body_entered(body):
 func _on_secret_areas_body_exited(body):
 	if (body.name == Globals.PLAYER_NAME):
 		$SecretRoom/SecretTileMap.modulate = Color(1, 1, 1, 1)
-#
-
-
-

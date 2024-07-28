@@ -33,11 +33,11 @@ func update_coins_amount():
 	if(Globals.coins_amount >= required_coins):
 		sprite_mid.texture = DOOR_OPEN_MID
 		sprite_top.texture = DOOR_OPEN_TOP
-		particles.visible = true
+		particles.set_emitting(true)
 	else: 
 		sprite_mid.texture = DOOR_CLOSED_MID
 		sprite_top.texture = DOOR_CLOSED_TOP
-		particles.visible = false
+		particles.set_emitting(false)
 	pass
 
 func change_level():

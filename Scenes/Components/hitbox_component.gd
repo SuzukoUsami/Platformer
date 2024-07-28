@@ -10,7 +10,6 @@ func _ready():
 	pass
 
 func on_body_entered(body):
-	print_debug("entered ", get_parent().name)
 	if (body.name == Globals.PLAYER_NAME):
 		var y_delta = global_position.y - body.position.y
 		if (y_delta > 40):

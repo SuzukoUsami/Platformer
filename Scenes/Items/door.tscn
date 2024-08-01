@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bsk4n0tds5w5g"]
+[gd_scene load_steps=12 format=3 uid="uid://bsk4n0tds5w5g"]
 
 [ext_resource type="Texture2D" uid="uid://c3flupludo3ga" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedMid.png" id="1_jrnm8"]
 [ext_resource type="Script" path="res://Scenes/Items/door.gd" id="1_pjv32"]
@@ -30,6 +30,60 @@ hue_variation_max = 0.05
 turbulence_enabled = true
 turbulence_noise_strength = 6.79
 turbulence_noise_speed_random = 0.95
+
+[sub_resource type="Animation" id="Animation_de6gh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3q8fq"]
+resource_name = "fade_to_black"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4mr8g"]
+resource_name = "reveal"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0.792157)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mp4mh"]
+_data = {
+"RESET": SubResource("Animation_de6gh"),
+"fade_to_black": SubResource("Animation_3q8fq"),
+"reveal": SubResource("Animation_4mr8g")
+}
 
 [node name="Door" type="Node2D"]
 script = ExtResource("1_pjv32")
@@ -76,6 +130,21 @@ process_material = SubResource("ParticleProcessMaterial_xyw00")
 lifetime = 3.0
 speed_scale = 1.5
 randomness = 1.0
+
+[node name="TransitionLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="TransitionLayer"]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TransitionLayer"]
+libraries = {
+"": SubResource("AnimationLibrary_mp4mh")
+}
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

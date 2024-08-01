@@ -12,8 +12,9 @@
  - spider enemy,
  - better enemy movement animations,
  - sword attack?
- - animate going to the next level,
 
 
  ### fix:
  - loading when no save file is present
+ - fix shaders when enemy is hit
+ - reveal animation when level changes,

@@ -26,5 +26,5 @@ visible = false
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/PinkCloud"]
-position = Vector2(1105, 54)
+position = Vector2(115, 993)
 texture = ExtResource("2_i24u0")

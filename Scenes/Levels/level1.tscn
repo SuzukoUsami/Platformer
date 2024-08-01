@@ -506,7 +506,7 @@ texture = ExtResource("10_se682")
 flip_h = true
 
 [node name="Cactus" type="Sprite2D" parent="Decor" index="68"]
-position = Vector2(939, 249)
+position = Vector2(939, 248)
 texture = ExtResource("6_ykm6j")
 
 [node name="Cactus2" type="Sprite2D" parent="Decor" index="69"]
@@ -796,11 +796,14 @@ polygon = PackedVector2Array(-417, 560, 65, 560, 67, 496, 65, 426, -11, 423, -10
 
 [node name="UI" parent="." index="6" instance=ExtResource("2_n2oet")]
 
+[node name="FireProjectile" parent="Projectiles" index="0" instance=ExtResource("27_ofnae")]
+position = Vector2(-1464, 533)
+
 [node name="Projectiles" parent="." index="7"]
 visible = false
 
 [node name="Slime" parent="Enemies" index="0" instance=ExtResource("10_hxy30")]
-position = Vector2(-788, 547)
+position = Vector2(-787, 548)
 
 [node name="Snail" parent="Enemies" index="1" instance=ExtResource("17_ryprp")]
 position = Vector2(789, -83)
@@ -809,10 +812,10 @@ position = Vector2(789, -83)
 position = Vector2(-715, -72)
 
 [node name="Slime2" parent="Enemies" index="3" instance=ExtResource("10_hxy30")]
-position = Vector2(998, 270)
+position = Vector2(977, 269)
 
 [node name="FireWorm" parent="Enemies" index="4" instance=ExtResource("22_gat3g")]
-position = Vector2(-1943, 208)
+position = Vector2(-1943, 209)
 
 [node name="Spider" parent="Enemies" index="5" instance=ExtResource("28_jj0mk")]
 position = Vector2(-2530, 538)

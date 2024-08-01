@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://dd76gmwkyl0aj"]
+[gd_scene load_steps=50 format=3 uid="uid://dd76gmwkyl0aj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_egcuc"]
 [ext_resource type="Script" path="res://Scenes/Levels/level2.gd" id="2_5amw5"]
@@ -28,6 +28,7 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="20_rib1g"]
 [ext_resource type="PackedScene" uid="uid://bx4p580173qd" path="res://Scenes/Traps/scp2137.tscn" id="24_v40d7"]
 [ext_resource type="PackedScene" uid="uid://dalqx826lbyyv" path="res://Scenes/Levels/parallax.tscn" id="28_pxd7q"]
+[ext_resource type="PackedScene" uid="uid://bciovw0ray6wp" path="res://Scenes/Enemies/fire_worm.tscn" id="29_ovkhp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_st0mr"]
 texture = ExtResource("4_dlgoe")
@@ -2319,16 +2320,16 @@ shape = SubResource("RectangleShape2D_j8b2u")
 position = Vector2(-2887, 618)
 
 [node name="Slime3" parent="Enemies" index="1" instance=ExtResource("14_1s3vn")]
-position = Vector2(-1719, -783)
+position = Vector2(-1719, -782)
 
 [node name="Slime4" parent="Enemies" index="2" instance=ExtResource("14_1s3vn")]
-position = Vector2(-2850, -783)
+position = Vector2(-2850, -782)
 
 [node name="Slime2" parent="Enemies" index="3" instance=ExtResource("14_1s3vn")]
 position = Vector2(1099, 338)
 
 [node name="FlyEnemy" parent="Enemies" index="4" instance=ExtResource("15_1uqgh")]
-position = Vector2(-3877, 201)
+position = Vector2(-3822, -346)
 
 [node name="FlyEnemy2" parent="Enemies" index="5" instance=ExtResource("15_1uqgh")]
 position = Vector2(718, -104)
@@ -2340,10 +2341,16 @@ position = Vector2(-2783, -1726)
 position = Vector2(-1789, -1769)
 
 [node name="Snail" parent="Enemies" index="8" instance=ExtResource("20_nqwu0")]
-position = Vector2(-462, 336)
+position = Vector2(-462, 337)
+
+[node name="Snail2" parent="Enemies" index="9" instance=ExtResource("20_nqwu0")]
+position = Vector2(-1463, -223)
+
+[node name="FireWorm" parent="Enemies" index="10" instance=ExtResource("29_ovkhp")]
+position = Vector2(-2291, 140)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-4252, 704)
+position = Vector2(-4208, 578)
 
 [node name="PlayerInvisibleWalls" parent="." index="11"]
 metadata/_edit_group_ = true
@@ -2362,3 +2369,4 @@ position = Vector2(56, -5)
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]
 [connection signal="body_exited" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_exited"]
+[connection signal="fire_projectile" from="Enemies/FireWorm" to="." method="_on_fire_worm_fire_projectile"]

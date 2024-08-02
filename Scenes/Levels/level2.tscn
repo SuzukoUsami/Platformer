@@ -150,6 +150,21 @@ _data = {
 "move": SubResource("Animation_p4pfs")
 }
 
+[sub_resource type="Animation" id="Animation_gg3s2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2714, 610)]
+}
+
 [sub_resource type="Animation" id="Animation_xrjrg"]
 resource_name = "move"
 length = 5.0
@@ -165,21 +180,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(2714, 610), Vector2(2714, 70)]
-}
-
-[sub_resource type="Animation" id="Animation_gg3s2"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(2714, 610)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xoohj"]
@@ -2470,7 +2470,7 @@ position = Vector2(-2623, -1541)
 position = Vector2(1212, -1149)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-4284, 686)
+position = Vector2(-4262, 673)
 
 [node name="PlayerInvisibleWalls" parent="." index="11"]
 metadata/_edit_group_ = true

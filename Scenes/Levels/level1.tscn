@@ -103,7 +103,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 6),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1720, 450), Vector2(2326, 450)]
+"values": [Vector2(1821, 429.167), Vector2(2326, 429.167)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_oni1m"]
@@ -697,7 +697,7 @@ position = Vector2(1163, -3)
 
 [node name="Door" parent="Items" index="0" instance=ExtResource("17_x1k5s")]
 position = Vector2(1862.5, 510)
-metadata/required_coins = 15
+metadata/required_coins = 30
 metadata/target_level = "res://Scenes/Levels/level2.tscn"
 
 [node name="Coin" parent="Items/Coins" index="0" instance=ExtResource("13_1evug")]
@@ -712,14 +712,23 @@ position = Vector2(-106, 316)
 [node name="BronzeCoin2" parent="Items/Coins" index="3" instance=ExtResource("11_n0nqg")]
 position = Vector2(693, 521)
 
-[node name="BronzeCoin3" parent="Items/Coins" index="4" instance=ExtResource("11_n0nqg")]
+[node name="BronzeCoin4" parent="Items/Coins" index="4" instance=ExtResource("11_n0nqg")]
+position = Vector2(1106, 258)
+
+[node name="BronzeCoin5" parent="Items/Coins" index="5" instance=ExtResource("11_n0nqg")]
+position = Vector2(1108, -21)
+
+[node name="BronzeCoin3" parent="Items/Coins" index="6" instance=ExtResource("11_n0nqg")]
 position = Vector2(636, -108)
 
-[node name="SilverCoin" parent="Items/Coins" index="5" instance=ExtResource("12_7mv4g")]
+[node name="SilverCoin" parent="Items/Coins" index="7" instance=ExtResource("12_7mv4g")]
 position = Vector2(-267, 371)
 
-[node name="SilverCoin2" parent="Items/Coins" index="6" instance=ExtResource("12_7mv4g")]
+[node name="SilverCoin2" parent="Items/Coins" index="8" instance=ExtResource("12_7mv4g")]
 position = Vector2(-2400, 536)
+
+[node name="SilverCoin3" parent="Items/Coins" index="9" instance=ExtResource("12_7mv4g")]
+position = Vector2(-1990, 259)
 
 [node name="Heart_item" parent="Items/Hearts" index="0" instance=ExtResource("15_67cci")]
 position = Vector2(530, 484)
@@ -799,26 +808,26 @@ polygon = PackedVector2Array(-417, 560, 65, 560, 67, 496, 65, 426, -11, 423, -10
 [node name="Projectiles" parent="." index="7"]
 visible = false
 
-[node name="Slime" parent="Enemies" index="0" instance=ExtResource("10_hxy30")]
+[node name="Slime" parent="Enemies/Slimes" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-788, 547)
 
-[node name="Snail" parent="Enemies" index="1" instance=ExtResource("17_ryprp")]
-position = Vector2(789, -83)
-
-[node name="FlyEnemy" parent="Enemies" index="2" instance=ExtResource("11_e5cin")]
-position = Vector2(-715, -72)
-
-[node name="Slime2" parent="Enemies" index="3" instance=ExtResource("10_hxy30")]
+[node name="Slime2" parent="Enemies/Slimes" index="1" instance=ExtResource("10_hxy30")]
 position = Vector2(998, 270)
 
-[node name="FireWorm" parent="Enemies" index="4" instance=ExtResource("22_gat3g")]
+[node name="FlyEnemy" parent="Enemies/Flies" index="0" instance=ExtResource("11_e5cin")]
+position = Vector2(-715, -72)
+
+[node name="Snail" parent="Enemies/Snails" index="0" instance=ExtResource("17_ryprp")]
+position = Vector2(789, -83)
+
+[node name="FireWorm" parent="Enemies/Worms" index="0" instance=ExtResource("22_gat3g")]
 position = Vector2(-1943, 208)
 
-[node name="Spider" parent="Enemies" index="5" instance=ExtResource("28_jj0mk")]
+[node name="Spider" parent="Enemies/Spiders" index="0" instance=ExtResource("28_jj0mk")]
 position = Vector2(-2530, 538)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-50, 174)
+position = Vector2(1347, 57)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)

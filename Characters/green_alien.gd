@@ -13,6 +13,10 @@ var jump_speed = -550.0
 var fall_acceleration = 2
 var vulnerability: bool = true
 
+func _ready():
+	$CanvasLayer.visible = true
+	$CanvasLayer/AnimationPlayer.play("reveal")
+
 
 func _process(_delta):
 	if Input.is_action_pressed("right") or Input.is_action_pressed("left"):

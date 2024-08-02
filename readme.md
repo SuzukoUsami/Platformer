@@ -12,8 +12,9 @@
  - spider enemy,
  - better enemy movement animations,
  - sword attack?
- - animate going to the next level,
+ - items mini shake animation,
 
 
  ### fix:
  - loading when no save file is present
+ - fix shaders when enemy is hit

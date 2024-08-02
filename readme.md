@@ -12,6 +12,7 @@
  - spider enemy,
  - better enemy movement animations,
  - sword attack?
+ - items mini shake animation,
 
 
  ### fix:

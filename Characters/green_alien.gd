@@ -14,6 +14,7 @@ var fall_acceleration = 2
 var vulnerability: bool = true
 
 func _ready():
+	$CanvasLayer.visible = true
 	$CanvasLayer/AnimationPlayer.play("reveal")
 
 

@@ -48,8 +48,6 @@ func _on_area_2d_body_entered(body):
 		if Globals.coins_amount >= required_coins:
 			$TransitionLayer/AnimationPlayer.play("fade_to_black")
 			await  $TransitionLayer/AnimationPlayer.animation_finished
-			$TransitionLayer/AnimationPlayer.play("reveal")
-			#await $TransitionLayer/AnimationPlayer.animation_finished
 			call_deferred("change_level")
 		else:
 			ui.visible = true

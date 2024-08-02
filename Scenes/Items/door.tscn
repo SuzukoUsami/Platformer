@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bsk4n0tds5w5g"]
+[gd_scene load_steps=11 format=3 uid="uid://bsk4n0tds5w5g"]
 
 [ext_resource type="Texture2D" uid="uid://c3flupludo3ga" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_closedMid.png" id="1_jrnm8"]
 [ext_resource type="Script" path="res://Scenes/Items/door.gd" id="1_pjv32"]
@@ -62,27 +62,10 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_4mr8g"]
-resource_name = "reveal"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ColorRect:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0.792157)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mp4mh"]
 _data = {
 "RESET": SubResource("Animation_de6gh"),
-"fade_to_black": SubResource("Animation_3q8fq"),
-"reveal": SubResource("Animation_4mr8g")
+"fade_to_black": SubResource("Animation_3q8fq")
 }
 
 [node name="Door" type="Node2D"]

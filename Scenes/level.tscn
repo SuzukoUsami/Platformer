@@ -194,8 +194,6 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="SecretAreas" type="Area2D" parent="SecretRoom"]
 
-[node name="Projectiles" type="Node2D" parent="."]
-
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Slimes" type="Node2D" parent="Enemies"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=40 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1.gd" id="2_b7tuh"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://bri80jmcd76op" path="res://Scenes/Items/silver_coin.tscn" id="12_7mv4g"]
 [ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="12_ftp16"]
 [ext_resource type="PackedScene" uid="uid://c5exh1x6ei5xj" path="res://Scenes/Items/coin.tscn" id="13_1evug"]
+[ext_resource type="Texture2D" uid="uid://dhqvxjye1asmr" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signLeft.png" id="15_8w7n5"]
 [ext_resource type="PackedScene" uid="uid://2okjnqhife86" path="res://Scenes/Items/heart_item.tscn" id="15_67cci"]
 [ext_resource type="PackedScene" uid="uid://cfqtwp6kdnpan" path="res://Scenes/Enemies/snail.tscn" id="17_ryprp"]
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="17_x1k5s"]
@@ -695,13 +696,17 @@ scale = Vector2(1.12857, 1.21429)
 texture = ExtResource("6_ykm6j")
 flip_h = true
 
+[node name="Sprite2D" type="Sprite2D" parent="Decor" index="7"]
+position = Vector2(2307, 528)
+texture = ExtResource("15_8w7n5")
+
 [node name="Door" parent="Items" index="0" instance=ExtResource("17_x1k5s")]
-position = Vector2(1862.5, 510)
+position = Vector2(1862, 507)
 metadata/required_coins = 30
 metadata/target_level = "res://Scenes/Levels/level2.tscn"
 
 [node name="Coin" parent="Items/Coins" index="0" instance=ExtResource("13_1evug")]
-position = Vector2(-1464, 460)
+position = Vector2(-2066, 446)
 
 [node name="Coin2" parent="Items/Coins" index="1" instance=ExtResource("13_1evug")]
 position = Vector2(1930, 22)
@@ -790,9 +795,6 @@ position = Vector2(1444, 110)
 [node name="Spring2" parent="Traps/SpikesTraps" index="12" instance=ExtResource("12_ftp16")]
 position = Vector2(-176, 529)
 
-[node name="SecretRoom" parent="." index="5"]
-visible = false
-
 [node name="SecretTileMap" type="TileMap" parent="SecretRoom" index="0"]
 tile_set = SubResource("TileSet_38r17")
 format = 2
@@ -807,9 +809,6 @@ visible = false
 polygon = PackedVector2Array(-417, 560, 65, 560, 67, 496, 65, 426, -11, 423, -10, 354, -79, 354, -79, 283, -141, 280, -142, 209, -208, 208, -208, 281, -275, 285, -277, 359, -342, 359, -346, 426, -415, 426, -418, 492)
 
 [node name="UI" parent="." index="6" instance=ExtResource("2_n2oet")]
-
-[node name="Projectiles" parent="." index="7"]
-visible = false
 
 [node name="Slime" parent="Enemies/Slimes" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-788, 547)
@@ -830,7 +829,7 @@ position = Vector2(-1943, 208)
 position = Vector2(-2530, 538)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1698, 489)
+position = Vector2(2230, -539)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
@@ -840,7 +839,7 @@ shape = SubResource("RectangleShape2D_oma0m")
 position = Vector2(-2692.5, -611)
 shape = SubResource("RectangleShape2D_8131l")
 
-[node name="EnemiesInvisibleWalls" parent="." index="11"]
+[node name="EnemiesInvisibleWalls" parent="." index="10"]
 collision_layer = 32
 collision_mask = 2
 

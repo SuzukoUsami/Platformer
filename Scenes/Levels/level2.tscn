@@ -1915,14 +1915,149 @@ flip_h = true
 position = Vector2(-4231, 739)
 texture = ExtResource("4_qdl8y")
 
-[node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="1"]
+[node name="LargeBush2" type="Sprite2D" parent="Decor/Bushes" index="1"]
+position = Vector2(-3491, 737)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush3" type="Sprite2D" parent="Decor/Bushes" index="2"]
+position = Vector2(2837, -944)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush4" type="Sprite2D" parent="Decor/Bushes" index="3"]
+position = Vector2(-3826, -244)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush5" type="Sprite2D" parent="Decor/Bushes" index="4"]
+position = Vector2(-820, -314)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush6" type="Sprite2D" parent="Decor/Bushes" index="5"]
+position = Vector2(-1815, -804)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush7" type="Sprite2D" parent="Decor/Bushes" index="6"]
+position = Vector2(-2649, -804)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush8" type="Sprite2D" parent="Decor/Bushes" index="7"]
+position = Vector2(-2458, 456)
+texture = ExtResource("4_qdl8y")
+
+[node name="LargeBush9" type="Sprite2D" parent="Decor/Bushes" index="8"]
+position = Vector2(-446, 317)
+texture = ExtResource("4_qdl8y")
+flip_h = true
+
+[node name="LargeBush10" type="Sprite2D" parent="Decor/Bushes" index="9"]
+position = Vector2(-1566, 317)
+texture = ExtResource("4_qdl8y")
+
+[node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="10"]
 position = Vector2(-4116.5, 740.5)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("5_pf0tv")
 
-[node name="MediumBush" type="Sprite2D" parent="Decor/Bushes" index="2"]
+[node name="SmallBush2" type="Sprite2D" parent="Decor/Bushes" index="11"]
+position = Vector2(-1622, 741)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush3" type="Sprite2D" parent="Decor/Bushes" index="12"]
+position = Vector2(-2430, -98)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush4" type="Sprite2D" parent="Decor/Bushes" index="13"]
+position = Vector2(614, 463)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush5" type="Sprite2D" parent="Decor/Bushes" index="14"]
+position = Vector2(-1397, -240)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush6" type="Sprite2D" parent="Decor/Bushes" index="15"]
+position = Vector2(-3175, -379)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="SmallBush7" type="Sprite2D" parent="Decor/Bushes" index="16"]
+position = Vector2(-3404, -98)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush8" type="Sprite2D" parent="Decor/Bushes" index="17"]
+position = Vector2(-1940, -797)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush9" type="Sprite2D" parent="Decor/Bushes" index="18"]
+position = Vector2(-336, 322)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="SmallBush10" type="Sprite2D" parent="Decor/Bushes" index="19"]
+position = Vector2(-3149, -2619)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="MediumBush" type="Sprite2D" parent="Decor/Bushes" index="20"]
 position = Vector2(-4179, 726)
 scale = Vector2(1.34285, 1.34285)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush2" type="Sprite2D" parent="Decor/Bushes" index="21"]
+position = Vector2(-3407.5, 721.5)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush3" type="Sprite2D" parent="Decor/Bushes" index="22"]
+position = Vector2(-1590, -261)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush4" type="Sprite2D" parent="Decor/Bushes" index="23"]
+position = Vector2(-2324, 439)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush5" type="Sprite2D" parent="Decor/Bushes" index="24"]
+position = Vector2(-489, -330)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush6" type="Sprite2D" parent="Decor/Bushes" index="25"]
+position = Vector2(-2022, -820)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush7" type="Sprite2D" parent="Decor/Bushes" index="26"]
+position = Vector2(-2530, -820)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+
+[node name="MediumBush8" type="Sprite2D" parent="Decor/Bushes" index="27"]
+position = Vector2(2162, 20)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+
+[node name="MediumBush9" type="Sprite2D" parent="Decor/Bushes" index="28"]
+position = Vector2(-2690, 579)
+scale = Vector2(1.5, 1.52857)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="MediumBush10" type="Sprite2D" parent="Decor/Bushes" index="29"]
+position = Vector2(-1512, 299)
+scale = Vector2(1.5, 1.52857)
 texture = ExtResource("5_pf0tv")
 flip_h = true
 
@@ -2029,7 +2164,7 @@ position = Vector2(-1432, -243)
 texture = ExtResource("7_apjds")
 
 [node name="Grass20" type="Sprite2D" parent="Decor/Grass" index="19"]
-position = Vector2(-2661, 597)
+position = Vector2(-2660, 597)
 texture = ExtResource("7_apjds")
 
 [node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]
@@ -2474,8 +2609,6 @@ shape = SubResource("RectangleShape2D_00pjr")
 position = Vector2(-3183.75, -2414)
 shape = SubResource("RectangleShape2D_j8b2u")
 
-[node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
-
 [node name="Slime" parent="Enemies/Slimes" index="0" instance=ExtResource("14_1s3vn")]
 position = Vector2(-2887, 618)
 
@@ -2548,10 +2681,12 @@ position = Vector2(-2623, -1541)
 [node name="FireWorm6" parent="Enemies/Worms" index="5" instance=ExtResource("29_dauwp")]
 position = Vector2(2802, -980)
 
+[node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
+
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(-4228, 701)
 
-[node name="PlayerInvisibleWalls" parent="." index="11"]
+[node name="PlayerInvisibleWalls" parent="." index="10"]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -2563,7 +2698,7 @@ shape = SubResource("RectangleShape2D_byv0g")
 position = Vector2(-4403.5, -1736)
 shape = SubResource("RectangleShape2D_wfe0r")
 
-[node name="EnemiesInvisibleWalls" parent="." index="12"]
+[node name="EnemiesInvisibleWalls" parent="." index="11"]
 position = Vector2(56, -5)
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]

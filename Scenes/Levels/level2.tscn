@@ -1946,18 +1946,90 @@ texture = ExtResource("3_54m1k")
 position = Vector2(-4007, 737)
 texture = ExtResource("3_54m1k")
 
-[node name="Plant" type="Sprite2D" parent="Decor/Grass" index="0"]
+[node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
 position = Vector2(-3604, 737)
 texture = ExtResource("7_apjds")
 
-[node name="Plant2" type="Sprite2D" parent="Decor/Grass" index="1"]
+[node name="Grass2" type="Sprite2D" parent="Decor/Grass" index="1"]
 position = Vector2(-1291, 482)
 rotation = -0.218166
 texture = ExtResource("7_apjds")
 
-[node name="Plant3" type="Sprite2D" parent="Decor/Grass" index="2"]
+[node name="Grass3" type="Sprite2D" parent="Decor/Grass" index="2"]
 position = Vector2(-1433, 623)
 rotation = -0.218166
+texture = ExtResource("7_apjds")
+
+[node name="Grass4" type="Sprite2D" parent="Decor/Grass" index="3"]
+position = Vector2(-2539, 457)
+texture = ExtResource("7_apjds")
+
+[node name="Grass5" type="Sprite2D" parent="Decor/Grass" index="4"]
+position = Vector2(-2844, 597)
+texture = ExtResource("7_apjds")
+flip_h = true
+
+[node name="Grass6" type="Sprite2D" parent="Decor/Grass" index="5"]
+position = Vector2(-3298, 736)
+texture = ExtResource("7_apjds")
+
+[node name="Grass7" type="Sprite2D" parent="Decor/Grass" index="6"]
+position = Vector2(-1280, -243)
+texture = ExtResource("7_apjds")
+flip_h = true
+
+[node name="Grass8" type="Sprite2D" parent="Decor/Grass" index="7"]
+position = Vector2(-1453, -1783)
+texture = ExtResource("7_apjds")
+
+[node name="Grass9" type="Sprite2D" parent="Decor/Grass" index="8"]
+position = Vector2(-2076, 457)
+texture = ExtResource("7_apjds")
+
+[node name="Grass10" type="Sprite2D" parent="Decor/Grass" index="9"]
+position = Vector2(-3957, -243)
+texture = ExtResource("7_apjds")
+
+[node name="Grass11" type="Sprite2D" parent="Decor/Grass" index="10"]
+position = Vector2(-2988, 37)
+texture = ExtResource("7_apjds")
+
+[node name="Grass12" type="Sprite2D" parent="Decor/Grass" index="11"]
+position = Vector2(-2038, 458)
+texture = ExtResource("7_apjds")
+
+[node name="Grass13" type="Sprite2D" parent="Decor/Grass" index="12"]
+position = Vector2(-2856, 37)
+texture = ExtResource("7_apjds")
+
+[node name="Grass14" type="Sprite2D" parent="Decor/Grass" index="13"]
+position = Vector2(-1642, -802)
+texture = ExtResource("7_apjds")
+
+[node name="Grass15" type="Sprite2D" parent="Decor/Grass" index="14"]
+position = Vector2(-2814, 737)
+texture = ExtResource("7_apjds")
+
+[node name="Grass16" type="Sprite2D" parent="Decor/Grass" index="15"]
+position = Vector2(-3284, -103)
+texture = ExtResource("7_apjds")
+
+[node name="Grass17" type="Sprite2D" parent="Decor/Grass" index="16"]
+position = Vector2(-2485, 737)
+texture = ExtResource("7_apjds")
+flip_h = true
+
+[node name="Grass18" type="Sprite2D" parent="Decor/Grass" index="17"]
+position = Vector2(-2218, -1362)
+texture = ExtResource("7_apjds")
+flip_h = true
+
+[node name="Grass19" type="Sprite2D" parent="Decor/Grass" index="18"]
+position = Vector2(-1432, -243)
+texture = ExtResource("7_apjds")
+
+[node name="Grass20" type="Sprite2D" parent="Decor/Grass" index="19"]
+position = Vector2(-2661, 597)
 texture = ExtResource("7_apjds")
 
 [node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]

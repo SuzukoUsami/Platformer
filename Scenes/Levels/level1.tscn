@@ -701,7 +701,7 @@ metadata/required_coins = 30
 metadata/target_level = "res://Scenes/Levels/level2.tscn"
 
 [node name="Coin" parent="Items/Coins" index="0" instance=ExtResource("13_1evug")]
-position = Vector2(-2066, 445)
+position = Vector2(-1464, 460)
 
 [node name="Coin2" parent="Items/Coins" index="1" instance=ExtResource("13_1evug")]
 position = Vector2(1930, 22)
@@ -789,6 +789,9 @@ position = Vector2(1444, 110)
 
 [node name="Spring2" parent="Traps/SpikesTraps" index="12" instance=ExtResource("12_ftp16")]
 position = Vector2(-176, 529)
+
+[node name="SecretRoom" parent="." index="5"]
+visible = false
 
 [node name="SecretTileMap" type="TileMap" parent="SecretRoom" index="0"]
 tile_set = SubResource("TileSet_38r17")

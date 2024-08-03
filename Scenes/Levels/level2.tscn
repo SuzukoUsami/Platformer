@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://dd76gmwkyl0aj"]
+[gd_scene load_steps=54 format=3 uid="uid://dd76gmwkyl0aj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_egcuc"]
 [ext_resource type="Script" path="res://Scenes/Levels/level2.gd" id="2_5amw5"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://b7x3wc8ifrt1h" path="res://graphics/Platformer Art Deluxe/Base pack/Items/bush.png" id="5_pf0tv"]
 [ext_resource type="Texture2D" uid="uid://c7fa38uxr3g27" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cactus.png" id="6_wtj1m"]
 [ext_resource type="Texture2D" uid="uid://bh5q3diqmwdbl" path="res://graphics/Platformer Art Deluxe/Base pack/Items/plant.png" id="7_apjds"]
+[ext_resource type="PackedScene" uid="uid://blhjrr07y8myr" path="res://Scenes/Decorations/snek.tscn" id="7_g83e1"]
 [ext_resource type="Texture2D" uid="uid://bpwp8usa3y2bj" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signRight.png" id="8_xv4qd"]
 [ext_resource type="Texture2D" uid="uid://dr8etbg631mmj" path="res://graphics/Platformer Art Deluxe/Base pack/Items/rock.png" id="9_t7byi"]
 [ext_resource type="PackedScene" uid="uid://bt2mnqr7bofiv" path="res://Scenes/Items/bronze_coin.tscn" id="10_g421k"]
@@ -311,79 +312,14 @@ position = Vector2(2912, -2152)
 metadata/required_coins = 50
 metadata/target_level = "res://Scenes/Levels/level3.tscn"
 
-[node name="Decor" parent="." index="3"]
-metadata/_edit_group_ = true
-metadata/_edit_lock_ = true
+[node name="Snek" parent="Decor/Animated" index="0" instance=ExtResource("7_g83e1")]
+position = Vector2(-1563, 767)
 
-[node name="Fence" type="Sprite2D" parent="Decor" index="0"]
-position = Vector2(-4079, 737)
-texture = ExtResource("3_54m1k")
+[node name="Snek2" parent="Decor/Animated" index="1" instance=ExtResource("7_g83e1")]
+position = Vector2(-1308, -213)
 
-[node name="Fence2" type="Sprite2D" parent="Decor" index="1"]
-position = Vector2(-3788, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence3" type="Sprite2D" parent="Decor" index="2"]
-position = Vector2(-3861, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence4" type="Sprite2D" parent="Decor" index="3"]
-position = Vector2(-3934, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence5" type="Sprite2D" parent="Decor" index="4"]
-position = Vector2(-4007, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="LargeBush" type="Sprite2D" parent="Decor" index="5"]
-position = Vector2(-4231, 739)
-texture = ExtResource("4_qdl8y")
-
-[node name="SmallBush" type="Sprite2D" parent="Decor" index="6"]
-position = Vector2(-4116.5, 740.5)
-scale = Vector2(0.9, 0.9)
-texture = ExtResource("5_pf0tv")
-
-[node name="MediumBush" type="Sprite2D" parent="Decor" index="7"]
-position = Vector2(-4179, 726)
-scale = Vector2(1.34285, 1.34285)
-texture = ExtResource("5_pf0tv")
-flip_h = true
-
-[node name="Cactus" type="Sprite2D" parent="Decor" index="8"]
-position = Vector2(-3646, 737)
-texture = ExtResource("6_wtj1m")
-
-[node name="Plant" type="Sprite2D" parent="Decor" index="9"]
-position = Vector2(-3604, 737)
-texture = ExtResource("7_apjds")
-
-[node name="Plant2" type="Sprite2D" parent="Decor" index="10"]
-position = Vector2(-1291, 482)
-rotation = -0.218166
-texture = ExtResource("7_apjds")
-
-[node name="Plant3" type="Sprite2D" parent="Decor" index="11"]
-position = Vector2(-1433, 623)
-rotation = -0.218166
-texture = ExtResource("7_apjds")
-
-[node name="Right" type="Sprite2D" parent="Decor" index="12"]
-position = Vector2(-4263, 735)
-texture = ExtResource("8_xv4qd")
-
-[node name="Rock" type="Sprite2D" parent="Decor" index="13"]
-position = Vector2(-3710, 737)
-texture = ExtResource("9_t7byi")
-
-[node name="SmallRock" type="Sprite2D" parent="Decor" index="14"]
-modulate = Color(0.662745, 0.729412, 0.729412, 1)
-position = Vector2(-4306, 754)
-scale = Vector2(0.485714, 0.485714)
-texture = ExtResource("9_t7byi")
-flip_h = true
-
-[node name="Clouds" type="Node2D" parent="Decor" index="15"]
+[node name="Snek3" parent="Decor/Animated" index="2" instance=ExtResource("7_g83e1")]
+position = Vector2(2320, 67)
 
 [node name="LargeCloud" type="Sprite2D" parent="Decor/Clouds" index="0"]
 position = Vector2(-4419, 515)
@@ -1975,6 +1911,74 @@ scale = Vector2(0.725352, 0.725352)
 texture = ExtResource("13_o52dk")
 flip_h = true
 
+[node name="LargeBush" type="Sprite2D" parent="Decor/Bushes" index="0"]
+position = Vector2(-4231, 739)
+texture = ExtResource("4_qdl8y")
+
+[node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="1"]
+position = Vector2(-4116.5, 740.5)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("5_pf0tv")
+
+[node name="MediumBush" type="Sprite2D" parent="Decor/Bushes" index="2"]
+position = Vector2(-4179, 726)
+scale = Vector2(1.34285, 1.34285)
+texture = ExtResource("5_pf0tv")
+flip_h = true
+
+[node name="Fence" type="Sprite2D" parent="Decor/Fences" index="0"]
+position = Vector2(-4079, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence2" type="Sprite2D" parent="Decor/Fences" index="1"]
+position = Vector2(-3788, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence3" type="Sprite2D" parent="Decor/Fences" index="2"]
+position = Vector2(-3861, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence4" type="Sprite2D" parent="Decor/Fences" index="3"]
+position = Vector2(-3934, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence5" type="Sprite2D" parent="Decor/Fences" index="4"]
+position = Vector2(-4007, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Plant" type="Sprite2D" parent="Decor/Grass" index="0"]
+position = Vector2(-3604, 737)
+texture = ExtResource("7_apjds")
+
+[node name="Plant2" type="Sprite2D" parent="Decor/Grass" index="1"]
+position = Vector2(-1291, 482)
+rotation = -0.218166
+texture = ExtResource("7_apjds")
+
+[node name="Plant3" type="Sprite2D" parent="Decor/Grass" index="2"]
+position = Vector2(-1433, 623)
+rotation = -0.218166
+texture = ExtResource("7_apjds")
+
+[node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]
+position = Vector2(-3710, 737)
+texture = ExtResource("9_t7byi")
+
+[node name="SmallRock" type="Sprite2D" parent="Decor/Rocks" index="1"]
+modulate = Color(0.662745, 0.729412, 0.729412, 1)
+position = Vector2(-4306, 754)
+scale = Vector2(0.485714, 0.485714)
+texture = ExtResource("9_t7byi")
+flip_h = true
+
+[node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
+position = Vector2(-3646, 737)
+texture = ExtResource("6_wtj1m")
+
+[node name="Right" type="Sprite2D" parent="Decor" index="7"]
+position = Vector2(-4263, 735)
+texture = ExtResource("8_xv4qd")
+
 [node name="BronzeCoin" parent="Items/Coins" index="0" instance=ExtResource("10_g421k")]
 position = Vector2(-595, 606)
 
@@ -2015,22 +2019,25 @@ position = Vector2(-1132, -1003)
 position = Vector2(2239, 45)
 
 [node name="Coin" parent="Items/Coins" index="13" instance=ExtResource("12_4vjol")]
-position = Vector2(-2484, 732)
+position = Vector2(-1407, 595)
 
-[node name="Coin4" parent="Items/Coins" index="14" instance=ExtResource("12_4vjol")]
-position = Vector2(-3114, -2484)
-
-[node name="Coin5" parent="Items/Coins" index="15" instance=ExtResource("12_4vjol")]
-position = Vector2(-3002, -2338)
-
-[node name="Coin6" parent="Items/Coins" index="16" instance=ExtResource("12_4vjol")]
-position = Vector2(-3057, -2409)
-
-[node name="Coin2" parent="Items/Coins" index="17" instance=ExtResource("12_4vjol")]
+[node name="Coin2" parent="Items/Coins" index="14" instance=ExtResource("12_4vjol")]
 position = Vector2(-1158, 700)
 
-[node name="Coin3" parent="Items/Coins" index="18" instance=ExtResource("12_4vjol")]
+[node name="Coin3" parent="Items/Coins" index="15" instance=ExtResource("12_4vjol")]
 position = Vector2(3598, 715)
+
+[node name="Coin4" parent="Items/Coins" index="16" instance=ExtResource("12_4vjol")]
+position = Vector2(-3114, -2484)
+
+[node name="Coin5" parent="Items/Coins" index="17" instance=ExtResource("12_4vjol")]
+position = Vector2(-3002, -2338)
+
+[node name="Coin6" parent="Items/Coins" index="18" instance=ExtResource("12_4vjol")]
+position = Vector2(-3057, -2409)
+
+[node name="Coin7" parent="Items/Coins" index="19" instance=ExtResource("12_4vjol")]
+position = Vector2(2618, -937)
 
 [node name="Heart_item" parent="Items/Hearts" index="0" instance=ExtResource("13_6v5hx")]
 position = Vector2(-1276, 446)
@@ -2419,7 +2426,7 @@ position = Vector2(1386, -1763)
 position = Vector2(-3877, 201)
 
 [node name="FlyEnemy2" parent="Enemies/Flies" index="1" instance=ExtResource("15_1uqgh")]
-position = Vector2(718, -104)
+position = Vector2(722, -79)
 
 [node name="FlyEnemy3" parent="Enemies/Flies" index="2" instance=ExtResource("15_1uqgh")]
 position = Vector2(-2949, -1636)
@@ -2467,10 +2474,10 @@ position = Vector2(-2610, -841)
 position = Vector2(-2623, -1541)
 
 [node name="FireWorm6" parent="Enemies/Worms" index="5" instance=ExtResource("29_dauwp")]
-position = Vector2(1212, -1149)
+position = Vector2(2802, -980)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-4262, 673)
+position = Vector2(-4228, 701)
 
 [node name="PlayerInvisibleWalls" parent="." index="11"]
 metadata/_edit_group_ = true

@@ -45,12 +45,14 @@ frame_progress = 0.518299
 [node name="HitboxComponent" type="Area2D" parent="."]
 position = Vector2(-1, -0.25)
 script = ExtResource("5_7hskp")
+instant_death = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 shape = SubResource("RectangleShape2D_6jrc8")
 
 [node name="HitShaderTimer" type="Timer" parent="."]
 wait_time = 0.2
+one_shot = true
 
 [node name="AutoMoveComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("5_0eaw5")]
 sprite = NodePath("../AnimatedSprite2D")
@@ -58,6 +60,7 @@ sprite = NodePath("../AnimatedSprite2D")
 [node name="CoinDropComponent" type="Node2D" parent="."]
 script = ExtResource("6_7ctta")
 
+[connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]
 [connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
 
 [editable path="AutoMoveComponent"]

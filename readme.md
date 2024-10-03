@@ -15,10 +15,9 @@
  - items mini shake animation,
  - new biomes,
  - more levels,
- - 
  
 
  ### fix:
- - loading when no save file is present
- - fix shaders when enemy is hit
+ - loading when no save file is present,
+ - fix shaders when snail, fly and fire worm are hit,
  - fireworm not shooting when player stands next to him,

@@ -13,8 +13,12 @@
  - better enemy movement animations,
  - sword attack?
  - items mini shake animation,
-
+ - new biomes,
+ - more levels,
+ - 
+ 
 
  ### fix:
  - loading when no save file is present
  - fix shaders when enemy is hit
+ - fireworm not shooting when player stands next to him,

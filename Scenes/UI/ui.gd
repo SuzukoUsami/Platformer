@@ -49,7 +49,7 @@ func update_coin_text():
 	update_color(Globals.coins_amount, coin_text, coin_image)
 
 func update_color(amount: int, label: Label, icon: TextureRect) -> void:
-	if amount <= 1:
+	if amount <= 0:
 		icon.modulate = transparent
 		label.modulate = transparent
 	else:

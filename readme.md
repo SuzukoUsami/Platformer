@@ -1,5 +1,6 @@
  # My tiny todo list ^^
  ### ideas:
+ - when player is dead reload scene!!!,
  - enemies dead animation,
  - player dead animation,
  - fly chaotic movement,
@@ -15,9 +16,7 @@
  - items mini shake animation,
  - new biomes,
  - more levels,
- 
+
 
  ### fix:
  - loading when no save file is present,
- - fix shaders when snail is hit,
- - fireworm not shooting when player stands next to him,

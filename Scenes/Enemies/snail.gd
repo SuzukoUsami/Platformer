@@ -18,7 +18,6 @@ func _on_hitbox_component_going_to_die():
 	if not is_hiding:
 		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.6)
 		$HitShaderTimer.start()
-		#queue_free()
 
 func _on_notice_area_body_entered(body):
 	if is_queued_for_deletion():

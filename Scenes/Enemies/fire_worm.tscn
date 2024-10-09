@@ -46,10 +46,10 @@ shape = SubResource("CapsuleShape2D_w3bw6")
 [node name="ProjectileSpawnPosition" type="Node2D" parent="."]
 
 [node name="Marker2D" type="Marker2D" parent="ProjectileSpawnPosition"]
-position = Vector2(-13, -37)
+position = Vector2(-12, -30)
 
 [node name="Marker2D2" type="Marker2D" parent="ProjectileSpawnPosition"]
-position = Vector2(13, -37)
+position = Vector2(13, -30)
 
 [node name="Projectiles" type="Node2D" parent="."]
 
@@ -65,7 +65,11 @@ shape = SubResource("RectangleShape2D_0u0ru")
 [node name="HitShaderTimer" type="Timer" parent="."]
 wait_time = 0.2
 
+[node name="ShootingTimer" type="Timer" parent="."]
+wait_time = 1.25
+
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
 [connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]
 [connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
+[connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]

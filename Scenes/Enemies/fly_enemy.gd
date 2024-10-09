@@ -18,7 +18,18 @@ func _process(_delta):
 		sprite_2d.set_flip_h(false)
 
 
+
 func _on_notice_area_body_entered(body):
 	if (body.name == Globals.PLAYER_NAME):
 		active = true
 		particles.emitting = true
+
+
+func _on_hitbox_component_going_to_die():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0.6)
+	$HitShaderTimer.start()
+
+
+func _on_hit_shader_timer_timeout():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)
+	queue_free()

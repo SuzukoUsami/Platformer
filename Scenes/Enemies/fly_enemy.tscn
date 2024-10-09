@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cs5p8tq8vvik6"]
+[gd_scene load_steps=11 format=3 uid="uid://cs5p8tq8vvik6"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/fly_enemy.gd" id="1_31irm"]
 [ext_resource type="Texture2D" uid="uid://c1wf2dmaso7ya" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/flyFly1.png" id="1_t8akn"]
+[ext_resource type="Material" uid="uid://dikmndbc1sq8v" path="res://Scenes/Enemies/enemy_hit_shader.tres" id="2_glmpp"]
 [ext_resource type="Texture2D" uid="uid://de8fj0mju83ft" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/flyFly2.png" id="3_2u2ck"]
 [ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="4_6v3fd"]
 
@@ -52,6 +53,7 @@ collision_layer = 2
 script = ExtResource("1_31irm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = ExtResource("2_glmpp")
 sprite_frames = SubResource("SpriteFrames_m62ou")
 autoplay = "default"
 frame_progress = 0.84372
@@ -77,10 +79,17 @@ trail_lifetime = 0.2
 trail_sections = 3
 trail_section_subdivisions = 1
 
+[node name="HitShaderTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [node name="HitboxComponent" type="Area2D" parent="."]
 script = ExtResource("4_6v3fd")
+instant_death = false
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="HitboxComponent"]
 shape = SubResource("RectangleShape2D_nksb4")
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
+[connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
+[connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]

@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var worm_sprite = $AnimatedSprite2D
+
 var fire_projectile_scene: PackedScene = preload("res://Scenes/Projectiles/fire_projectile.tscn")
 
 var active: bool = false
@@ -24,3 +26,13 @@ func _on_notice_area_body_entered(_body):
 func _on_notice_area_body_exited(_body):
 	active = false
 	shoot = true
+
+
+func _on_hitbox_component_going_to_die():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0.6)
+	$HitShaderTimer.start()
+
+
+func _on_hit_shader_timer_timeout():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)
+	queue_free()

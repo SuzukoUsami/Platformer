@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bciovw0ray6wp"]
+[gd_scene load_steps=9 format=3 uid="uid://bciovw0ray6wp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/fire_worm.gd" id="1_mts4c"]
 [ext_resource type="Texture2D" uid="uid://c012xpcsegnmp" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava.png" id="1_ngyw2"]
 [ext_resource type="Texture2D" uid="uid://bqeoyfq85w4t8" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Enemy sprites/snakeLava_ani.png" id="2_m718d"]
+[ext_resource type="Material" uid="uid://dikmndbc1sq8v" path="res://Scenes/Enemies/enemy_hit_shader.tres" id="4_7wyfa"]
 [ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="4_ov4dh"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_k3iql"]
@@ -30,6 +31,7 @@ size = Vector2(45, 142)
 script = ExtResource("1_mts4c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = ExtResource("4_7wyfa")
 sprite_frames = SubResource("SpriteFrames_k3iql")
 autoplay = "default"
 frame_progress = 0.845926
@@ -52,11 +54,18 @@ position = Vector2(13, -37)
 [node name="Projectiles" type="Node2D" parent="."]
 
 [node name="HitboxComponent" type="Area2D" parent="."]
+material = ExtResource("4_7wyfa")
 script = ExtResource("4_ov4dh")
+instant_death = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_0u0ru")
 
+[node name="HitShaderTimer" type="Timer" parent="."]
+wait_time = 0.2
+
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
+[connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]
+[connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]

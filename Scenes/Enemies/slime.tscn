@@ -1,18 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://drhv7l1r7i6hp"]
+[gd_scene load_steps=10 format=3 uid="uid://drhv7l1r7i6hp"]
 
 [ext_resource type="Script" path="res://Scenes/Enemies/slime.gd" id="1_lci0w"]
 [ext_resource type="Texture2D" uid="uid://drj0hwn6bn25" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk1.png" id="1_ok30s"]
-[ext_resource type="Shader" path="res://Scenes/Enemies/slime.gdshader" id="2_nittn"]
+[ext_resource type="Material" uid="uid://dikmndbc1sq8v" path="res://Scenes/Enemies/enemy_hit_shader.tres" id="2_v4uxr"]
 [ext_resource type="Texture2D" uid="uid://dhe4j4nyj7v4y" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/slimeWalk2.png" id="3_6rlry"]
 [ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="5_0eaw5"]
 [ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="5_7hskp"]
 [ext_resource type="Script" path="res://Scenes/Components/CoinDropComponent.gd" id="6_7ctta"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_rxlwf"]
-resource_local_to_scene = true
-shader = ExtResource("2_nittn")
-shader_parameter/color = Color(1, 0.176471, 0.192157, 1)
-shader_parameter/progress = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_dq8l8"]
 animations = [{
@@ -36,7 +30,7 @@ script = ExtResource("1_lci0w")
 metadata/auto_move = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_rxlwf")
+material = ExtResource("2_v4uxr")
 sprite_frames = SubResource("SpriteFrames_dq8l8")
 animation = &"walk"
 autoplay = "walk"

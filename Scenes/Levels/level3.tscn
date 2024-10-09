@@ -21,4 +21,4 @@ metadata/target_level = "res://Scenes/UI/main_menu.tscn"
 visible = false
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(300, 262)
+position = Vector2(102, 692)

@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dikmndbc1sq8v"]
+
+[ext_resource type="Shader" path="res://Scenes/Enemies/slime.gdshader" id="1_m6j56"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_m6j56")
+shader_parameter/color = Color(1, 0.176471, 0.192157, 1)
+shader_parameter/progress = 0.0

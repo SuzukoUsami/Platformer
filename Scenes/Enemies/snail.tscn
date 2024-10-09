@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cfqtwp6kdnpan"]
+[gd_scene load_steps=11 format=3 uid="uid://cfqtwp6kdnpan"]
 
 [ext_resource type="Texture2D" uid="uid://d0lgvqrd1woaj" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk1.png" id="1_6o1cy"]
 [ext_resource type="Script" path="res://Scenes/Enemies/snail.gd" id="1_tvl7f"]
 [ext_resource type="Texture2D" uid="uid://cmpun5aqgiftu" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailShell.png" id="2_8vjsr"]
+[ext_resource type="Material" uid="uid://dikmndbc1sq8v" path="res://Scenes/Enemies/enemy_hit_shader.tres" id="2_wr7pp"]
 [ext_resource type="Texture2D" uid="uid://byboresksowe2" path="res://graphics/Platformer Art Deluxe/Base pack/Enemies/snailWalk2.png" id="3_vrkxw"]
 [ext_resource type="PackedScene" uid="uid://c5ecgoe53r8a4" path="res://Scenes/Components/auto_move_component.tscn" id="5_3mm8e"]
 [ext_resource type="Script" path="res://Scenes/Components/hitbox_component.gd" id="5_ih5po"]
@@ -41,6 +42,7 @@ script = ExtResource("1_tvl7f")
 metadata/auto_move = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = ExtResource("2_wr7pp")
 sprite_frames = SubResource("SpriteFrames_jyeqj")
 animation = &"walk"
 autoplay = "walk"
@@ -52,6 +54,9 @@ instant_death = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_e5jrf")
+
+[node name="HitShaderTimer" type="Timer" parent="."]
+wait_time = 0.2
 
 [node name="NoticeArea" type="Area2D" parent="."]
 
@@ -70,6 +75,7 @@ one_shot = true
 sprite = NodePath("../AnimatedSprite2D")
 
 [connection signal="going_to_die" from="HitboxComponent" to="." method="_on_hitbox_component_going_to_die"]
+[connection signal="timeout" from="HitShaderTimer" to="." method="_on_hit_shader_timer_timeout"]
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
 [connection signal="timeout" from="NoticeTimer" to="." method="_on_notice_timer_timeout"]

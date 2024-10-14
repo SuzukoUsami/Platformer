@@ -2684,7 +2684,7 @@ position = Vector2(2802, -980)
 [node name="UI" parent="." index="8" instance=ExtResource("18_6hqm0")]
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1504, -959)
+position = Vector2(-4256, 714)
 
 [node name="PlayerInvisibleWalls" parent="." index="10"]
 metadata/_edit_group_ = true

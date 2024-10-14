@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=41 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1.gd" id="2_b7tuh"]
@@ -29,6 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://b3j3ffv74spwg" path="res://Scenes/Traps/moving_platform_medium.tscn" id="22_77vvn"]
 [ext_resource type="PackedScene" uid="uid://bciovw0ray6wp" path="res://Scenes/Enemies/fire_worm.tscn" id="22_gat3g"]
 [ext_resource type="PackedScene" uid="uid://cho0vwu6j0da6" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
+[ext_resource type="Texture2D" uid="uid://gxq8nga2b05u" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signExit.png" id="30_qitl7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl6t1"]
 texture = ExtResource("3_oxry1")
@@ -681,6 +682,10 @@ position = Vector2(325.5, 530.5)
 scale = Vector2(0.814286, 0.842857)
 texture = ExtResource("9_lo7qv")
 
+[node name="Sprite2D" type="Sprite2D" parent="Decor" index="7"]
+position = Vector2(2307, 528)
+texture = ExtResource("15_8w7n5")
+
 [node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
 position = Vector2(939, 249)
 texture = ExtResource("6_ykm6j")
@@ -695,10 +700,6 @@ position = Vector2(2015.5, 520.5)
 scale = Vector2(1.12857, 1.21429)
 texture = ExtResource("6_ykm6j")
 flip_h = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Decor" index="7"]
-position = Vector2(2307, 528)
-texture = ExtResource("15_8w7n5")
 
 [node name="Door" parent="Items" index="0" instance=ExtResource("17_x1k5s")]
 position = Vector2(1862, 507)
@@ -846,6 +847,10 @@ collision_mask = 2
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="EnemiesInvisibleWalls" index="0"]
 position = Vector2(-1267, 516)
 shape = SubResource("RectangleShape2D_2q58u")
+
+[node name="SignExit" type="Sprite2D" parent="." index="11"]
+position = Vector2(1944, 528)
+texture = ExtResource("30_qitl7")
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]
 [connection signal="body_exited" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_exited"]

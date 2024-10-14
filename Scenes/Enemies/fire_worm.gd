@@ -7,10 +7,7 @@ extends Node2D
 var fire_projectile_scene: PackedScene = preload("res://Scenes/Projectiles/fire_projectile.tscn")
 
 var active: bool = false
-#var shoot: bool = true
 
-func _ready():
-	print_debug(active)
 
 func  create_fire_projectile(pos, direction):
 	var fire_projectile = fire_projectile_scene.instantiate()

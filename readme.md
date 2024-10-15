@@ -37,3 +37,4 @@
 	- items mini shake animation,
 	- new biomes,
 	- more levels,
+	- alien can change into a ball (like in the starbound),

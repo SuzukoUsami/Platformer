@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5h6yf5ab5gxv"
-path="res://.godot/imported/switch_up_outline.png-2db7217d87fb2778ab3c8c4f511fcde4.ctex"
+path="res://.godot/imported/switch_up_outline.png-b891af16496313fc1d48f805c60c8e65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Switch/Double/switch_up_outline.png"
-dest_files=["res://.godot/imported/switch_up_outline.png-2db7217d87fb2778ab3c8c4f511fcde4.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Switch/Double/switch_up_outline.png"
+dest_files=["res://.godot/imported/switch_up_outline.png-b891af16496313fc1d48f805c60c8e65.ctex"]
 
 [params]
 

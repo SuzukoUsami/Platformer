@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4ycvkgrd70q3"
-path="res://.godot/imported/keyboard_delete.svg-91c56857086a48a198a12b75706418e2.ctex"
+path="res://.godot/imported/keyboard_delete.svg-cfdbb547f2fcbb21140422f41b362352.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_delete.svg"
-dest_files=["res://.godot/imported/keyboard_delete.svg-91c56857086a48a198a12b75706418e2.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_delete.svg"
+dest_files=["res://.godot/imported/keyboard_delete.svg-cfdbb547f2fcbb21140422f41b362352.ctex"]
 
 [params]
 

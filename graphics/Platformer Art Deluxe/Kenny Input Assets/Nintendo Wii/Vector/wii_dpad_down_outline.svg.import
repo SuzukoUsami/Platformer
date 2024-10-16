@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqqboqphoaxlq"
-path="res://.godot/imported/wii_dpad_down_outline.svg-5ec7ce65f269c9468bc9a8d88a70be7e.ctex"
+path="res://.godot/imported/wii_dpad_down_outline.svg-f46103ef19ad3e7cfcafd72db8ddac5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Wii/Vector/wii_dpad_down_outline.svg"
-dest_files=["res://.godot/imported/wii_dpad_down_outline.svg-5ec7ce65f269c9468bc9a8d88a70be7e.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Wii/Vector/wii_dpad_down_outline.svg"
+dest_files=["res://.godot/imported/wii_dpad_down_outline.svg-f46103ef19ad3e7cfcafd72db8ddac5e.ctex"]
 
 [params]
 

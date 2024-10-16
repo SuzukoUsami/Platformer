@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cexgs45rhns6a"
-path="res://.godot/imported/flair_disabled_line.svg-45657395bf69c761fe344a47bfdad7c1.ctex"
+path="res://.godot/imported/flair_disabled_line.svg-9d286143479a703350a86e676f2a7dc5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Vector/flair_disabled_line.svg"
-dest_files=["res://.godot/imported/flair_disabled_line.svg-45657395bf69c761fe344a47bfdad7c1.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Vector/flair_disabled_line.svg"
+dest_files=["res://.godot/imported/flair_disabled_line.svg-9d286143479a703350a86e676f2a7dc5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cptodj76p2ia4"
-path="res://.godot/imported/steam_dpad_horizontal_outline.png-20ce4d42b7a70565eb9a60ff39c659b0.ctex"
+path="res://.godot/imported/steam_dpad_horizontal_outline.png-35f98a932365f837f7143fde0d96a288.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Controller/Double/steam_dpad_horizontal_outline.png"
-dest_files=["res://.godot/imported/steam_dpad_horizontal_outline.png-20ce4d42b7a70565eb9a60ff39c659b0.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Controller/Double/steam_dpad_horizontal_outline.png"
+dest_files=["res://.godot/imported/steam_dpad_horizontal_outline.png-35f98a932365f837f7143fde0d96a288.ctex"]
 
 [params]
 

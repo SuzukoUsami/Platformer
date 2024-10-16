@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqjygeg35rros"
-path="res://.godot/imported/controller_icon_connecting_b.png-8393eabca19c479a917525ee0912afec.ctex"
+path="res://.godot/imported/controller_icon_connecting_b.png-d3deddfec1266ac1c7807416d0443f52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Double/controller_icon_connecting_b.png"
-dest_files=["res://.godot/imported/controller_icon_connecting_b.png-8393eabca19c479a917525ee0912afec.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Double/controller_icon_connecting_b.png"
+dest_files=["res://.godot/imported/controller_icon_connecting_b.png-d3deddfec1266ac1c7807416d0443f52.ctex"]
 
 [params]
 

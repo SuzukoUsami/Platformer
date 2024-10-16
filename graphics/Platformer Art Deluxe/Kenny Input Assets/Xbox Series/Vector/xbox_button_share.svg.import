@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bny24afq0qsoc"
-path="res://.godot/imported/xbox_button_share.svg-cfb501cb311225dce3f4490c45781a4d.ctex"
+path="res://.godot/imported/xbox_button_share.svg-1d64c9f14c7d036c7305947df57b4f8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Xbox Series/Vector/xbox_button_share.svg"
-dest_files=["res://.godot/imported/xbox_button_share.svg-cfb501cb311225dce3f4490c45781a4d.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Xbox Series/Vector/xbox_button_share.svg"
+dest_files=["res://.godot/imported/xbox_button_share.svg-1d64c9f14c7d036c7305947df57b4f8c.ctex"]
 
 [params]
 

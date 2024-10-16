@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bop8chsyk2oh"
-path="res://.godot/imported/xbox_button_x_outline.png-70f88419cecddee2feb0806b827adf93.ctex"
+path="res://.godot/imported/xbox_button_x_outline.png-4a4f0a41be7820dd0421f0198d35bfc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Xbox Series/Default/xbox_button_x_outline.png"
-dest_files=["res://.godot/imported/xbox_button_x_outline.png-70f88419cecddee2feb0806b827adf93.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Xbox Series/Default/xbox_button_x_outline.png"
+dest_files=["res://.godot/imported/xbox_button_x_outline.png-4a4f0a41be7820dd0421f0198d35bfc1.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctneo0ar4q4ml"
-path="res://.godot/imported/generic_joystick_red_horizontal.png-a713d6b554b8c8b5fde796c5c9895557.ctex"
+path="res://.godot/imported/generic_joystick_red_horizontal.png-5e28be913dd91160f3285e7847d0e2e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Generic/Default/generic_joystick_red_horizontal.png"
-dest_files=["res://.godot/imported/generic_joystick_red_horizontal.png-a713d6b554b8c8b5fde796c5c9895557.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Default/generic_joystick_red_horizontal.png"
+dest_files=["res://.godot/imported/generic_joystick_red_horizontal.png-5e28be913dd91160f3285e7847d0e2e1.ctex"]
 
 [params]
 

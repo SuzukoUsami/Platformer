@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cao7e61l5xexs"
-path="res://.godot/imported/flair_small_cross.png-a6dcd1389e9d9997048bbbd07a43947d.ctex"
+path="res://.godot/imported/flair_small_cross.png-9d99eed9178db229c08957fa366c98c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Default/flair_small_cross.png"
-dest_files=["res://.godot/imported/flair_small_cross.png-a6dcd1389e9d9997048bbbd07a43947d.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Default/flair_small_cross.png"
+dest_files=["res://.godot/imported/flair_small_cross.png-9d99eed9178db229c08957fa366c98c7.ctex"]
 
 [params]
 

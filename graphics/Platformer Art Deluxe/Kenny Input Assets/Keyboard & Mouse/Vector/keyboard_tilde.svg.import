@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clkn6kqef2tp7"
-path="res://.godot/imported/keyboard_tilde.svg-c3b029252c5dda130eb6f54418157963.ctex"
+path="res://.godot/imported/keyboard_tilde.svg-55a5c4299e03b85ab1b003e3284fa048.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_tilde.svg"
-dest_files=["res://.godot/imported/keyboard_tilde.svg-c3b029252c5dda130eb6f54418157963.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_tilde.svg"
+dest_files=["res://.godot/imported/keyboard_tilde.svg-55a5c4299e03b85ab1b003e3284fa048.ctex"]
 
 [params]
 

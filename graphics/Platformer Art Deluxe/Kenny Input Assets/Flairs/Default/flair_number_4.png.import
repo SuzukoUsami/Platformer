@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bajyrq3001iqr"
-path="res://.godot/imported/flair_number_4.png-c5bf95a355f291e1720fee341343af4f.ctex"
+path="res://.godot/imported/flair_number_4.png-5753850a94efcb5ca243ca184d9df46f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Default/flair_number_4.png"
-dest_files=["res://.godot/imported/flair_number_4.png-c5bf95a355f291e1720fee341343af4f.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Default/flair_number_4.png"
+dest_files=["res://.godot/imported/flair_number_4.png-5753850a94efcb5ca243ca184d9df46f.ctex"]
 
 [params]
 

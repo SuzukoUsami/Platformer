@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brn48tl01mirm"
-path="res://.godot/imported/mouse_horizontal.png-db07cd51cbaf64d34dd80abf6031b2b7.ctex"
+path="res://.godot/imported/mouse_horizontal.png-8efb1a8ff5ab9b956b68d3c870ae46e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/mouse_horizontal.png"
-dest_files=["res://.godot/imported/mouse_horizontal.png-db07cd51cbaf64d34dd80abf6031b2b7.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/mouse_horizontal.png"
+dest_files=["res://.godot/imported/mouse_horizontal.png-8efb1a8ff5ab9b956b68d3c870ae46e7.ctex"]
 
 [params]
 

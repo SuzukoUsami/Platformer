@@ -16,7 +16,7 @@
  ### fix:
 	- loading when no save file is present,
 	- when player is dead reload scene!!!,
-	- add paralax to the main level (the level),
+	- add paralax and ui to the main level (the level),
 	- pause menu,
 	
 

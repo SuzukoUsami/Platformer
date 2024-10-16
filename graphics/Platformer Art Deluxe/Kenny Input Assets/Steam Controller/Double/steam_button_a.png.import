@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qkp3k0crk3jn"
-path="res://.godot/imported/steam_button_a.png-b9ebf273978c51294106c4d8be13b278.ctex"
+path="res://.godot/imported/steam_button_a.png-778be83b4abd52f30d01746d008b477e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Controller/Double/steam_button_a.png"
-dest_files=["res://.godot/imported/steam_button_a.png-b9ebf273978c51294106c4d8be13b278.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Controller/Double/steam_button_a.png"
+dest_files=["res://.godot/imported/steam_button_a.png-778be83b4abd52f30d01746d008b477e.ctex"]
 
 [params]
 

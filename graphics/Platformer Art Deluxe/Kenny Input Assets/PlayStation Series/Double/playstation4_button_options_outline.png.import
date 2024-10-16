@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3w88p1pjv13v"
-path="res://.godot/imported/playstation4_button_options_outline.png-990493edef0d151e872bc4ffef898164.ctex"
+path="res://.godot/imported/playstation4_button_options_outline.png-f094a7733c4d497f780a37fed39cdf24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Double/playstation4_button_options_outline.png"
-dest_files=["res://.godot/imported/playstation4_button_options_outline.png-990493edef0d151e872bc4ffef898164.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Double/playstation4_button_options_outline.png"
+dest_files=["res://.godot/imported/playstation4_button_options_outline.png-f094a7733c4d497f780a37fed39cdf24.ctex"]
 
 [params]
 

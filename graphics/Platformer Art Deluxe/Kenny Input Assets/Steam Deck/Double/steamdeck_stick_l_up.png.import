@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmwkk0413fqki"
-path="res://.godot/imported/steamdeck_stick_l_up.png-26c6c859ff63976a11828373fb43a49d.ctex"
+path="res://.godot/imported/steamdeck_stick_l_up.png-985d8111048f54a3b2b6433929412504.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Deck/Double/steamdeck_stick_l_up.png"
-dest_files=["res://.godot/imported/steamdeck_stick_l_up.png-26c6c859ff63976a11828373fb43a49d.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Deck/Double/steamdeck_stick_l_up.png"
+dest_files=["res://.godot/imported/steamdeck_stick_l_up.png-985d8111048f54a3b2b6433929412504.ctex"]
 
 [params]
 

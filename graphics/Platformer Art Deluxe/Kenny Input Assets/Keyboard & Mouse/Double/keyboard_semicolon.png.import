@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3sk22pwgvmqu"
-path="res://.godot/imported/keyboard_semicolon.png-ee0e7e3e0510ef136e2425856bbeb608.ctex"
+path="res://.godot/imported/keyboard_semicolon.png-8a6c0275bfc92c6f361d47a11d12b135.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Double/keyboard_semicolon.png"
-dest_files=["res://.godot/imported/keyboard_semicolon.png-ee0e7e3e0510ef136e2425856bbeb608.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Double/keyboard_semicolon.png"
+dest_files=["res://.godot/imported/keyboard_semicolon.png-8a6c0275bfc92c6f361d47a11d12b135.ctex"]
 
 [params]
 

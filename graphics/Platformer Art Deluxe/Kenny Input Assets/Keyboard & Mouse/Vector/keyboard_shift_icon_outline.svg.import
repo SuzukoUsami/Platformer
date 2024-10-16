@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx2frrmy4bbod"
-path="res://.godot/imported/keyboard_shift_icon_outline.svg-9a292d7f6e85a8a906dc2475a7212123.ctex"
+path="res://.godot/imported/keyboard_shift_icon_outline.svg-ae1eeda5ea918c2f2e0f7a3988a7fbae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_shift_icon_outline.svg"
-dest_files=["res://.godot/imported/keyboard_shift_icon_outline.svg-9a292d7f6e85a8a906dc2475a7212123.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_shift_icon_outline.svg"
+dest_files=["res://.godot/imported/keyboard_shift_icon_outline.svg-ae1eeda5ea918c2f2e0f7a3988a7fbae.ctex"]
 
 [params]
 

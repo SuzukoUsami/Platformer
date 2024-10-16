@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpnbmepmu7wjh"
-path="res://.godot/imported/keyboard_capslock_outline.png-09395723d876a27606fd4b3517f27dfa.ctex"
+path="res://.godot/imported/keyboard_capslock_outline.png-c84cee581a373eec7b9e015a68a36392.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/keyboard_capslock_outline.png"
-dest_files=["res://.godot/imported/keyboard_capslock_outline.png-09395723d876a27606fd4b3517f27dfa.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/keyboard_capslock_outline.png"
+dest_files=["res://.godot/imported/keyboard_capslock_outline.png-c84cee581a373eec7b9e015a68a36392.ctex"]
 
 [params]
 

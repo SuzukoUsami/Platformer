@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v0nnhkfmlabd"
-path="res://.godot/imported/steam_pad_down.svg-325363aeeead1f65f5b1be2a28388677.ctex"
+path="res://.godot/imported/steam_pad_down.svg-03c8b72b8586ef1955d6cadc49b01f35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Controller/Vector/steam_pad_down.svg"
-dest_files=["res://.godot/imported/steam_pad_down.svg-325363aeeead1f65f5b1be2a28388677.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Controller/Vector/steam_pad_down.svg"
+dest_files=["res://.godot/imported/steam_pad_down.svg-03c8b72b8586ef1955d6cadc49b01f35.ctex"]
 
 [params]
 

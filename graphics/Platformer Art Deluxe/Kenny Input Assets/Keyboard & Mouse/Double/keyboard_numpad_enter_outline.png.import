@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bch8ueehpbxcg"
-path="res://.godot/imported/keyboard_numpad_enter_outline.png-ddb9264f86498f0f5799e1db37cc6cd8.ctex"
+path="res://.godot/imported/keyboard_numpad_enter_outline.png-b7576ab91d3ab65830d844a097bf2b16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Double/keyboard_numpad_enter_outline.png"
-dest_files=["res://.godot/imported/keyboard_numpad_enter_outline.png-ddb9264f86498f0f5799e1db37cc6cd8.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Double/keyboard_numpad_enter_outline.png"
+dest_files=["res://.godot/imported/keyboard_numpad_enter_outline.png-b7576ab91d3ab65830d844a097bf2b16.ctex"]
 
 [params]
 

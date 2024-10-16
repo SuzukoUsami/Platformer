@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcwu4171sy03g"
-path="res://.godot/imported/generic_stick_up.svg-5ee2f57a727bd64c334b6cd2e9ab0135.ctex"
+path="res://.godot/imported/generic_stick_up.svg-a26545fa8dadb7ef83b66e14b43339fd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Generic/Vector/generic_stick_up.svg"
-dest_files=["res://.godot/imported/generic_stick_up.svg-5ee2f57a727bd64c334b6cd2e9ab0135.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Vector/generic_stick_up.svg"
+dest_files=["res://.godot/imported/generic_stick_up.svg-a26545fa8dadb7ef83b66e14b43339fd.ctex"]
 
 [params]
 

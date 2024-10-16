@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c37aiu3a14nlj"
-path="res://.godot/imported/wii_stick_r.svg-d4d11132df36ce61288ba209da2d07e3.ctex"
+path="res://.godot/imported/wii_stick_r.svg-e265f2db7fa81b8b2269e19235526474.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Wii/Vector/wii_stick_r.svg"
-dest_files=["res://.godot/imported/wii_stick_r.svg-d4d11132df36ce61288ba209da2d07e3.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Wii/Vector/wii_stick_r.svg"
+dest_files=["res://.godot/imported/wii_stick_r.svg-e265f2db7fa81b8b2269e19235526474.ctex"]
 
 [params]
 

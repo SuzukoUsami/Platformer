@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pu878056hq4v"
-path="res://.godot/imported/keyboard_bracket_less.png-1d912a945121e55f246d739c3fbaf109.ctex"
+path="res://.godot/imported/keyboard_bracket_less.png-d893018a3d0cf0a31e4527b6db4e0f2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Double/keyboard_bracket_less.png"
-dest_files=["res://.godot/imported/keyboard_bracket_less.png-1d912a945121e55f246d739c3fbaf109.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Double/keyboard_bracket_less.png"
+dest_files=["res://.godot/imported/keyboard_bracket_less.png-d893018a3d0cf0a31e4527b6db4e0f2b.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b2428g7lxk0to"
-path="res://.godot/imported/keyboard_arrows_vertical_outline.svg-b4712502c7b424ae4f6999f4e278fd7d.ctex"
+path="res://.godot/imported/keyboard_arrows_vertical_outline.svg-3169dd29c089cd964521444d96dee80a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_arrows_vertical_outline.svg"
-dest_files=["res://.godot/imported/keyboard_arrows_vertical_outline.svg-b4712502c7b424ae4f6999f4e278fd7d.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_arrows_vertical_outline.svg"
+dest_files=["res://.godot/imported/keyboard_arrows_vertical_outline.svg-3169dd29c089cd964521444d96dee80a.ctex"]
 
 [params]
 

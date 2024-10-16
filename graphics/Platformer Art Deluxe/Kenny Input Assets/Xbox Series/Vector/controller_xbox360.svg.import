@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dba8da5qssbxs"
-path="res://.godot/imported/controller_xbox360.svg-a84c04366d5ccf79021b3c410811dc59.ctex"
+path="res://.godot/imported/controller_xbox360.svg-87ce455f6e1ea66310616273a9b9d413.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Xbox Series/Vector/controller_xbox360.svg"
-dest_files=["res://.godot/imported/controller_xbox360.svg-a84c04366d5ccf79021b3c410811dc59.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Xbox Series/Vector/controller_xbox360.svg"
+dest_files=["res://.godot/imported/controller_xbox360.svg-87ce455f6e1ea66310616273a9b9d413.ctex"]
 
 [params]
 

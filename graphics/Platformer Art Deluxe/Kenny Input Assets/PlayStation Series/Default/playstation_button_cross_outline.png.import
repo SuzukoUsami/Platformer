@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpduqoi7mwgvx"
-path="res://.godot/imported/playstation_button_cross_outline.png-ad3199870d7d95479136f2aa313111e8.ctex"
+path="res://.godot/imported/playstation_button_cross_outline.png-294bfc9920060bc0d503ae0304645194.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Default/playstation_button_cross_outline.png"
-dest_files=["res://.godot/imported/playstation_button_cross_outline.png-ad3199870d7d95479136f2aa313111e8.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Default/playstation_button_cross_outline.png"
+dest_files=["res://.godot/imported/playstation_button_cross_outline.png-294bfc9920060bc0d503ae0304645194.ctex"]
 
 [params]
 

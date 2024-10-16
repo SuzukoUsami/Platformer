@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cyogi1h3rabxi"
-path="res://.godot/imported/flair_arrow_backforth.png-6995e5c34ea72feb609a3d8331fcf0f3.ctex"
+path="res://.godot/imported/flair_arrow_backforth.png-3216835a0e4e981f99739fd8407d64b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Double/flair_arrow_backforth.png"
-dest_files=["res://.godot/imported/flair_arrow_backforth.png-6995e5c34ea72feb609a3d8331fcf0f3.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Double/flair_arrow_backforth.png"
+dest_files=["res://.godot/imported/flair_arrow_backforth.png-3216835a0e4e981f99739fd8407d64b4.ctex"]
 
 [params]
 

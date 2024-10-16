@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0j4ygicujnae"
-path="res://.godot/imported/keyboard_y_outline.png-2e8b271c1de83665ef786c635e462af6.ctex"
+path="res://.godot/imported/keyboard_y_outline.png-7e134657f87ade279e3d5be60e78b116.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/keyboard_y_outline.png"
-dest_files=["res://.godot/imported/keyboard_y_outline.png-2e8b271c1de83665ef786c635e462af6.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/keyboard_y_outline.png"
+dest_files=["res://.godot/imported/keyboard_y_outline.png-7e134657f87ade279e3d5be60e78b116.ctex"]
 
 [params]
 

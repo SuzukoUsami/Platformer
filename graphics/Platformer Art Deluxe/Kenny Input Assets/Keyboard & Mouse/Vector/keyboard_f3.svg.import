@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8b4fksknt433"
-path="res://.godot/imported/keyboard_f3.svg-951f974d58362efb4b6f0a798f7dd847.ctex"
+path="res://.godot/imported/keyboard_f3.svg-27ce9bba3434f8a3867f27fbb81a0d41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_f3.svg"
-dest_files=["res://.godot/imported/keyboard_f3.svg-951f974d58362efb4b6f0a798f7dd847.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_f3.svg"
+dest_files=["res://.godot/imported/keyboard_f3.svg-27ce9bba3434f8a3867f27fbb81a0d41.ctex"]
 
 [params]
 

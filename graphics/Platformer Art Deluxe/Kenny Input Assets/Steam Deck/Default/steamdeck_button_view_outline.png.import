@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2lerrodwde0s"
-path="res://.godot/imported/steamdeck_button_view_outline.png-d525ef0a84180e9009865d02b612ad4a.ctex"
+path="res://.godot/imported/steamdeck_button_view_outline.png-644a85b6c2bd74c6ceb89eac459f7730.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Deck/Default/steamdeck_button_view_outline.png"
-dest_files=["res://.godot/imported/steamdeck_button_view_outline.png-d525ef0a84180e9009865d02b612ad4a.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Deck/Default/steamdeck_button_view_outline.png"
+dest_files=["res://.godot/imported/steamdeck_button_view_outline.png-644a85b6c2bd74c6ceb89eac459f7730.ctex"]
 
 [params]
 

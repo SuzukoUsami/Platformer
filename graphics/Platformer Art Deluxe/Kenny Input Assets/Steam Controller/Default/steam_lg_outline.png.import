@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df83b8nmm76sl"
-path="res://.godot/imported/steam_lg_outline.png-135c7df919ced262fca8619bd8f2b250.ctex"
+path="res://.godot/imported/steam_lg_outline.png-97acbf0f2e9e86941bb832a80f783d3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Steam Controller/Default/steam_lg_outline.png"
-dest_files=["res://.godot/imported/steam_lg_outline.png-135c7df919ced262fca8619bd8f2b250.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Steam Controller/Default/steam_lg_outline.png"
+dest_files=["res://.godot/imported/steam_lg_outline.png-97acbf0f2e9e86941bb832a80f783d3e.ctex"]
 
 [params]
 

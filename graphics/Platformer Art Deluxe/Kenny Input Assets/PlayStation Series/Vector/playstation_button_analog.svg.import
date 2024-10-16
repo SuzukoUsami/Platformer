@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfrpsfaumrpm2"
-path="res://.godot/imported/playstation_button_analog.svg-b4d76595bedec550fea2e7fedc3ac7eb.ctex"
+path="res://.godot/imported/playstation_button_analog.svg-04d10198e93eab93e12a92e0c26e7810.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Vector/playstation_button_analog.svg"
-dest_files=["res://.godot/imported/playstation_button_analog.svg-b4d76595bedec550fea2e7fedc3ac7eb.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Vector/playstation_button_analog.svg"
+dest_files=["res://.godot/imported/playstation_button_analog.svg-04d10198e93eab93e12a92e0c26e7810.ctex"]
 
 [params]
 

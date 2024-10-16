@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8mc0s1qfxrgw"
-path="res://.godot/imported/playstation_trigger_l2.svg-b03bf83101c784cf44af4d71857eab01.ctex"
+path="res://.godot/imported/playstation_trigger_l2.svg-e143ee6c89f13666b686b42c4b5d948e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Vector/playstation_trigger_l2.svg"
-dest_files=["res://.godot/imported/playstation_trigger_l2.svg-b03bf83101c784cf44af4d71857eab01.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Vector/playstation_trigger_l2.svg"
+dest_files=["res://.godot/imported/playstation_trigger_l2.svg-e143ee6c89f13666b686b42c4b5d948e.ctex"]
 
 [params]
 

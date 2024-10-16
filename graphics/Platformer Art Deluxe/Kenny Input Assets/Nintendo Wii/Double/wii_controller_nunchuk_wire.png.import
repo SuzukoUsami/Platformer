@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3mwc5e0o570i"
-path="res://.godot/imported/wii_controller_nunchuk_wire.png-ce4384c0a836ff8f5d269b287255e2aa.ctex"
+path="res://.godot/imported/wii_controller_nunchuk_wire.png-42e6b37934600f6cd838314b4a0b28ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Wii/Double/wii_controller_nunchuk_wire.png"
-dest_files=["res://.godot/imported/wii_controller_nunchuk_wire.png-ce4384c0a836ff8f5d269b287255e2aa.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Wii/Double/wii_controller_nunchuk_wire.png"
+dest_files=["res://.godot/imported/wii_controller_nunchuk_wire.png-42e6b37934600f6cd838314b4a0b28ee.ctex"]
 
 [params]
 

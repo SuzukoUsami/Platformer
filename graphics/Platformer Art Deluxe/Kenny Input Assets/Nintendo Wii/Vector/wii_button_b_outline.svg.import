@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjs01k871std5"
-path="res://.godot/imported/wii_button_b_outline.svg-c49cdfa82b42bba1b791f96a2d8dd7dc.ctex"
+path="res://.godot/imported/wii_button_b_outline.svg-b4cb7167288af11439752cb55e3a9cd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Wii/Vector/wii_button_b_outline.svg"
-dest_files=["res://.godot/imported/wii_button_b_outline.svg-c49cdfa82b42bba1b791f96a2d8dd7dc.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Wii/Vector/wii_button_b_outline.svg"
+dest_files=["res://.godot/imported/wii_button_b_outline.svg-b4cb7167288af11439752cb55e3a9cd9.ctex"]
 
 [params]
 

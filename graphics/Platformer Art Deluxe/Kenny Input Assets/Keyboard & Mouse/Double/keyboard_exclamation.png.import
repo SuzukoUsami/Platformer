@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cihikgpoq7tnk"
-path="res://.godot/imported/keyboard_exclamation.png-d892ae5451acc08ed6a62845143fc45d.ctex"
+path="res://.godot/imported/keyboard_exclamation.png-a8b647a306b2d684d5835216e9fa97ff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Double/keyboard_exclamation.png"
-dest_files=["res://.godot/imported/keyboard_exclamation.png-d892ae5451acc08ed6a62845143fc45d.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Double/keyboard_exclamation.png"
+dest_files=["res://.godot/imported/keyboard_exclamation.png-a8b647a306b2d684d5835216e9fa97ff.ctex"]
 
 [params]
 

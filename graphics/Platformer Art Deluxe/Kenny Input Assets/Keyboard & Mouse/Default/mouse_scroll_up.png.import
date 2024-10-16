@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buggywmk0w50n"
-path="res://.godot/imported/mouse_scroll_up.png-b91a190a77f6e8b3fd2ad8a89714b67f.ctex"
+path="res://.godot/imported/mouse_scroll_up.png-b7950709422eddb4042b341b019a5253.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/mouse_scroll_up.png"
-dest_files=["res://.godot/imported/mouse_scroll_up.png-b91a190a77f6e8b3fd2ad8a89714b67f.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/mouse_scroll_up.png"
+dest_files=["res://.godot/imported/mouse_scroll_up.png-b7950709422eddb4042b341b019a5253.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cuv0acwtr1jvj"
-path="res://.godot/imported/switch_dpad_horizontal.png-7aa486e12c3dc6a48d899b598a32f64f.ctex"
+path="res://.godot/imported/switch_dpad_horizontal.png-0458911d64f6313f9abe7e8cbcd75c65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Switch/Default/switch_dpad_horizontal.png"
-dest_files=["res://.godot/imported/switch_dpad_horizontal.png-7aa486e12c3dc6a48d899b598a32f64f.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Switch/Default/switch_dpad_horizontal.png"
+dest_files=["res://.godot/imported/switch_dpad_horizontal.png-0458911d64f6313f9abe7e8cbcd75c65.ctex"]
 
 [params]
 

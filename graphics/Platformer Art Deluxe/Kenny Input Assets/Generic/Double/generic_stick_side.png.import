@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0sd3v6ym5hsl"
-path="res://.godot/imported/generic_stick_side.png-675b650a17c539c8082a8bf980d6b7cd.ctex"
+path="res://.godot/imported/generic_stick_side.png-b525353093534ea4128ea4e8570f4149.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Generic/Double/generic_stick_side.png"
-dest_files=["res://.godot/imported/generic_stick_side.png-675b650a17c539c8082a8bf980d6b7cd.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Double/generic_stick_side.png"
+dest_files=["res://.godot/imported/generic_stick_side.png-b525353093534ea4128ea4e8570f4149.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd4deohkb1qn0"
-path="res://.godot/imported/playstation3_button_start.png-226a00eaef7e693e38282f4332b2ea06.ctex"
+path="res://.godot/imported/playstation3_button_start.png-b9ed169eca72d793fec9b7d349d69290.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Double/playstation3_button_start.png"
-dest_files=["res://.godot/imported/playstation3_button_start.png-226a00eaef7e693e38282f4332b2ea06.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Double/playstation3_button_start.png"
+dest_files=["res://.godot/imported/playstation3_button_start.png-b9ed169eca72d793fec9b7d349d69290.ctex"]
 
 [params]
 

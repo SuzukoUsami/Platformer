@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvs2c0ch0fhh3"
-path="res://.godot/imported/generic_button_trigger_a_outline.svg-afa22e7e8a71e5e8dddf17a2b661fbf3.ctex"
+path="res://.godot/imported/generic_button_trigger_a_outline.svg-2d5630d07bfe930d70afa20361e6bb98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Generic/Vector/generic_button_trigger_a_outline.svg"
-dest_files=["res://.godot/imported/generic_button_trigger_a_outline.svg-afa22e7e8a71e5e8dddf17a2b661fbf3.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Vector/generic_button_trigger_a_outline.svg"
+dest_files=["res://.godot/imported/generic_button_trigger_a_outline.svg-2d5630d07bfe930d70afa20361e6bb98.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqya35jhs5lcm"
-path="res://.godot/imported/playstation_dpad_all.svg-63318331ce3b68a5ce0fa390cb656439.ctex"
+path="res://.godot/imported/playstation_dpad_all.svg-529bdc6730fb00168bb130b456d6c6f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Vector/playstation_dpad_all.svg"
-dest_files=["res://.godot/imported/playstation_dpad_all.svg-63318331ce3b68a5ce0fa390cb656439.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Vector/playstation_dpad_all.svg"
+dest_files=["res://.godot/imported/playstation_dpad_all.svg-529bdc6730fb00168bb130b456d6c6f7.ctex"]
 
 [params]
 

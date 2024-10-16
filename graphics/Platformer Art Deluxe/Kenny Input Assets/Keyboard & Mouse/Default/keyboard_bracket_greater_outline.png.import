@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://egn6nmpl7bhm"
-path="res://.godot/imported/keyboard_bracket_greater_outline.png-49e31370cd76948f7b79cb26a317c994.ctex"
+path="res://.godot/imported/keyboard_bracket_greater_outline.png-d2810dc8f397bc85f5c9715e8288584f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/keyboard_bracket_greater_outline.png"
-dest_files=["res://.godot/imported/keyboard_bracket_greater_outline.png-49e31370cd76948f7b79cb26a317c994.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/keyboard_bracket_greater_outline.png"
+dest_files=["res://.godot/imported/keyboard_bracket_greater_outline.png-d2810dc8f397bc85f5c9715e8288584f.ctex"]
 
 [params]
 

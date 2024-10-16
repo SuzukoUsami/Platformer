@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnahtc40nmsvk"
-path="res://.godot/imported/controller_icon_battery_full.svg-927ff6684d1ff7d03b89d9aeb2daed03.ctex"
+path="res://.godot/imported/controller_icon_battery_full.svg-c8fa7e2df150c5c4f4563bac21a7a68a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Flairs/Vector/controller_icon_battery_full.svg"
-dest_files=["res://.godot/imported/controller_icon_battery_full.svg-927ff6684d1ff7d03b89d9aeb2daed03.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Flairs/Vector/controller_icon_battery_full.svg"
+dest_files=["res://.godot/imported/controller_icon_battery_full.svg-c8fa7e2df150c5c4f4563bac21a7a68a.ctex"]
 
 [params]
 

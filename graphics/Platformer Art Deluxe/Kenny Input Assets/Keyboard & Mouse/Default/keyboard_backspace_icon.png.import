@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbcudwfqtui6l"
-path="res://.godot/imported/keyboard_backspace_icon.png-140801dec7438a43622a7c472b8d394a.ctex"
+path="res://.godot/imported/keyboard_backspace_icon.png-7e68c130fa46e4423602e48fedab4184.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Default/keyboard_backspace_icon.png"
-dest_files=["res://.godot/imported/keyboard_backspace_icon.png-140801dec7438a43622a7c472b8d394a.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/keyboard_backspace_icon.png"
+dest_files=["res://.godot/imported/keyboard_backspace_icon.png-7e68c130fa46e4423602e48fedab4184.ctex"]
 
 [params]
 

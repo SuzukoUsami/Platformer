@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6klud1e4hj82"
-path="res://.godot/imported/playstation4_button_share_outline.svg-85f5d11ef98215ae00da1f9534dbbc46.ctex"
+path="res://.godot/imported/playstation4_button_share_outline.svg-ce6f702a60c4b050081e869a2e011545.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Vector/playstation4_button_share_outline.svg"
-dest_files=["res://.godot/imported/playstation4_button_share_outline.svg-85f5d11ef98215ae00da1f9534dbbc46.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Vector/playstation4_button_share_outline.svg"
+dest_files=["res://.godot/imported/playstation4_button_share_outline.svg-ce6f702a60c4b050081e869a2e011545.ctex"]
 
 [params]
 

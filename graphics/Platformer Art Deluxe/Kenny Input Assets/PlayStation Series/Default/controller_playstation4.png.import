@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csc0fxo0r7wt3"
-path="res://.godot/imported/controller_playstation4.png-b3da3c8cc06c9c4822cc445f4d1b479e.ctex"
+path="res://.godot/imported/controller_playstation4.png-fd5b380df678963b3adabebb5d29ad18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Default/controller_playstation4.png"
-dest_files=["res://.godot/imported/controller_playstation4.png-b3da3c8cc06c9c4822cc445f4d1b479e.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Default/controller_playstation4.png"
+dest_files=["res://.godot/imported/controller_playstation4.png-fd5b380df678963b3adabebb5d29ad18.ctex"]
 
 [params]
 

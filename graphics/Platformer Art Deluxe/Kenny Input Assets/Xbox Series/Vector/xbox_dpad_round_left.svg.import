@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://indwq4wu6vw3"
-path="res://.godot/imported/xbox_dpad_round_left.svg-5677f42afb46d00d64301df1da79e7b8.ctex"
+path="res://.godot/imported/xbox_dpad_round_left.svg-63d9b15518605b5f3afea1e403225f6f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Xbox Series/Vector/xbox_dpad_round_left.svg"
-dest_files=["res://.godot/imported/xbox_dpad_round_left.svg-5677f42afb46d00d64301df1da79e7b8.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Xbox Series/Vector/xbox_dpad_round_left.svg"
+dest_files=["res://.godot/imported/xbox_dpad_round_left.svg-63d9b15518605b5f3afea1e403225f6f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhhhl1kux4u77"
-path="res://.godot/imported/switch_buttons_all.svg-1ddd27d43e54bdbe01f06a6848b1face.ctex"
+path="res://.godot/imported/switch_buttons_all.svg-049e780df53f0703b6e5f3bd8b64c1a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Nintendo Switch/Vector/switch_buttons_all.svg"
-dest_files=["res://.godot/imported/switch_buttons_all.svg-1ddd27d43e54bdbe01f06a6848b1face.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Switch/Vector/switch_buttons_all.svg"
+dest_files=["res://.godot/imported/switch_buttons_all.svg-049e780df53f0703b6e5f3bd8b64c1a9.ctex"]
 
 [params]
 

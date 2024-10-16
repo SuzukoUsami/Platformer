@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n5jqid1xcmba"
-path="res://.godot/imported/xbox_stick_l_vertical.png-423d15e40e2a25ffdb4eabd3f93d2ced.ctex"
+path="res://.godot/imported/xbox_stick_l_vertical.png-b304053a79de4c442cc0916111ecde82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Xbox Series/Default/xbox_stick_l_vertical.png"
-dest_files=["res://.godot/imported/xbox_stick_l_vertical.png-423d15e40e2a25ffdb4eabd3f93d2ced.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Xbox Series/Default/xbox_stick_l_vertical.png"
+dest_files=["res://.godot/imported/xbox_stick_l_vertical.png-b304053a79de4c442cc0916111ecde82.ctex"]
 
 [params]
 

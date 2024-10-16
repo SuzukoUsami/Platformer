@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhhl6gklljofk"
-path="res://.godot/imported/playstation5_button_mute.svg-9ed2e34b6cd8bbc7b87a0d785b75421f.ctex"
+path="res://.godot/imported/playstation5_button_mute.svg-7f72e83ed6f9c8b7c6d5c14634a2e267.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/PlayStation Series/Vector/playstation5_button_mute.svg"
-dest_files=["res://.godot/imported/playstation5_button_mute.svg-9ed2e34b6cd8bbc7b87a0d785b75421f.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/PlayStation Series/Vector/playstation5_button_mute.svg"
+dest_files=["res://.godot/imported/playstation5_button_mute.svg-7f72e83ed6f9c8b7c6d5c14634a2e267.ctex"]
 
 [params]
 

@@ -31,7 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://cho0vwu6j0da6" path="res://Scenes/Enemies/spider.tscn" id="28_jj0mk"]
 [ext_resource type="Texture2D" uid="uid://gxq8nga2b05u" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signExit.png" id="30_qitl7"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rl6t1"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0qsc"]
 texture = ExtResource("3_oxry1")
 texture_region_size = Vector2i(70, 70)
 0:0/0 = 0
@@ -73,7 +73,7 @@ texture_region_size = Vector2i(70, 70)
 
 [sub_resource type="TileSet" id="TileSet_xh01t"]
 tile_size = Vector2i(70, 70)
-sources/0 = SubResource("TileSetAtlasSource_rl6t1")
+sources/0 = SubResource("TileSetAtlasSource_d0qsc")
 
 [sub_resource type="Animation" id="Animation_tv3mf"]
 length = 0.001
@@ -114,7 +114,7 @@ _data = {
 "move": SubResource("Animation_arr2a")
 }
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p8um7"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fbjcj"]
 texture = ExtResource("3_oxry1")
 texture_region_size = Vector2i(70, 70)
 0:0/0 = 0
@@ -156,7 +156,7 @@ texture_region_size = Vector2i(70, 70)
 
 [sub_resource type="TileSet" id="TileSet_38r17"]
 tile_size = Vector2i(70, 70)
-sources/1 = SubResource("TileSetAtlasSource_p8um7")
+sources/1 = SubResource("TileSetAtlasSource_fbjcj")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oma0m"]
 size = Vector2(114, 2601)

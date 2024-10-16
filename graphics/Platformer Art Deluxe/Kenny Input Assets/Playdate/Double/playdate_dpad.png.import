@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqg06fc6a8d7g"
-path="res://.godot/imported/playdate_dpad.png-e1c664ef92f3ba5ac51605655f877700.ctex"
+path="res://.godot/imported/playdate_dpad.png-7dda1d0a7fe52320f411ba5d825a5e00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Playdate/Double/playdate_dpad.png"
-dest_files=["res://.godot/imported/playdate_dpad.png-e1c664ef92f3ba5ac51605655f877700.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Playdate/Double/playdate_dpad.png"
+dest_files=["res://.godot/imported/playdate_dpad.png-7dda1d0a7fe52320f411ba5d825a5e00.ctex"]
 
 [params]
 

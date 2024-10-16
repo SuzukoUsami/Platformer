@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ntb4sy2fvn26"
-path="res://.godot/imported/playdate_button_a_outline.png-ff2a7b8caf562ab5f699c4b6a2ee30dd.ctex"
+path="res://.godot/imported/playdate_button_a_outline.png-175a84937b4eab74555f00d1e2828281.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Playdate/Double/playdate_button_a_outline.png"
-dest_files=["res://.godot/imported/playdate_button_a_outline.png-ff2a7b8caf562ab5f699c4b6a2ee30dd.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Playdate/Double/playdate_button_a_outline.png"
+dest_files=["res://.godot/imported/playdate_button_a_outline.png-175a84937b4eab74555f00d1e2828281.ctex"]
 
 [params]
 

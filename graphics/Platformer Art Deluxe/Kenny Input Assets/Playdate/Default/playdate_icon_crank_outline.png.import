@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkli1hx8iijrl"
-path="res://.godot/imported/playdate_icon_crank_outline.png-12f7ca3ea56a086b08b4df0689007270.ctex"
+path="res://.godot/imported/playdate_icon_crank_outline.png-e113fb862b1deb2dd1869c867ebfdf84.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Playdate/Default/playdate_icon_crank_outline.png"
-dest_files=["res://.godot/imported/playdate_icon_crank_outline.png-12f7ca3ea56a086b08b4df0689007270.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Playdate/Default/playdate_icon_crank_outline.png"
+dest_files=["res://.godot/imported/playdate_icon_crank_outline.png-e113fb862b1deb2dd1869c867ebfdf84.ctex"]
 
 [params]
 

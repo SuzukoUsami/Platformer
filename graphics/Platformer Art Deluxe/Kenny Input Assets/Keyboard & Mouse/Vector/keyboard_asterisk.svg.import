@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dx0nra5o7w6xd"
-path="res://.godot/imported/keyboard_asterisk.svg-3129bf702c6ad1e0b687b11ac7ba0e44.ctex"
+path="res://.godot/imported/keyboard_asterisk.svg-19b63e87f30a413449d341d2890177e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/Platformer Art Deluxe/Kenny Input Asstets/Keyboard & Mouse/Vector/keyboard_asterisk.svg"
-dest_files=["res://.godot/imported/keyboard_asterisk.svg-3129bf702c6ad1e0b687b11ac7ba0e44.ctex"]
+source_file="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Vector/keyboard_asterisk.svg"
+dest_files=["res://.godot/imported/keyboard_asterisk.svg-19b63e87f30a413449d341d2890177e1.ctex"]
 
 [params]
 

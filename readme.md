@@ -1,7 +1,6 @@
  # My tiny todo list ^^
 
 ### to do:
-	- tiny character control tutorial on boards/in the background, killing enemy by jumping on them,
 	- character walking particles,
 	- music,
 	- sound effects -> killing an enemy, fireworm shooting, player dmg and heal, luceg, coin pick up,
@@ -38,3 +37,4 @@
 	- new biomes,
 	- more levels,
 	- alien can change into a ball (like in the starbound),
+	- dynamic controller input tutorial,

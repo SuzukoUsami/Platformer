@@ -96,6 +96,8 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="Decor" type="Node2D" parent="."]
 
+[node name="Fences" type="Node2D" parent="Decor"]
+
 [node name="Animated" type="Node2D" parent="Decor"]
 
 [node name="Other" type="Node2D" parent="Decor"]
@@ -104,11 +106,9 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 
 [node name="Bushes" type="Node2D" parent="Decor"]
 
-[node name="Fences" type="Node2D" parent="Decor"]
+[node name="Rocks" type="Node2D" parent="Decor"]
 
 [node name="Grass" type="Node2D" parent="Decor"]
-
-[node name="Rocks" type="Node2D" parent="Decor"]
 
 [node name="Plants" type="Node2D" parent="Decor"]
 

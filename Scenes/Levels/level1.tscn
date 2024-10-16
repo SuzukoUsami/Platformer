@@ -830,13 +830,14 @@ position = Vector2(-1943, 208)
 position = Vector2(-2530, 538)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-1409, 359)
+position = Vector2(-2349, 312)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
 shape = SubResource("RectangleShape2D_oma0m")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="1"]
+visible = false
 position = Vector2(-2692.5, -611)
 shape = SubResource("RectangleShape2D_8131l")
 

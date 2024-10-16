@@ -313,6 +313,26 @@ position = Vector2(2912, -2152)
 metadata/required_coins = 50
 metadata/target_level = "res://Scenes/Levels/level3.tscn"
 
+[node name="Fence" type="Sprite2D" parent="Decor/Fences" index="0"]
+position = Vector2(-4079, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence2" type="Sprite2D" parent="Decor/Fences" index="1"]
+position = Vector2(-3788, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence3" type="Sprite2D" parent="Decor/Fences" index="2"]
+position = Vector2(-3861, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence4" type="Sprite2D" parent="Decor/Fences" index="3"]
+position = Vector2(-3934, 737)
+texture = ExtResource("3_54m1k")
+
+[node name="Fence5" type="Sprite2D" parent="Decor/Fences" index="4"]
+position = Vector2(-4007, 737)
+texture = ExtResource("3_54m1k")
+
 [node name="Snek" parent="Decor/Animated" index="0" instance=ExtResource("7_g83e1")]
 position = Vector2(-1563, 767)
 
@@ -2062,25 +2082,16 @@ scale = Vector2(1.5, 1.52857)
 texture = ExtResource("5_pf0tv")
 flip_h = true
 
-[node name="Fence" type="Sprite2D" parent="Decor/Fences" index="0"]
-position = Vector2(-4079, 737)
-texture = ExtResource("3_54m1k")
+[node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]
+position = Vector2(-3710, 737)
+texture = ExtResource("9_t7byi")
 
-[node name="Fence2" type="Sprite2D" parent="Decor/Fences" index="1"]
-position = Vector2(-3788, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence3" type="Sprite2D" parent="Decor/Fences" index="2"]
-position = Vector2(-3861, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence4" type="Sprite2D" parent="Decor/Fences" index="3"]
-position = Vector2(-3934, 737)
-texture = ExtResource("3_54m1k")
-
-[node name="Fence5" type="Sprite2D" parent="Decor/Fences" index="4"]
-position = Vector2(-4007, 737)
-texture = ExtResource("3_54m1k")
+[node name="SmallRock" type="Sprite2D" parent="Decor/Rocks" index="1"]
+modulate = Color(0.662745, 0.729412, 0.729412, 1)
+position = Vector2(-4306, 754)
+scale = Vector2(0.485714, 0.485714)
+texture = ExtResource("9_t7byi")
+flip_h = true
 
 [node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
 position = Vector2(-3604, 737)
@@ -2167,17 +2178,6 @@ texture = ExtResource("7_apjds")
 [node name="Grass20" type="Sprite2D" parent="Decor/Grass" index="19"]
 position = Vector2(-2660, 597)
 texture = ExtResource("7_apjds")
-
-[node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]
-position = Vector2(-3710, 737)
-texture = ExtResource("9_t7byi")
-
-[node name="SmallRock" type="Sprite2D" parent="Decor/Rocks" index="1"]
-modulate = Color(0.662745, 0.729412, 0.729412, 1)
-position = Vector2(-4306, 754)
-scale = Vector2(0.485714, 0.485714)
-texture = ExtResource("9_t7byi")
-flip_h = true
 
 [node name="Right" type="Sprite2D" parent="Decor" index="7"]
 position = Vector2(-4263, 735)

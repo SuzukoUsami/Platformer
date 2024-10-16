@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://b5vp5e42xehaf"]
+[gd_scene load_steps=63 format=3 uid="uid://b5vp5e42xehaf"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_74ujc"]
 [ext_resource type="Script" path="res://Scenes/Levels/tutorial.gd" id="2_gy2ad"]
@@ -40,9 +40,15 @@
 [ext_resource type="Texture2D" uid="uid://bclvpuvprp7o0" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/bush.png" id="23_urmph"]
 [ext_resource type="Texture2D" uid="uid://b7x3wc8ifrt1h" path="res://graphics/Platformer Art Deluxe/Base pack/Items/bush.png" id="24_5lg1j"]
 [ext_resource type="Texture2D" uid="uid://c7fa38uxr3g27" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cactus.png" id="33_o7gjx"]
+[ext_resource type="Texture2D" uid="uid://df1hnphdmbxdm" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tinyShroom_red.png" id="34_asxdj"]
+[ext_resource type="Texture2D" uid="uid://cf7ap6qij3jaj" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tallShroom_red.png" id="35_okvpc"]
 [ext_resource type="Texture2D" uid="uid://co0i4bktalmyk" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud1.png" id="36_fa55l"]
 [ext_resource type="Texture2D" uid="uid://dqhe5f7tksk3b" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud2.png" id="37_8kn23"]
+[ext_resource type="Texture2D" uid="uid://l7htevnn261e" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tinyShroom_tan.png" id="38_imhgi"]
 [ext_resource type="Texture2D" uid="uid://bvnpaesahit73" path="res://graphics/Platformer Art Deluxe/Base pack/Items/cloud3.png" id="38_v4fk5"]
+[ext_resource type="Texture2D" uid="uid://daoie8rysnyol" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tallShroom_tan.png" id="39_po5yf"]
+[ext_resource type="Texture2D" uid="uid://cvtciuufw54qk" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tallShroom_brown.png" id="46_bc0o7"]
+[ext_resource type="Texture2D" uid="uid://1raxppwlho3q" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/tinyShroom_brown.png" id="47_42g4b"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_aj5ga"]
 font_color = Color(0, 0, 0, 1)
@@ -386,6 +392,38 @@ texture = ExtResource("17_qty0e")
 position = Vector2(340, 37)
 texture = ExtResource("17_qty0e")
 
+[node name="Fence5" type="Sprite2D" parent="Decor/Fences" index="4"]
+position = Vector2(1874, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence6" type="Sprite2D" parent="Decor/Fences" index="5"]
+position = Vector2(1802, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence7" type="Sprite2D" parent="Decor/Fences" index="6"]
+position = Vector2(1730, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence8" type="Sprite2D" parent="Decor/Fences" index="7"]
+position = Vector2(1658, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence9" type="Sprite2D" parent="Decor/Fences" index="8"]
+position = Vector2(2162, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence10" type="Sprite2D" parent="Decor/Fences" index="9"]
+position = Vector2(2090, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence11" type="Sprite2D" parent="Decor/Fences" index="10"]
+position = Vector2(2018, 177)
+texture = ExtResource("17_qty0e")
+
+[node name="Fence12" type="Sprite2D" parent="Decor/Fences" index="11"]
+position = Vector2(1946, 177)
+texture = ExtResource("17_qty0e")
+
 [node name="Snek" parent="Decor/Animated" index="0" instance=ExtResource("18_3lsme")]
 position = Vector2(895, 67)
 
@@ -581,33 +619,53 @@ texture = ExtResource("23_urmph")
 position = Vector2(3503, 177)
 texture = ExtResource("23_urmph")
 
-[node name="BigBush3" type="Sprite2D" parent="Decor/Bushes" index="2"]
+[node name="BigBush5" type="Sprite2D" parent="Decor/Bushes" index="2"]
+position = Vector2(2618, 48)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("23_urmph")
+
+[node name="BigBush6" type="Sprite2D" parent="Decor/Bushes" index="3"]
+position = Vector2(1673, 192)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("23_urmph")
+flip_h = true
+
+[node name="BigBush3" type="Sprite2D" parent="Decor/Bushes" index="4"]
 position = Vector2(675, 37)
 texture = ExtResource("23_urmph")
 
-[node name="BigBush4" type="Sprite2D" parent="Decor/Bushes" index="3"]
+[node name="BigBush4" type="Sprite2D" parent="Decor/Bushes" index="5"]
 position = Vector2(987, -90)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("23_urmph")
 flip_h = true
 
-[node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="4"]
+[node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="6"]
 position = Vector2(6897, -313)
 texture = ExtResource("24_5lg1j")
 
-[node name="SmallBush2" type="Sprite2D" parent="Decor/Bushes" index="5"]
+[node name="SmallBush2" type="Sprite2D" parent="Decor/Bushes" index="7"]
 position = Vector2(3407, 179)
 texture = ExtResource("24_5lg1j")
 
-[node name="SmallBush4" type="Sprite2D" parent="Decor/Bushes" index="6"]
+[node name="SmallBush6" type="Sprite2D" parent="Decor/Bushes" index="8"]
+position = Vector2(2679, 38)
+texture = ExtResource("24_5lg1j")
+
+[node name="SmallBush7" type="Sprite2D" parent="Decor/Bushes" index="9"]
+position = Vector2(1729, 179)
+texture = ExtResource("24_5lg1j")
+flip_h = true
+
+[node name="SmallBush4" type="Sprite2D" parent="Decor/Bushes" index="10"]
 position = Vector2(1297, -383)
 texture = ExtResource("24_5lg1j")
 
-[node name="SmallBush5" type="Sprite2D" parent="Decor/Bushes" index="7"]
+[node name="SmallBush5" type="Sprite2D" parent="Decor/Bushes" index="11"]
 position = Vector2(946, -102)
 texture = ExtResource("24_5lg1j")
 
-[node name="SmallBush3" type="Sprite2D" parent="Decor/Bushes" index="8"]
+[node name="SmallBush3" type="Sprite2D" parent="Decor/Bushes" index="12"]
 position = Vector2(3558, 179)
 texture = ExtResource("24_5lg1j")
 flip_h = true
@@ -627,72 +685,124 @@ position = Vector2(570, 55)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("15_scfna")
 
-[node name="Rock2" type="Sprite2D" parent="Decor/Rocks" index="3"]
+[node name="Rock5" type="Sprite2D" parent="Decor/Rocks" index="3"]
+position = Vector2(2051.5, 179)
+texture = ExtResource("15_scfna")
+flip_h = true
+
+[node name="Rock6" type="Sprite2D" parent="Decor/Rocks" index="4"]
+position = Vector2(2009, 193)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("15_scfna")
+
+[node name="Rock2" type="Sprite2D" parent="Decor/Rocks" index="5"]
 position = Vector2(7819, -315)
 scale = Vector2(1.00715, 1.00715)
 texture = ExtResource("15_scfna")
 
-[node name="RockMoss" type="Sprite2D" parent="Decor/Rocks" index="4"]
+[node name="RockMoss" type="Sprite2D" parent="Decor/Rocks" index="6"]
 position = Vector2(7342, -315)
 texture = ExtResource("16_7tf7m")
 
-[node name="RockMoss2" type="Sprite2D" parent="Decor/Rocks" index="5"]
+[node name="RockMoss2" type="Sprite2D" parent="Decor/Rocks" index="7"]
 position = Vector2(3863, 178)
 texture = ExtResource("16_7tf7m")
 flip_h = true
 
-[node name="RockMoss3" type="Sprite2D" parent="Decor/Rocks" index="6"]
+[node name="RockMoss3" type="Sprite2D" parent="Decor/Rocks" index="8"]
 position = Vector2(1515, -505)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("16_7tf7m")
 
-[node name="RockMossAlt" type="Sprite2D" parent="Decor/Rocks" index="7"]
+[node name="RockMoss5" type="Sprite2D" parent="Decor/Rocks" index="9"]
+position = Vector2(1774, 197)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("16_7tf7m")
+
+[node name="RockMoss4" type="Sprite2D" parent="Decor/Rocks" index="10"]
+position = Vector2(2296, 184)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("16_7tf7m")
+
+[node name="RockMossAlt" type="Sprite2D" parent="Decor/Rocks" index="11"]
 position = Vector2(7427, -315)
 texture = ExtResource("17_qb2ut")
 
-[node name="RockMossAlt2" type="Sprite2D" parent="Decor/Rocks" index="8"]
+[node name="RockMossAlt2" type="Sprite2D" parent="Decor/Rocks" index="12"]
 position = Vector2(42, 37)
 texture = ExtResource("17_qb2ut")
 
-[node name="RockMossAlt3" type="Sprite2D" parent="Decor/Rocks" index="9"]
+[node name="RockMossAlt3" type="Sprite2D" parent="Decor/Rocks" index="13"]
 position = Vector2(6600, -389)
 scale = Vector2(1.2, 1.2)
 texture = ExtResource("17_qb2ut")
 flip_h = true
 
-[node name="StoneCaveRockLarge" type="Sprite2D" parent="Decor/Rocks" index="10"]
+[node name="StoneCaveRockLarge" type="Sprite2D" parent="Decor/Rocks" index="14"]
 position = Vector2(7945, -315)
 texture = ExtResource("18_lvtl1")
 
-[node name="StoneCaveRockSmall" type="Sprite2D" parent="Decor/Rocks" index="11"]
+[node name="StoneCaveRockSmall" type="Sprite2D" parent="Decor/Rocks" index="15"]
 position = Vector2(7899, -296)
 texture = ExtResource("19_vl5hj")
 
-[node name="StoneCaveTop" type="Sprite2D" parent="Decor/Rocks" index="12"]
+[node name="StoneCaveTop" type="Sprite2D" parent="Decor/Rocks" index="16"]
 position = Vector2(7724, -525)
 texture = ExtResource("20_70bbm")
 
-[node name="StoneCaveTop2" type="Sprite2D" parent="Decor/Rocks" index="13"]
+[node name="StoneCaveTop2" type="Sprite2D" parent="Decor/Rocks" index="17"]
 position = Vector2(7513, -525)
 texture = ExtResource("20_70bbm")
 flip_h = true
 
-[node name="StoneCaveSpikeTop" type="Sprite2D" parent="Decor/Rocks" index="14"]
+[node name="StoneCaveSpikeTop" type="Sprite2D" parent="Decor/Rocks" index="18"]
 position = Vector2(7626, -525)
 texture = ExtResource("21_6wy8k")
 
-[node name="StoneCaveSpikeTop2" type="Sprite2D" parent="Decor/Rocks" index="15"]
+[node name="StoneCaveSpikeTop2" type="Sprite2D" parent="Decor/Rocks" index="19"]
 position = Vector2(7823, -525)
 texture = ExtResource("21_6wy8k")
 
-[node name="StoneCaveSpikeTop4" type="Sprite2D" parent="Decor/Rocks" index="16"]
+[node name="StoneCaveSpikeTop4" type="Sprite2D" parent="Decor/Rocks" index="20"]
 position = Vector2(7957, -525)
 texture = ExtResource("21_6wy8k")
 flip_h = true
 
-[node name="StoneCaveSpikeTop5" type="Sprite2D" parent="Decor/Rocks" index="17"]
+[node name="StoneCaveSpikeTop5" type="Sprite2D" parent="Decor/Rocks" index="21"]
 position = Vector2(7391, -525)
 texture = ExtResource("21_6wy8k")
+
+[node name="Shrooms" type="Node2D" parent="Decor" index="6"]
+
+[node name="TinyShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="0"]
+position = Vector2(2546, 191)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_asxdj")
+
+[node name="TallShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="1"]
+position = Vector2(2517, 182)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("46_bc0o7")
+
+[node name="TallShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="2"]
+position = Vector2(2607, 192)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_okvpc")
+
+[node name="TinyShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="3"]
+position = Vector2(2575, 189)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("47_42g4b")
+
+[node name="TinyShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="4"]
+position = Vector2(7701, -299)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_imhgi")
+
+[node name="TallShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="5"]
+position = Vector2(7525, -300)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("39_po5yf")
 
 [node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
 position = Vector2(100, 37)
@@ -703,19 +813,51 @@ position = Vector2(549, 45)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("6_2gtfb")
 
-[node name="Grass4" type="Sprite2D" parent="Decor/Grass" index="2"]
+[node name="Grass5" type="Sprite2D" parent="Decor/Grass" index="2"]
+position = Vector2(2436, 115)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("6_2gtfb")
+
+[node name="Grass7" type="Sprite2D" parent="Decor/Grass" index="3"]
+position = Vector2(1920, 178)
+texture = ExtResource("6_2gtfb")
+
+[node name="Grass9" type="Sprite2D" parent="Decor/Grass" index="4"]
+position = Vector2(2205, 181)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("6_2gtfb")
+
+[node name="Grass8" type="Sprite2D" parent="Decor/Grass" index="5"]
+position = Vector2(1938, 192)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_2gtfb")
+flip_h = true
+
+[node name="Grass6" type="Sprite2D" parent="Decor/Grass" index="6"]
+position = Vector2(2985, 51)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_2gtfb")
+flip_h = true
+
+[node name="Grass4" type="Sprite2D" parent="Decor/Grass" index="7"]
 position = Vector2(1359, -509)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("6_2gtfb")
 flip_h = true
 
-[node name="Grass2" type="Sprite2D" parent="Decor/Grass" index="3"]
+[node name="Grass2" type="Sprite2D" parent="Decor/Grass" index="8"]
 position = Vector2(7037, -592)
 texture = ExtResource("6_2gtfb")
 
 [node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
 position = Vector2(1545, -522)
 texture = ExtResource("33_o7gjx")
+
+[node name="Cactus2" type="Sprite2D" parent="Decor/Plants" index="1"]
+position = Vector2(3912, 172)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("33_o7gjx")
+flip_h = true
 
 [node name="Door" parent="Items" index="0" instance=ExtResource("6_wq636")]
 position = Vector2(3689, 158)

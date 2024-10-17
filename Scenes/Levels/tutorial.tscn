@@ -287,6 +287,7 @@ text = "Collect"
 label_settings = SubResource("LabelSettings_ab5xj")
 
 [node name="TextureRect" type="TextureRect" parent="TutorialHints/NextLevelHint" index="1"]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 texture = ExtResource("7_ae80b")
 
@@ -1037,20 +1038,32 @@ flip_h = true
 
 [node name="Door" parent="Items" index="0" instance=ExtResource("6_wq636")]
 position = Vector2(3689, 158)
-metadata/required_coins = 10
+metadata/required_coins = 15
 metadata/_edit_lock_ = true
 
 [node name="BronzeCoin" parent="Items/Coins" index="0" instance=ExtResource("14_xa0g1")]
 position = Vector2(5376, -106)
 
 [node name="BronzeCoin2" parent="Items/Coins" index="1" instance=ExtResource("14_xa0g1")]
-position = Vector2(6354, -302)
+position = Vector2(6181, -300)
 
-[node name="SilverCoin" parent="Items/Coins" index="2" instance=ExtResource("15_by23o")]
+[node name="BronzeCoin3" parent="Items/Coins" index="2" instance=ExtResource("14_xa0g1")]
+position = Vector2(5269, 178)
+
+[node name="BronzeCoin4" parent="Items/Coins" index="3" instance=ExtResource("14_xa0g1")]
+position = Vector2(4186, 41)
+
+[node name="BronzeCoin5" parent="Items/Coins" index="4" instance=ExtResource("14_xa0g1")]
+position = Vector2(6237, -596)
+
+[node name="SilverCoin" parent="Items/Coins" index="5" instance=ExtResource("15_by23o")]
 position = Vector2(5429, -721)
 
-[node name="Coin" parent="Items/Coins" index="3" instance=ExtResource("18_qpuoo")]
+[node name="Coin" parent="Items/Coins" index="6" instance=ExtResource("18_qpuoo")]
 position = Vector2(7612, -319)
+
+[node name="Coin2" parent="Items/Coins" index="7" instance=ExtResource("18_qpuoo")]
+position = Vector2(3652, 12)
 
 [node name="Heart_item" parent="Items/Hearts" index="0" instance=ExtResource("19_itfas")]
 position = Vector2(7390, -322)
@@ -1098,7 +1111,7 @@ position = Vector2(5082, -711)
 [node name="UI" parent="." index="9" instance=ExtResource("15_xl3ew")]
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(562, -479)
+position = Vector2(391, -48)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(-20, -743)

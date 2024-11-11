@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8octv0ssathp"]
+
+[ext_resource type="Texture2D" uid="uid://c038uope17mry" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighCheckeredBottom.png" id="1_euj86"]
+[ext_resource type="Texture2D" uid="uid://dcufnh8is7042" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighCheckeredTop.png" id="2_55goj"]
+
+[node name="MidCheckeredWindow" type="Node2D"]
+
+[node name="WindowHighCheckeredBottom" type="Sprite2D" parent="."]
+texture = ExtResource("1_euj86")
+
+[node name="WindowHighCheckeredTop" type="Sprite2D" parent="."]
+position = Vector2(0, -70)
+texture = ExtResource("2_55goj")

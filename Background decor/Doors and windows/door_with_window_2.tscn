@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dln1v8wf5o234"]
+
+[ext_resource type="Texture2D" uid="uid://d1mybbrt8iruy" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/doorKnobAlt.png" id="1_0xsu3"]
+[ext_resource type="Texture2D" uid="uid://cubg0ackrn6k3" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/doorWindowTop.png" id="2_1h4yk"]
+
+[node name="DoorWithWindow2" type="Node2D"]
+
+[node name="DoorKnobAlt" type="Sprite2D" parent="."]
+texture = ExtResource("1_0xsu3")
+
+[node name="DoorWindowTop" type="Sprite2D" parent="."]
+position = Vector2(0, -69)
+texture = ExtResource("2_1h4yk")

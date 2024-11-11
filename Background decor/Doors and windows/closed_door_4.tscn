@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg5csj35l0v31"]
+
+[ext_resource type="Texture2D" uid="uid://danrqiiywva5g" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/doorLock.png" id="1_asikk"]
+[ext_resource type="Texture2D" uid="uid://vvwc60u17a8m" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/doorTop.png" id="2_l2unr"]
+
+[node name="ClosedDoor4" type="Node2D"]
+
+[node name="DoorLock" type="Sprite2D" parent="."]
+texture = ExtResource("1_asikk")
+
+[node name="DoorTop" type="Sprite2D" parent="."]
+position = Vector2(0, -67)
+texture = ExtResource("2_l2unr")

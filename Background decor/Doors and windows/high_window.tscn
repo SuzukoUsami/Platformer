@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsbkboe36oqq6"]
+
+[ext_resource type="Texture2D" uid="uid://cl2x2o1h1rqgt" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighBottom.png" id="1_44o6w"]
+[ext_resource type="Texture2D" uid="uid://ds6xlhl5o3fr3" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighMid.png" id="2_kgsub"]
+[ext_resource type="Texture2D" uid="uid://buy4gjrmb1bip" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighTop.png" id="3_3wcdw"]
+
+[node name="HighWindow" type="Node2D"]
+
+[node name="WindowHighBottom" type="Sprite2D" parent="."]
+texture = ExtResource("1_44o6w")
+
+[node name="WindowHighMid" type="Sprite2D" parent="."]
+position = Vector2(0, -64)
+texture = ExtResource("2_kgsub")
+
+[node name="WindowHighTop" type="Sprite2D" parent="."]
+position = Vector2(0, -134)
+texture = ExtResource("3_3wcdw")

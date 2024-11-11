@@ -25,7 +25,7 @@ radius = 100.0
 height = 544.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0u0ru"]
-size = Vector2(45, 142)
+size = Vector2(45, 148)
 
 [node name="FireWorm" type="Node2D" groups=["Enemies", "FireWorms"]]
 script = ExtResource("1_mts4c")
@@ -40,6 +40,7 @@ frame_progress = 0.845926
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
+position = Vector2(0, 32)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_w3bw6")
 
@@ -66,7 +67,7 @@ shape = SubResource("RectangleShape2D_0u0ru")
 wait_time = 0.2
 
 [node name="ShootingTimer" type="Timer" parent="."]
-wait_time = 1.25
+wait_time = 1.35
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]

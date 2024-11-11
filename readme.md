@@ -17,9 +17,8 @@
 	- menu can be clickable with thr controller,
 
  ### fix:
-	- loading when no save file is present,
+	- loading when no save file is present,- fire worm can't shoot player when above him,
 	- when player is dead reload scene!!!,
-	- fire worm can't shoot player when above him,
 	
 
  ### ideas:

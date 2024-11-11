@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bffjp7voqvoq7"]
+
+[ext_resource type="Texture2D" uid="uid://l4ei7cc03f57" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_openMid.png" id="1_q8bd4"]
+[ext_resource type="Texture2D" uid="uid://cbuklskv8ym7a" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/door_openTop.png" id="2_vsn4s"]
+
+[node name="OpenedDoor1" type="Node2D"]
+
+[node name="DoorOpenMid" type="Sprite2D" parent="."]
+texture = ExtResource("1_q8bd4")
+
+[node name="DoorOpenTop" type="Sprite2D" parent="."]
+position = Vector2(0, -70)
+texture = ExtResource("2_vsn4s")

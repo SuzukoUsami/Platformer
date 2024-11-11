@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dugu6mkdcwi5l"]
+
+[ext_resource type="Texture2D" uid="uid://cwg4roef8d44r" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighLeadlightBottom.png" id="1_0vhgb"]
+[ext_resource type="Texture2D" uid="uid://b646jx0yjoofg" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowHighLeadlightTop.png" id="2_3hfwp"]
+
+[node name="WindowMidLeadlight" type="Node2D"]
+
+[node name="WindowHighLeadlightBottom" type="Sprite2D" parent="."]
+texture = ExtResource("1_0vhgb")
+
+[node name="WindowHighLeadlightTop" type="Sprite2D" parent="."]
+position = Vector2(0, -70)
+texture = ExtResource("2_3hfwp")

@@ -1,16 +1,32 @@
-[gd_scene load_steps=3 format=3 uid="uid://du5n0dmjvsucj"]
+[gd_scene load_steps=5 format=3 uid="uid://du5n0dmjvsucj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_d4uvr"]
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="2_sp7u6"]
+[ext_resource type="Texture2D" uid="uid://bpwp8usa3y2bj" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signRight.png" id="3_8stha"]
+[ext_resource type="PackedScene" uid="uid://c02t47nqofu1b" path="res://Background decor/house.tscn" id="3_iadhs"]
 
 [node name="Level3" instance=ExtResource("1_d4uvr")]
 
 [node name="Door" parent="." index="1" instance=ExtResource("2_sp7u6")]
-position = Vector2(-249, 780)
+position = Vector2(-951, 1053)
 metadata/target_level = "res://Scenes/UI/main_menu.tscn"
+metadata/_edit_lock_ = true
+
+[node name="House" parent="." index="2" instance=ExtResource("3_iadhs")]
+position = Vector2(1585, 389)
 
 [node name="TileMap" parent="Platforms" index="0"]
-layer_0/tile_data = PackedInt32Array(786432, 131072, 3, 786433, 131072, 3, 786434, 131072, 3, 786435, 131072, 3, 786436, 131072, 3, 786437, 131072, 3, 786438, 131072, 3, 786439, 131072, 3, 786440, 131072, 3, 786441, 131072, 3, 786442, 131072, 3, 786443, 131072, 3, 786444, 131072, 3, 786445, 131072, 3, 786446, 131072, 3, 786447, 131072, 3, 786448, 131072, 3, 786449, 131072, 3, 786450, 131072, 3, 786451, 131072, 3, 851948, 131072, 3, 851949, 131072, 3, 851950, 131072, 3, 851951, 131072, 3, 851952, 131072, 3, 851953, 131072, 3, 851954, 131072, 3, 851955, 131072, 3, 851956, 131072, 3, 851957, 131072, 3, 851958, 131072, 3, 851959, 131072, 3, 851960, 131072, 3, 851961, 131072, 3, 851962, 131072, 3, 851963, 131072, 3, 851964, 131072, 3, 851965, 131072, 3, 851966, 131072, 3, 851967, 131072, 3)
+layer_0/tile_data = PackedInt32Array(393216, 262144, 3, 393217, 262144, 3, 393218, 262144, 3, 393219, 262144, 3, 393220, 262144, 3, 393221, 262144, 3, 393222, 262144, 3, 393223, 262144, 3, 393224, 262144, 3, 393225, 262144, 3, 393226, 262144, 3, 393227, 262144, 3, 393228, 262144, 3, 393229, 262144, 3, 393230, 262144, 3, 393231, 262144, 3, 393232, 262144, 3, 393233, 262144, 3, 393234, 262144, 3, 393235, 262144, 3, 393236, 262144, 3, 393237, 262144, 3, 393238, 262144, 3, 393239, 262144, 3, 393240, 262144, 3, 393241, 262144, 3, 393242, 262144, 3, 393243, 262144, 3, 393244, 262144, 3, 393245, 262144, 3, 393246, 262144, 3, 393247, 262144, 3, 393248, 262144, 3, 393249, 262144, 3, 393250, 262144, 3, 393251, 262144, 3, 393252, 262144, 3, 393253, 262144, 3, 393254, 262144, 3, 393255, 262144, 3, 393256, 262144, 3, 393257, 262144, 3, 393258, 262144, 3, 393259, 262144, 3, 393260, 262144, 3, 393261, 262144, 3, 393262, 262144, 3, 393263, 262144, 3, 393264, 262144, 3, 393265, 262144, 3, 393266, 262144, 3, 393267, 262144, 3, 393268, 262144, 3, 393269, 262144, 3, 393270, 262144, 3, 393271, 262144, 3, 393272, 262144, 3, 393273, 262144, 3, 393274, 262144, 3, 393275, 262144, 3, 393276, 262144, 3, 393277, 262144, 3, 393278, 262144, 3, 393279, 262144, 3)
+
+[node name="SignRight" type="Sprite2D" parent="Decor/Other" index="0"]
+position = Vector2(157, 387)
+texture = ExtResource("3_8stha")
+
+[node name="SignRight2" type="Sprite2D" parent="Decor/Other" index="1"]
+position = Vector2(166, 326)
+rotation = 0.261799
+scale = Vector2(0.954597, 1)
+texture = ExtResource("3_8stha")
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(102, 692)
+position = Vector2(360, 363)

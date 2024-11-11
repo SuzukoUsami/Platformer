@@ -2677,7 +2677,7 @@ position = Vector2(-2623, -1541)
 position = Vector2(2802, -980)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-4252, 700)
+position = Vector2(-4272, 694)
 
 [node name="PlayerInvisibleWalls" parent="." index="9"]
 metadata/_edit_group_ = true

@@ -13,8 +13,8 @@
 	- pet the cat option,
 	- checkpoints,
 	- when player is in the air disable walking animation,
-	- walking with d-pad,
 	- more bouncy on the bouncy spring when down button is pressed,
+	- menu can be clickable with thr controller,
 
  ### fix:
 	- loading when no save file is present,

@@ -81,7 +81,6 @@ script = ExtResource("4_ai5vv")
 [node name="PausePanel" type="Panel" parent="Pause"]
 unique_name_in_owner = true
 process_mode = 3
-visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -143,10 +142,6 @@ process_mode = 3
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Load last save"
-
-[node name="Button" type="Button" parent="Pause/PausePanel/VBoxContainer"]
-layout_mode = 2
-text = "kitku kitku"
 
 [connection signal="pressed" from="Pause/PausePanel/VBoxContainer/Resume" to="Pause" method="_on_resume_pressed"]
 [connection signal="pressed" from="Pause/PausePanel/VBoxContainer/GoToMenu" to="Pause" method="_on_go_to_menu_pressed"]

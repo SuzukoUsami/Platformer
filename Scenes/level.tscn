@@ -109,6 +109,7 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3)
 [node name="Clouds" type="Node2D" parent="Decor"]
 
 [node name="Bushes" type="Node2D" parent="Decor"]
+modulate = Color(0.909804, 0.909804, 0.909804, 1)
 
 [node name="Rocks" type="Node2D" parent="Decor"]
 

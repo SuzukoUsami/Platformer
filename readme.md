@@ -19,7 +19,6 @@
  ### fix:
 	- loading when no save file is present,
 	- when player is dead reload scene!!!,
-	- bushes must have other color than grass,
 	- fire worm can't shoot player when above him,
 	
 
@@ -42,3 +41,5 @@
 	- more levels,
 	- alien can change into a ball (like in the starbound),
 	- dynamic controller input tutorial,
+	- different minigame on each level,
+	- button that spawns cats,

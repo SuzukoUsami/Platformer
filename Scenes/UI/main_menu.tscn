@@ -47,6 +47,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 
+[node name="Tutorial" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 35
+text = "Tutorial"
+
 [node name="Level1" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -64,6 +69,7 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 35
 text = "Level 3"
 
+[connection signal="pressed" from="HBoxContainer/Tutorial" to="." method="_on_tutorial_pressed"]
 [connection signal="pressed" from="HBoxContainer/Level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="HBoxContainer/Level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="HBoxContainer/Level3" to="." method="_on_level_3_pressed"]

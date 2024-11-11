@@ -206,6 +206,14 @@ texture = ExtResource("3_gx56a")
 [node name="Snek" parent="Decor/Animated" index="0" instance=ExtResource("5_vo364")]
 position = Vector2(1163, -3)
 
+[node name="Sprite2D" type="Sprite2D" parent="Decor/Other" index="0"]
+position = Vector2(2307, 528)
+texture = ExtResource("15_8w7n5")
+
+[node name="SignExit" type="Sprite2D" parent="Decor/Other" index="1"]
+position = Vector2(1944, 528)
+texture = ExtResource("30_qitl7")
+
 [node name="CloudA11" type="Sprite2D" parent="Decor/Clouds" index="0"]
 position = Vector2(-1627, -551)
 texture = ExtResource("8_c813w")
@@ -682,10 +690,6 @@ position = Vector2(659, 527)
 texture = ExtResource("7_46vra")
 flip_h = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Decor" index="7"]
-position = Vector2(2307, 528)
-texture = ExtResource("15_8w7n5")
-
 [node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
 position = Vector2(939, 249)
 texture = ExtResource("6_ykm6j")
@@ -809,8 +813,6 @@ polygon = PackedVector2Array(-1753, 420, -1754, 561, -2101, 559, -2101, 350, -18
 visible = false
 polygon = PackedVector2Array(-417, 560, 65, 560, 67, 496, 65, 426, -11, 423, -10, 354, -79, 354, -79, 283, -141, 280, -142, 209, -208, 208, -208, 281, -275, 285, -277, 359, -342, 359, -346, 426, -415, 426, -418, 492)
 
-[node name="UI" parent="." index="6" instance=ExtResource("2_n2oet")]
-
 [node name="Slime" parent="Enemies/Slimes" index="0" instance=ExtResource("10_hxy30")]
 position = Vector2(-788, 547)
 
@@ -832,6 +834,8 @@ position = Vector2(-2530, 538)
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(2204, 499)
 
+[node name="UI" parent="." index="8" instance=ExtResource("2_n2oet")]
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
 shape = SubResource("RectangleShape2D_oma0m")
@@ -848,10 +852,6 @@ collision_mask = 2
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="EnemiesInvisibleWalls" index="0"]
 position = Vector2(-1267, 516)
 shape = SubResource("RectangleShape2D_2q58u")
-
-[node name="SignExit" type="Sprite2D" parent="." index="11"]
-position = Vector2(1944, 528)
-texture = ExtResource("30_qitl7")
 
 [connection signal="body_entered" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_entered"]
 [connection signal="body_exited" from="SecretRoom/SecretAreas" to="." method="_on_secret_areas_body_exited"]

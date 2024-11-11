@@ -11,7 +11,6 @@
 	- controller support,
 	- portals: itch.io, game jolt, new grounds, kongregate,
 	- pet the cat option,
-	- add tutorial level to the menu,
 	- checkpoints,
 	- when player is in the air disable walking animation,
 	- walking with d-pad,
@@ -21,7 +20,6 @@
 	- loading when no save file is present,
 	- when player is dead reload scene!!!,
 	- add paralax and ui to the main level (the level),
-	- pause menu,
 	- bushes must have other color than grass,
 	- fire worm can't shoot player when above him,
 	

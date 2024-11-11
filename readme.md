@@ -19,7 +19,6 @@
  ### fix:
 	- loading when no save file is present,
 	- when player is dead reload scene!!!,
-	- add paralax and ui to the main level (the level),
 	- bushes must have other color than grass,
 	- fire worm can't shoot player when above him,
 	

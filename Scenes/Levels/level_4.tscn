@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dyx7eviatg2my"]
+[gd_scene load_steps=3 format=3 uid="uid://dyx7eviatg2my"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_gtlhh"]
 [ext_resource type="PackedScene" uid="uid://cfqtwp6kdnpan" path="res://Scenes/Enemies/snail.tscn" id="2_gsckt"]
-[ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="3_bcslm"]
 
 [node name="Level4" instance=ExtResource("1_gtlhh")]
 
@@ -11,5 +10,3 @@ layer_0/tile_data = PackedInt32Array(524296, 262144, 3, 524297, 262144, 3, 52429
 
 [node name="Snail" parent="Enemies" index="0" instance=ExtResource("2_gsckt")]
 position = Vector2(822, 334)
-
-[node name="UI" parent="." index="8" instance=ExtResource("3_bcslm")]

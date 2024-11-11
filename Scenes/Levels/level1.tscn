@@ -1,10 +1,8 @@
-[gd_scene load_steps=41 format=3 uid="uid://bxr11xn8armlc"]
+[gd_scene load_steps=39 format=3 uid="uid://bxr11xn8armlc"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_eigen"]
 [ext_resource type="Script" path="res://Scenes/Levels/level1.gd" id="2_b7tuh"]
-[ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="2_n2oet"]
 [ext_resource type="Texture2D" uid="uid://b1bhh4fq13cyy" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/fence.png" id="3_gx56a"]
-[ext_resource type="PackedScene" uid="uid://dalqx826lbyyv" path="res://Scenes/Levels/parallax.tscn" id="3_md4x1"]
 [ext_resource type="Texture2D" uid="uid://cpvcfmvj4aidg" path="res://graphics/Platformer Art Deluxe/Extended Tileset/PNG Grass/Spritesheet/sheet.png" id="3_oxry1"]
 [ext_resource type="Texture2D" uid="uid://bclvpuvprp7o0" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/bush.png" id="4_0d0jv"]
 [ext_resource type="Texture2D" uid="uid://b7x3wc8ifrt1h" path="res://graphics/Platformer Art Deluxe/Base pack/Items/bush.png" id="5_hhmpw"]
@@ -169,9 +167,6 @@ size = Vector2(20, 96.5)
 
 [node name="Level1" instance=ExtResource("1_eigen")]
 script = ExtResource("2_b7tuh")
-
-[node name="Parallax" parent="." index="0" instance=ExtResource("3_md4x1")]
-position = Vector2(1, -7)
 
 [node name="BackgroundTileMap" type="TileMap" parent="Platforms" index="0"]
 modulate = Color(0.806941, 0.71754, 0.715296, 0.815686)
@@ -834,8 +829,6 @@ position = Vector2(-2530, 538)
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(2204, 499)
 
-[node name="UI" parent="." index="8" instance=ExtResource("2_n2oet")]
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(2491, -597.5)
 shape = SubResource("RectangleShape2D_oma0m")
@@ -845,7 +838,7 @@ visible = false
 position = Vector2(-2692.5, -611)
 shape = SubResource("RectangleShape2D_8131l")
 
-[node name="EnemiesInvisibleWalls" parent="." index="10"]
+[node name="EnemiesInvisibleWalls" parent="." index="9"]
 collision_layer = 32
 collision_mask = 2
 

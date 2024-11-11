@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ghfglfl03ro1"]
+[gd_scene load_steps=7 format=3 uid="uid://ghfglfl03ro1"]
 
+[ext_resource type="PackedScene" uid="uid://dalqx826lbyyv" path="res://Scenes/Levels/parallax.tscn" id="1_hjr8a"]
 [ext_resource type="Texture2D" uid="uid://cpvcfmvj4aidg" path="res://graphics/Platformer Art Deluxe/Extended Tileset/PNG Grass/Spritesheet/sheet.png" id="1_r6n8q"]
 [ext_resource type="PackedScene" uid="uid://c6vbh08828p0p" path="res://Characters/green_alien.tscn" id="2_qtgwv"]
+[ext_resource type="PackedScene" uid="uid://bygi4jkyiaqah" path="res://Scenes/UI/ui.tscn" id="3_h8ije"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5gp1y"]
 texture = ExtResource("1_r6n8q")
@@ -87,6 +89,8 @@ sources/0 = SubResource("TileSetAtlasSource_5gp1y")
 
 [node name="Level" type="Node2D"]
 
+[node name="Parallax" parent="." instance=ExtResource("1_hjr8a")]
+
 [node name="Platforms" type="Node2D" parent="."]
 
 [node name="TileMap" type="TileMap" parent="Platforms"]
@@ -144,3 +148,5 @@ position = Vector2(593, 442)
 [node name="PlayerInvisibleWalls" type="StaticBody2D" parent="."]
 
 [node name="EnemiesInvisibleWalls" type="StaticBody2D" parent="."]
+
+[node name="UI" parent="." instance=ExtResource("3_h8ije")]

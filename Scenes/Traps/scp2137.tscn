@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dtfk4ln0of220"]
+[gd_scene load_steps=19 format=3 uid="uid://dtfk4ln0of220"]
 
 [ext_resource type="Texture2D" uid="uid://7mklufasnfgw" path="res://graphics/PNG/pixilart-sprite.png" id="1_4qkyu"]
 [ext_resource type="Script" path="res://Scenes/Traps/scp_2137.gd" id="1_vbm6n"]
@@ -6,6 +6,7 @@
 [ext_resource type="LabelSettings" uid="uid://bsdrqm3w6vg2j" path="res://Scenes/UI/tutorial_label.tres" id="3_pxx55"]
 [ext_resource type="Texture2D" uid="uid://dkfl1jblmh4br" path="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Switch/Vector/switch_buttons_left.svg" id="4_gmrsj"]
 [ext_resource type="Texture2D" uid="uid://cr7e4degcumii" path="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Default/generic_button_circle.png" id="5_qts2h"]
+[ext_resource type="Texture2D" uid="uid://dh6ie34pe2pm2" path="res://graphics/Platformer Art Deluxe/Base pack/HUD/hud_heartFull.png" id="7_k3fpm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8yec"]
 atlas = ExtResource("1_4qkyu")
@@ -61,6 +62,139 @@ shadow_size = 12
 shadow_color = Color(1, 0, 0, 0.592157)
 shadow_offset = Vector2(3, -2)
 
+[sub_resource type="Animation" id="Animation_r7017"]
+resource_name = "move"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HudHeartFull:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.7, 1.16667, 1.66667, 2.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-37, -37), Vector2(-56, -49), Vector2(-84, -84), Vector2(-98, -112), Vector2(-105, -140)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HudHeartFull:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.366667, 0.8, 1.23333, 1.66667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3), Vector2(0.4, 0.4), Vector2(0.5, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HudHeartFull:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.833333, 1.26667, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.261799, -0.174533, -0.349066]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("HudHeartFull:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.833333, 1.3, 1.66667, 2.03333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.882353), Color(1, 1, 1, 0.72549), Color(1, 1, 1, 0.392157), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("HudHeartFull:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.166667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_1acwf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("HudHeartFull:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-37, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HudHeartFull:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HudHeartFull:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("HudHeartFull:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("HudHeartFull:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4t0if"]
+_data = {
+"RESET": SubResource("Animation_1acwf"),
+"move": SubResource("Animation_r7017")
+}
+
 [node name="SCP2137" type="Node2D"]
 script = ExtResource("1_vbm6n")
 
@@ -90,6 +224,7 @@ offset_bottom = 40.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HowToPet"]
 clip_contents = true
+layout_mode = 0
 offset_left = -118.0
 offset_top = -189.0
 offset_right = -1.0
@@ -139,6 +274,20 @@ offset_bottom = -166.0
 texture = ExtResource("5_qts2h")
 expand_mode = 1
 stretch_mode = 4
+
+[node name="LoveAnimation" type="AnimatableBody2D" parent="."]
+
+[node name="HudHeartFull" type="Sprite2D" parent="LoveAnimation"]
+visible = false
+z_index = 2
+position = Vector2(-37, -37)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("7_k3fpm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LoveAnimation"]
+libraries = {
+"": SubResource("AnimationLibrary_4t0if")
+}
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
 [connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]

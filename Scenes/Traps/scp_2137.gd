@@ -6,7 +6,7 @@ var active:bool = false
 
 func _process(delta):
 	if (Input.is_action_just_pressed("primary action") and active):
-		print_debug("Mrrrr..yyy..")
+		$LoveAnimation/AnimationPlayer.play("move")
 
 
 func _on_notice_area_body_entered(body):

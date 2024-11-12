@@ -39,4 +39,4 @@ texture = ExtResource("3_8stha")
 position = Vector2(604, 392)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(304, 366)
+position = Vector2(264, 370)

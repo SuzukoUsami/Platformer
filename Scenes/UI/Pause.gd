@@ -13,13 +13,11 @@ func _process(_delta):
 			pause_panel.hide()
 
 func _on_resume_pressed():
-	print_debug("bea")
 	pause_panel.hide()
 	get_tree().paused = false
 
 
 func _on_go_to_menu_pressed():
-	print_debug("kitku")
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://Scenes/UI/main_menu.tscn")
 

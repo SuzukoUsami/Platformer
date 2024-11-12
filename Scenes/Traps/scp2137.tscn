@@ -1,7 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dtfk4ln0of220"]
+[gd_scene load_steps=15 format=3 uid="uid://dtfk4ln0of220"]
 
 [ext_resource type="Texture2D" uid="uid://7mklufasnfgw" path="res://graphics/PNG/pixilart-sprite.png" id="1_4qkyu"]
 [ext_resource type="Script" path="res://Scenes/Traps/scp_2137.gd" id="1_vbm6n"]
+[ext_resource type="Texture2D" uid="uid://bsjdddaejdog6" path="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Keyboard & Mouse/Default/keyboard_e_outline.png" id="3_gcpi4"]
+[ext_resource type="LabelSettings" uid="uid://bsdrqm3w6vg2j" path="res://Scenes/UI/tutorial_label.tres" id="3_pxx55"]
+[ext_resource type="Texture2D" uid="uid://dkfl1jblmh4br" path="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Nintendo Switch/Vector/switch_buttons_left.svg" id="4_gmrsj"]
+[ext_resource type="Texture2D" uid="uid://cr7e4degcumii" path="res://graphics/Platformer Art Deluxe/Kenny Input Assets/Generic/Default/generic_button_circle.png" id="5_qts2h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8yec"]
 atlas = ExtResource("1_4qkyu")
@@ -47,8 +51,15 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mtvke"]
-radius = 34.0
-height = 338.0
+radius = 44.0
+height = 194.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_nqvvh"]
+font_color = Color(0, 0, 0, 1)
+outline_size = 2
+shadow_size = 12
+shadow_color = Color(1, 0, 0, 0.592157)
+shadow_offset = Vector2(3, -2)
 
 [node name="SCP2137" type="Node2D"]
 script = ExtResource("1_vbm6n")
@@ -66,18 +77,69 @@ collision_layer = 4
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
-position = Vector2(-4, 3)
+position = Vector2(-1, -1)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_mtvke")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_left = -102.0
-offset_top = -100.0
-offset_right = -19.0
-offset_bottom = -60.0
+[node name="HowToPet" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="Label" type="Label" parent="HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="HowToPet"]
+clip_contents = true
+offset_left = -118.0
+offset_top = -189.0
+offset_right = -1.0
+offset_bottom = -139.0
+
+[node name="Label" type="Label" parent="HowToPet/HBoxContainer"]
 layout_mode = 2
-text = "Pet the cat"
+text = "Press"
+label_settings = ExtResource("3_pxx55")
+
+[node name="TextureRect" type="TextureRect" parent="HowToPet/HBoxContainer"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 2
+texture = ExtResource("3_gcpi4")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="HowToPet/HBoxContainer"]
+layout_mode = 2
+text = "to"
+label_settings = ExtResource("3_pxx55")
+
+[node name="Label2" type="Label" parent="HowToPet/HBoxContainer"]
+layout_mode = 2
+text = "Pet The Cat!"
+label_settings = SubResource("LabelSettings_nqvvh")
+
+[node name="PrimaryActionPad" type="Node2D" parent="HowToPet"]
+position = Vector2(30, -35)
+metadata/_edit_group_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="HowToPet/PrimaryActionPad"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -100.0
+offset_top = -200.0
+offset_right = -50.0
+offset_bottom = -150.0
+texture = ExtResource("4_gmrsj")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="TextureRect3" type="TextureRect" parent="HowToPet/PrimaryActionPad"]
+modulate = Color(0.752941, 0, 0, 1)
+offset_left = -96.0
+offset_top = -184.0
+offset_right = -77.0
+offset_bottom = -166.0
+texture = ExtResource("5_qts2h")
+expand_mode = 1
+stretch_mode = 4
 
 [connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]
+[connection signal="body_exited" from="NoticeArea" to="." method="_on_notice_area_body_exited"]
+[connection signal="input_event" from="NoticeArea" to="." method="_on_notice_area_input_event"]

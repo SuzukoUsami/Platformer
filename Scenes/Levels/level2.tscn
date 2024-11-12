@@ -2087,6 +2087,10 @@ scale = Vector2(0.485714, 0.485714)
 texture = ExtResource("9_t7byi")
 flip_h = true
 
+[node name="Right" type="Sprite2D" parent="Decor" index="7"]
+position = Vector2(-4263, 735)
+texture = ExtResource("8_xv4qd")
+
 [node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
 position = Vector2(-3604, 737)
 texture = ExtResource("7_apjds")
@@ -2172,10 +2176,6 @@ texture = ExtResource("7_apjds")
 [node name="Grass20" type="Sprite2D" parent="Decor/Grass" index="19"]
 position = Vector2(-2660, 597)
 texture = ExtResource("7_apjds")
-
-[node name="Right" type="Sprite2D" parent="Decor" index="7"]
-position = Vector2(-4263, 735)
-texture = ExtResource("8_xv4qd")
 
 [node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
 position = Vector2(-3646, 737)

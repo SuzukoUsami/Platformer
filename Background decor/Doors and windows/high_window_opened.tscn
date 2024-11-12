@@ -7,12 +7,13 @@
 [node name="HighWindowOpened" type="Node2D"]
 
 [node name="WindowHighOpenBottom" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
 texture = ExtResource("1_pcafk")
 
 [node name="WindowHighOpenMid" type="Sprite2D" parent="."]
-position = Vector2(0, -70)
+position = Vector2(0, -105)
 texture = ExtResource("2_5oixb")
 
 [node name="WindowHighOpenTop" type="Sprite2D" parent="."]
-position = Vector2(0, -137)
+position = Vector2(0, -175)
 texture = ExtResource("3_73fbq")

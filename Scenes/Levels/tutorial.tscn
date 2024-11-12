@@ -517,7 +517,7 @@ texture = ExtResource("3_hbq3h")
 position = Vector2(7242, -315)
 texture = ExtResource("3_hbq3h")
 
-[node name="Clouds" parent="Decor" index="3"]
+[node name="Clouds" parent="Decor" index="4"]
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 
@@ -744,6 +744,43 @@ position = Vector2(3558, 179)
 texture = ExtResource("24_5lg1j")
 flip_h = true
 
+[node name="Shrooms" type="Node2D" parent="Decor" index="6"]
+
+[node name="TinyShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="0"]
+position = Vector2(6008, -646)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("34_asxdj")
+
+[node name="TallShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="1"]
+position = Vector2(3798, 194)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("46_bc0o7")
+
+[node name="TallShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="2"]
+position = Vector2(1908, 195)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("35_okvpc")
+
+[node name="TinyShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="3"]
+position = Vector2(2977, 55)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("47_42g4b")
+
+[node name="TinyShroomBrown2" type="Sprite2D" parent="Decor/Shrooms" index="4"]
+position = Vector2(6573, -359)
+scale = Vector2(0.35893, 0.344643)
+texture = ExtResource("47_42g4b")
+
+[node name="TallShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="5"]
+position = Vector2(7715, -301)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("39_po5yf")
+
+[node name="TinyShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="6"]
+position = Vector2(7724, -298)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("38_imhgi")
+
 [node name="Rock" type="Sprite2D" parent="Decor/Rocks" index="0"]
 position = Vector2(7772.5, -321.5)
 scale = Vector2(1.18571, 1.18571)
@@ -872,43 +909,6 @@ flip_h = true
 [node name="StoneCaveSpikeTop5" type="Sprite2D" parent="Decor/Rocks" index="26"]
 position = Vector2(7391, -525)
 texture = ExtResource("21_6wy8k")
-
-[node name="Shrooms" type="Node2D" parent="Decor" index="6"]
-
-[node name="TinyShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="0"]
-position = Vector2(6008, -646)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("34_asxdj")
-
-[node name="TallShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="1"]
-position = Vector2(3798, 194)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("46_bc0o7")
-
-[node name="TallShroomRed" type="Sprite2D" parent="Decor/Shrooms" index="2"]
-position = Vector2(1908, 195)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("35_okvpc")
-
-[node name="TinyShroomBrown" type="Sprite2D" parent="Decor/Shrooms" index="3"]
-position = Vector2(2977, 55)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("47_42g4b")
-
-[node name="TinyShroomBrown2" type="Sprite2D" parent="Decor/Shrooms" index="4"]
-position = Vector2(6573, -359)
-scale = Vector2(0.35893, 0.344643)
-texture = ExtResource("47_42g4b")
-
-[node name="TallShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="5"]
-position = Vector2(7715, -301)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("39_po5yf")
-
-[node name="TinyShroomTan" type="Sprite2D" parent="Decor/Shrooms" index="6"]
-position = Vector2(7724, -298)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("38_imhgi")
 
 [node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
 position = Vector2(100, 37)

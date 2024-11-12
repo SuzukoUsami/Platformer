@@ -6,8 +6,9 @@
 [node name="OpenedDoor1" type="Node2D"]
 
 [node name="DoorOpenMid" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
 texture = ExtResource("1_q8bd4")
 
 [node name="DoorOpenTop" type="Sprite2D" parent="."]
-position = Vector2(0, -70)
+position = Vector2(0, -105)
 texture = ExtResource("2_vsn4s")

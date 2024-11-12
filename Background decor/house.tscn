@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://c02t47nqofu1b"]
+[gd_scene load_steps=17 format=3 uid="uid://c02t47nqofu1b"]
 
 [ext_resource type="Texture2D" uid="uid://uqebtj8y5n0n" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeige.png" id="1_41v45"]
 [ext_resource type="Texture2D" uid="uid://tdu78m4arm7o" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeAlt2.png" id="2_4k0fi"]
@@ -7,284 +7,278 @@
 [ext_resource type="Texture2D" uid="uid://cfwlceqb58xpo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomMid.png" id="5_ue7x4"]
 [ext_resource type="Texture2D" uid="uid://c84dvli5flej1" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomRight.png" id="6_v3jrw"]
 [ext_resource type="Texture2D" uid="uid://j02e7w4nhi34" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeMidLeft.png" id="7_moxxi"]
+[ext_resource type="Texture2D" uid="uid://535eq4q8hs6g" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeMidRight.png" id="8_h2gey"]
+[ext_resource type="Texture2D" uid="uid://dfj6ky64e4tif" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeTopLeft.png" id="10_dmh8k"]
+[ext_resource type="Texture2D" uid="uid://dlepabfkdywbq" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeTopMid.png" id="11_c4kmb"]
 [ext_resource type="PackedScene" uid="uid://c8octv0ssathp" path="res://Background decor/Doors and windows/mid_checkered_window.tscn" id="11_r8ndk"]
 [ext_resource type="Texture2D" uid="uid://d2yx0wg5yhi1r" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLowCheckered.png" id="12_5a8k1"]
+[ext_resource type="Texture2D" uid="uid://du7etx5agl54y" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeTopRight.png" id="12_dnpcy"]
 [ext_resource type="Texture2D" uid="uid://dr08t4cggo376" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/chimney.png" id="12_xbgnt"]
-[ext_resource type="Texture2D" uid="uid://c16vsv2pu03yj" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/anemometer.png" id="13_5qgfm"]
 [ext_resource type="Texture2D" uid="uid://dfu0rnp6ps8ns" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/roofRedMid.png" id="13_qit3n"]
-[ext_resource type="PackedScene" uid="uid://lrwudx0er4p5" path="res://Background decor/Doors and windows/closed_door_3.tscn" id="15_uj6lt"]
+[ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="14_hn8be"]
 
 [node name="House" type="Node2D"]
+modulate = Color(0.803922, 0.803922, 0.803922, 1)
 
 [node name="Roof" type="Node2D" parent="."]
-
-[node name="RoofRedMid" type="Sprite2D" parent="Roof"]
-position = Vector2(-274, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid2" type="Sprite2D" parent="Roof"]
-position = Vector2(-209, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid3" type="Sprite2D" parent="Roof"]
-position = Vector2(-139, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid4" type="Sprite2D" parent="Roof"]
-position = Vector2(-69, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid5" type="Sprite2D" parent="Roof"]
-position = Vector2(1, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid6" type="Sprite2D" parent="Roof"]
-position = Vector2(71, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid7" type="Sprite2D" parent="Roof"]
-position = Vector2(141, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid8" type="Sprite2D" parent="Roof"]
-position = Vector2(211, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid9" type="Sprite2D" parent="Roof"]
-position = Vector2(280, -278)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid10" type="Sprite2D" parent="Roof"]
-position = Vector2(-274, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid11" type="Sprite2D" parent="Roof"]
-position = Vector2(-209, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid12" type="Sprite2D" parent="Roof"]
-position = Vector2(-139, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid13" type="Sprite2D" parent="Roof"]
-position = Vector2(-69, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid14" type="Sprite2D" parent="Roof"]
-position = Vector2(1, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid15" type="Sprite2D" parent="Roof"]
-position = Vector2(71, -348)
-texture = ExtResource("13_qit3n")
-
-[node name="RoofRedMid16" type="Sprite2D" parent="Roof"]
-position = Vector2(141, -348)
-texture = ExtResource("13_qit3n")
+modulate = Color(1, 1, 1, 0.776471)
+metadata/_edit_lock_ = true
 
 [node name="RoofRedMid17" type="Sprite2D" parent="Roof"]
-position = Vector2(211, -348)
+position = Vector2(-245, -315)
 texture = ExtResource("13_qit3n")
 
 [node name="RoofRedMid18" type="Sprite2D" parent="Roof"]
-position = Vector2(280, -348)
+position = Vector2(-175, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid19" type="Sprite2D" parent="Roof"]
+position = Vector2(-105, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid20" type="Sprite2D" parent="Roof"]
+position = Vector2(-35, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid21" type="Sprite2D" parent="Roof"]
+position = Vector2(35, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid22" type="Sprite2D" parent="Roof"]
+position = Vector2(105, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid23" type="Sprite2D" parent="Roof"]
+position = Vector2(175, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid24" type="Sprite2D" parent="Roof"]
+position = Vector2(245, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid25" type="Sprite2D" parent="Roof"]
+position = Vector2(315, -315)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid26" type="Sprite2D" parent="Roof"]
+position = Vector2(-245, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid27" type="Sprite2D" parent="Roof"]
+position = Vector2(-175, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid28" type="Sprite2D" parent="Roof"]
+position = Vector2(-105, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid29" type="Sprite2D" parent="Roof"]
+position = Vector2(-35, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid30" type="Sprite2D" parent="Roof"]
+position = Vector2(35, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid31" type="Sprite2D" parent="Roof"]
+position = Vector2(105, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid32" type="Sprite2D" parent="Roof"]
+position = Vector2(175, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid33" type="Sprite2D" parent="Roof"]
+position = Vector2(245, -385)
+texture = ExtResource("13_qit3n")
+
+[node name="RoofRedMid34" type="Sprite2D" parent="Roof"]
+position = Vector2(315, -385)
 texture = ExtResource("13_qit3n")
 
 [node name="Building" type="Node2D" parent="."]
-
-[node name="HouseBeige" type="Sprite2D" parent="Building"]
-position = Vector2(0.5, -68.5)
-scale = Vector2(1.01429, 1.04286)
-texture = ExtResource("1_41v45")
+modulate = Color(1, 1, 1, 0.784314)
+metadata/_edit_lock_ = true
 
 [node name="HouseBeige5" type="Sprite2D" parent="Building"]
-position = Vector2(-203, -209)
+position = Vector2(35, -105)
 texture = ExtResource("1_41v45")
 
-[node name="HouseBeigeAlt2" type="Sprite2D" parent="Building"]
-position = Vector2(207, -69)
-texture = ExtResource("2_4k0fi")
-
 [node name="HouseBeigeAlt3" type="Sprite2D" parent="Building"]
-position = Vector2(-203, -139)
+position = Vector2(-175, -105)
 texture = ExtResource("2_4k0fi")
 
 [node name="HouseBeigeAlt" type="Sprite2D" parent="Building"]
-position = Vector2(-203, -70)
+position = Vector2(-175, -175)
 texture = ExtResource("3_t1iho")
 
+[node name="HouseBeige6" type="Sprite2D" parent="Building"]
+position = Vector2(35, -175)
+texture = ExtResource("1_41v45")
+
 [node name="HouseBeigeAlt4" type="Sprite2D" parent="Building"]
-position = Vector2(208, -209)
-scale = Vector2(0.971429, 1)
+position = Vector2(245, -175)
+texture = ExtResource("2_4k0fi")
+
+[node name="HouseBeigeAlt2" type="Sprite2D" parent="Building"]
+position = Vector2(245, -105)
 texture = ExtResource("3_t1iho")
 
 [node name="HouseBeigeBottomLeft" type="Sprite2D" parent="Building"]
-position = Vector2(139, 0)
+position = Vector2(175, -35)
 texture = ExtResource("4_3oany")
-
-[node name="HouseBeigeBottomLeft2" type="Sprite2D" parent="Building"]
-position = Vector2(-67, 0)
-texture = ExtResource("4_3oany")
-
-[node name="HouseBeigeBottomMid" type="Sprite2D" parent="Building"]
-texture = ExtResource("5_ue7x4")
-
-[node name="HouseBeigeBottomMid2" type="Sprite2D" parent="Building"]
-position = Vector2(-203, 0)
-texture = ExtResource("5_ue7x4")
 
 [node name="HouseBeigeBottomMid3" type="Sprite2D" parent="Building"]
-position = Vector2(207, 0)
+position = Vector2(35, -35)
+texture = ExtResource("5_ue7x4")
+
+[node name="HouseBeigeBottomMid4" type="Sprite2D" parent="Building"]
+position = Vector2(245, -35)
+texture = ExtResource("5_ue7x4")
+
+[node name="HouseBeigeBottomMid5" type="Sprite2D" parent="Building"]
+position = Vector2(-175, -35)
 texture = ExtResource("5_ue7x4")
 
 [node name="HouseBeigeBottomRight" type="Sprite2D" parent="Building"]
-position = Vector2(70, 0)
+position = Vector2(105, -35)
 texture = ExtResource("6_v3jrw")
 
 [node name="HouseBeigeBottomRight2" type="Sprite2D" parent="Building"]
-position = Vector2(-133, 0)
+position = Vector2(-105, -35)
 texture = ExtResource("6_v3jrw")
-
-[node name="HouseBeigeMidLeft" type="Sprite2D" parent="Building"]
-position = Vector2(139, -70)
-texture = ExtResource("7_moxxi")
-
-[node name="HouseBeigeMidLeft3" type="Sprite2D" parent="Building"]
-position = Vector2(70, -70)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft4" type="Sprite2D" parent="Building"]
-position = Vector2(-133, -70)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft2" type="Sprite2D" parent="Building"]
-position = Vector2(-65, -70)
-texture = ExtResource("7_moxxi")
-
-[node name="HouseBeige2" type="Sprite2D" parent="Building"]
-position = Vector2(0.5, -137.5)
-scale = Vector2(1.01429, 1.04286)
-texture = ExtResource("1_41v45")
-
-[node name="HouseBeige4" type="Sprite2D" parent="Building"]
-position = Vector2(207.25, -138)
-scale = Vector2(0.992857, 1.04286)
-texture = ExtResource("1_41v45")
-
-[node name="HouseBeigeMidLeft5" type="Sprite2D" parent="Building"]
-position = Vector2(139, -139)
-texture = ExtResource("7_moxxi")
-
-[node name="HouseBeigeMidLeft6" type="Sprite2D" parent="Building"]
-position = Vector2(70, -139)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft7" type="Sprite2D" parent="Building"]
-position = Vector2(-133, -139)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft8" type="Sprite2D" parent="Building"]
-position = Vector2(-65, -139)
-texture = ExtResource("7_moxxi")
-
-[node name="HouseBeige3" type="Sprite2D" parent="Building"]
-position = Vector2(0.5, -207.5)
-scale = Vector2(1.01429, 1.04286)
-texture = ExtResource("1_41v45")
-
-[node name="HouseBeigeMidLeft9" type="Sprite2D" parent="Building"]
-position = Vector2(139, -209)
-texture = ExtResource("7_moxxi")
-
-[node name="HouseBeigeMidLeft10" type="Sprite2D" parent="Building"]
-position = Vector2(70, -209)
-texture = ExtResource("7_moxxi")
-flip_h = true
 
 [node name="HouseBeigeBottomRight3" type="Sprite2D" parent="Building"]
-position = Vector2(277, 0)
+position = Vector2(315, -35)
 texture = ExtResource("6_v3jrw")
 
-[node name="HouseBeigeMidLeft16" type="Sprite2D" parent="Building"]
-position = Vector2(277, -70)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft17" type="Sprite2D" parent="Building"]
-position = Vector2(277, -139)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft18" type="Sprite2D" parent="Building"]
-position = Vector2(277, -209)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft11" type="Sprite2D" parent="Building"]
-position = Vector2(-133, -209)
-texture = ExtResource("7_moxxi")
-flip_h = true
-
-[node name="HouseBeigeMidLeft12" type="Sprite2D" parent="Building"]
-position = Vector2(-65, -209)
-texture = ExtResource("7_moxxi")
-
 [node name="HouseBeigeBottomLeft3" type="Sprite2D" parent="Building"]
-position = Vector2(-270, 0)
+position = Vector2(-35, -35)
 texture = ExtResource("4_3oany")
 
-[node name="HouseBeigeMidLeft13" type="Sprite2D" parent="Building"]
-position = Vector2(-270, -70)
+[node name="HouseBeigeBottomLeft4" type="Sprite2D" parent="Building"]
+position = Vector2(-245, -35)
+texture = ExtResource("4_3oany")
+
+[node name="HouseBeigeMidRight" type="Sprite2D" parent="Building"]
+position = Vector2(315, -105)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidRight2" type="Sprite2D" parent="Building"]
+position = Vector2(-105, -105)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-245, -105)
 texture = ExtResource("7_moxxi")
 
-[node name="HouseBeigeMidLeft14" type="Sprite2D" parent="Building"]
-position = Vector2(-270, -139)
+[node name="HouseBeigeMidLeft2" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -105)
 texture = ExtResource("7_moxxi")
 
-[node name="HouseBeigeMidLeft15" type="Sprite2D" parent="Building"]
-position = Vector2(-270, -209)
+[node name="HouseBeigeMidRight3" type="Sprite2D" parent="Building"]
+position = Vector2(105, -105)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidLeft3" type="Sprite2D" parent="Building"]
+position = Vector2(175, -105)
 texture = ExtResource("7_moxxi")
+
+[node name="HouseBeigeMidRight4" type="Sprite2D" parent="Building"]
+position = Vector2(315, -175)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidRight5" type="Sprite2D" parent="Building"]
+position = Vector2(-105, -175)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidLeft4" type="Sprite2D" parent="Building"]
+position = Vector2(-245, -175)
+texture = ExtResource("7_moxxi")
+
+[node name="HouseBeigeMidLeft5" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -175)
+texture = ExtResource("7_moxxi")
+
+[node name="HouseBeigeMidRight6" type="Sprite2D" parent="Building"]
+position = Vector2(105, -175)
+texture = ExtResource("8_h2gey")
+
+[node name="HouseBeigeMidLeft6" type="Sprite2D" parent="Building"]
+position = Vector2(175, -175)
+texture = ExtResource("7_moxxi")
+
+[node name="HouseBeigeTopLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-245, -245)
+texture = ExtResource("10_dmh8k")
+
+[node name="HouseBeigeTopLeft2" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -245)
+texture = ExtResource("10_dmh8k")
+
+[node name="HouseBeigeTopLeft3" type="Sprite2D" parent="Building"]
+position = Vector2(175, -245)
+texture = ExtResource("10_dmh8k")
+
+[node name="HouseBeigeTopMid" type="Sprite2D" parent="Building"]
+position = Vector2(245, -245)
+texture = ExtResource("11_c4kmb")
+
+[node name="HouseBeigeTopMid2" type="Sprite2D" parent="Building"]
+position = Vector2(35, -245)
+texture = ExtResource("11_c4kmb")
+
+[node name="HouseBeigeTopMid3" type="Sprite2D" parent="Building"]
+position = Vector2(-175, -245)
+texture = ExtResource("11_c4kmb")
+
+[node name="HouseBeigeTopRight" type="Sprite2D" parent="Building"]
+position = Vector2(315, -245)
+texture = ExtResource("12_dnpcy")
+
+[node name="HouseBeigeTopRight2" type="Sprite2D" parent="Building"]
+position = Vector2(105, -245)
+texture = ExtResource("12_dnpcy")
+
+[node name="HouseBeigeTopRight3" type="Sprite2D" parent="Building"]
+position = Vector2(-105, -245)
+texture = ExtResource("12_dnpcy")
 
 [node name="DoorsAndWindows" type="Node2D" parent="."]
+modulate = Color(1, 1, 1, 0.796078)
 
-[node name="ClosedDoor3" parent="DoorsAndWindows" instance=ExtResource("15_uj6lt")]
+[node name="MidCheckeredWindow" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
+position = Vector2(-210, -49)
 
 [node name="MidCheckeredWindow2" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
-position = Vector2(-168, -58)
-
-[node name="MidCheckeredWindow5" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
-position = Vector2(-244, -171)
+position = Vector2(-140, -161)
 
 [node name="MidCheckeredWindow3" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
-position = Vector2(246, -174)
+position = Vector2(210, -161)
 
 [node name="MidCheckeredWindow4" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
-position = Vector2(156, -46)
+position = Vector2(280, -49)
 
 [node name="WindowLowCheckered" type="Sprite2D" parent="DoorsAndWindows"]
-position = Vector2(-36, -110)
+position = Vector2(0, -175)
 texture = ExtResource("12_5a8k1")
 
 [node name="WindowLowCheckered2" type="Sprite2D" parent="DoorsAndWindows"]
-position = Vector2(35, -110)
+position = Vector2(70, -175)
 texture = ExtResource("12_5a8k1")
 
 [node name="WindowLowCheckered3" type="Sprite2D" parent="DoorsAndWindows"]
-position = Vector2(-36, -200)
+position = Vector2(0, -245)
 texture = ExtResource("12_5a8k1")
 
 [node name="WindowLowCheckered4" type="Sprite2D" parent="DoorsAndWindows"]
-position = Vector2(35, -200)
+position = Vector2(70, -245)
 texture = ExtResource("12_5a8k1")
 
-[node name="Chimney" type="Sprite2D" parent="."]
-position = Vector2(233, -387)
-texture = ExtResource("12_xbgnt")
+[node name="ClosedDoor2" parent="DoorsAndWindows" instance=ExtResource("14_hn8be")]
+position = Vector2(35, 0)
 
-[node name="Anemometer" type="Sprite2D" parent="."]
-position = Vector2(-233, -398)
-texture = ExtResource("13_5qgfm")
+[node name="Chimney" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.94902)
+position = Vector2(245, -420)
+texture = ExtResource("12_xbgnt")

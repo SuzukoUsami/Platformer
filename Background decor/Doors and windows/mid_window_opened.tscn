@@ -6,8 +6,9 @@
 [node name="MidWindowOpened" type="Node2D"]
 
 [node name="WindowHighOpenBottom" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
 texture = ExtResource("1_k66mc")
 
 [node name="WindowHighOpenTop" type="Sprite2D" parent="."]
-position = Vector2(0, -70)
+position = Vector2(0, -105)
 texture = ExtResource("2_olohp")

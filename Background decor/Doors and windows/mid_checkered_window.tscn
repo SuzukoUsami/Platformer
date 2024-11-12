@@ -6,8 +6,9 @@
 [node name="MidCheckeredWindow" type="Node2D"]
 
 [node name="WindowHighCheckeredBottom" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
 texture = ExtResource("1_euj86")
 
 [node name="WindowHighCheckeredTop" type="Sprite2D" parent="."]
-position = Vector2(0, -70)
+position = Vector2(0, -105)
 texture = ExtResource("2_55goj")

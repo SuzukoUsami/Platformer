@@ -6,8 +6,9 @@
 [node name="WindowMidLeadlight" type="Node2D"]
 
 [node name="WindowHighLeadlightBottom" type="Sprite2D" parent="."]
+position = Vector2(0, -35)
 texture = ExtResource("1_0vhgb")
 
 [node name="WindowHighLeadlightTop" type="Sprite2D" parent="."]
-position = Vector2(0, -70)
+position = Vector2(0, -105)
 texture = ExtResource("2_3hfwp")

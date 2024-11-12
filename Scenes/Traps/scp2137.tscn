@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bx4p580173qd"]
+[gd_scene load_steps=10 format=3 uid="uid://dtfk4ln0of220"]
 
 [ext_resource type="Texture2D" uid="uid://7mklufasnfgw" path="res://graphics/PNG/pixilart-sprite.png" id="1_4qkyu"]
+[ext_resource type="Script" path="res://Scenes/Traps/scp_2137.gd" id="1_vbm6n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j8yec"]
 atlas = ExtResource("1_4qkyu")
@@ -45,7 +46,12 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mtvke"]
+radius = 34.0
+height = 338.0
+
 [node name="SCP2137" type="Node2D"]
+script = ExtResource("1_vbm6n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 1)
@@ -53,3 +59,25 @@ scale = Vector2(1.71094, 1.71094)
 sprite_frames = SubResource("SpriteFrames_xw1ff")
 autoplay = "default"
 frame_progress = 0.73884
+metadata/_edit_lock_ = true
+
+[node name="NoticeArea" type="Area2D" parent="."]
+collision_layer = 4
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NoticeArea"]
+position = Vector2(-4, 3)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_mtvke")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = -102.0
+offset_top = -100.0
+offset_right = -19.0
+offset_bottom = -60.0
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Pet the cat"
+
+[connection signal="body_entered" from="NoticeArea" to="." method="_on_notice_area_body_entered"]

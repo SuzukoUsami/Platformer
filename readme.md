@@ -42,3 +42,7 @@
 	- dynamic controller input tutorial,
 	- different minigame on each level,
 	- button that spawns cats,
+	- ability/something to hint where traps are,
+	- shops,
+	- coyote effect,
+	

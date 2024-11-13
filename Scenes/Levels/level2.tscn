@@ -1927,11 +1927,11 @@ texture = ExtResource("13_o52dk")
 flip_h = true
 
 [node name="LargeBush" type="Sprite2D" parent="Decor/Bushes" index="0"]
-position = Vector2(-4231, 739)
+position = Vector2(-4206, 736)
 texture = ExtResource("4_qdl8y")
 
 [node name="LargeBush2" type="Sprite2D" parent="Decor/Bushes" index="1"]
-position = Vector2(-3491, 737)
+position = Vector2(-3495, 738)
 texture = ExtResource("4_qdl8y")
 
 [node name="LargeBush3" type="Sprite2D" parent="Decor/Bushes" index="2"]
@@ -1968,7 +1968,7 @@ position = Vector2(-1566, 317)
 texture = ExtResource("4_qdl8y")
 
 [node name="SmallBush" type="Sprite2D" parent="Decor/Bushes" index="10"]
-position = Vector2(-4116.5, 740.5)
+position = Vector2(-4103, 741)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("5_pf0tv")
 
@@ -2019,13 +2019,13 @@ scale = Vector2(0.9, 0.9)
 texture = ExtResource("5_pf0tv")
 
 [node name="MediumBush" type="Sprite2D" parent="Decor/Bushes" index="20"]
-position = Vector2(-4179, 726)
+position = Vector2(-4192, 725)
 scale = Vector2(1.34285, 1.34285)
 texture = ExtResource("5_pf0tv")
 flip_h = true
 
 [node name="MediumBush2" type="Sprite2D" parent="Decor/Bushes" index="21"]
-position = Vector2(-3407.5, 721.5)
+position = Vector2(-3408, 721)
 scale = Vector2(1.5, 1.52857)
 texture = ExtResource("5_pf0tv")
 flip_h = true
@@ -2082,17 +2082,17 @@ texture = ExtResource("9_t7byi")
 
 [node name="SmallRock" type="Sprite2D" parent="Decor/Rocks" index="1"]
 modulate = Color(0.662745, 0.729412, 0.729412, 1)
-position = Vector2(-4306, 754)
+position = Vector2(-4305, 756)
 scale = Vector2(0.485714, 0.485714)
 texture = ExtResource("9_t7byi")
 flip_h = true
 
 [node name="Right" type="Sprite2D" parent="Decor" index="7"]
-position = Vector2(-4263, 735)
+position = Vector2(-4254, 737)
 texture = ExtResource("8_xv4qd")
 
 [node name="Grass" type="Sprite2D" parent="Decor/Grass" index="0"]
-position = Vector2(-3604, 737)
+position = Vector2(-3603, 739)
 texture = ExtResource("7_apjds")
 
 [node name="Grass2" type="Sprite2D" parent="Decor/Grass" index="1"]
@@ -2115,7 +2115,7 @@ texture = ExtResource("7_apjds")
 flip_h = true
 
 [node name="Grass6" type="Sprite2D" parent="Decor/Grass" index="5"]
-position = Vector2(-3298, 736)
+position = Vector2(-3289, 738)
 texture = ExtResource("7_apjds")
 
 [node name="Grass7" type="Sprite2D" parent="Decor/Grass" index="6"]
@@ -2178,7 +2178,7 @@ position = Vector2(-2660, 597)
 texture = ExtResource("7_apjds")
 
 [node name="Cactus" type="Sprite2D" parent="Decor/Plants" index="0"]
-position = Vector2(-3646, 737)
+position = Vector2(-3646, 739)
 texture = ExtResource("6_wtj1m")
 
 [node name="BronzeCoin" parent="Items/Coins" index="0" instance=ExtResource("10_g421k")]
@@ -2523,7 +2523,7 @@ position = Vector2(3466, 736)
 position = Vector2(3535, 736)
 
 [node name="Spring" parent="Traps" index="1" instance=ExtResource("17_oenhp")]
-position = Vector2(-3357, 740)
+position = Vector2(-3337, 744)
 
 [node name="Spring5" parent="Traps" index="2" instance=ExtResource("17_oenhp")]
 position = Vector2(-3404, -2338)
@@ -2623,7 +2623,7 @@ position = Vector2(-2302, 197)
 position = Vector2(1386, -1763)
 
 [node name="FlyEnemy" parent="Enemies/Flies" index="0" instance=ExtResource("15_1uqgh")]
-position = Vector2(-3877, 201)
+position = Vector2(-3581, 202)
 
 [node name="FlyEnemy2" parent="Enemies/Flies" index="1" instance=ExtResource("15_1uqgh")]
 position = Vector2(722, -79)
@@ -2677,7 +2677,7 @@ position = Vector2(-2623, -1541)
 position = Vector2(2802, -980)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(-2625, -2718)
+position = Vector2(-4155, 714)
 
 [node name="PlayerInvisibleWalls" parent="." index="9"]
 metadata/_edit_group_ = true

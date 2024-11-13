@@ -21,7 +21,7 @@
 [node name="DarkHouse" type="Node2D"]
 
 [node name="Roof" type="Node2D" parent="."]
-modulate = Color(0.486275, 0.486275, 0.486275, 0.784314)
+modulate = Color(0.486275, 0.486275, 0.486275, 1)
 
 [node name="RoofGreyTopMid" type="Sprite2D" parent="Roof"]
 position = Vector2(-105, -455)
@@ -44,7 +44,7 @@ position = Vector2(175, -455)
 texture = ExtResource("11_15eap")
 
 [node name="Building" type="Node2D" parent="."]
-modulate = Color(1, 1, 1, 0.784314)
+modulate = Color(0.856067, 0.856067, 0.856067, 1)
 
 [node name="HouseDark" type="Sprite2D" parent="Building"]
 position = Vector2(35, -105)
@@ -170,7 +170,7 @@ position = Vector2(-105, -385)
 texture = ExtResource("9_psidf")
 
 [node name="DoorsAndWindows" type="Node2D" parent="."]
-modulate = Color(0.74902, 0.74902, 0.74902, 0.882353)
+modulate = Color(0.74902, 0.74902, 0.74902, 1)
 
 [node name="WindowLowLeadlight" type="Sprite2D" parent="DoorsAndWindows"]
 position = Vector2(-70, -385)

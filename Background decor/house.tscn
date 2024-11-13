@@ -17,11 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://dfu0rnp6ps8ns" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/roofRedMid.png" id="13_qit3n"]
 [ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="14_hn8be"]
 
-[node name="House" type="Node2D"]
-modulate = Color(0.803922, 0.803922, 0.803922, 1)
+[node name="BigHouse" type="Node2D"]
 
 [node name="Roof" type="Node2D" parent="."]
-modulate = Color(1, 1, 1, 0.776471)
 metadata/_edit_lock_ = true
 
 [node name="RoofRedMid17" type="Sprite2D" parent="Roof"]
@@ -97,7 +95,6 @@ position = Vector2(315, -385)
 texture = ExtResource("13_qit3n")
 
 [node name="Building" type="Node2D" parent="."]
-modulate = Color(1, 1, 1, 0.784314)
 metadata/_edit_lock_ = true
 
 [node name="HouseBeige5" type="Sprite2D" parent="Building"]
@@ -245,7 +242,6 @@ position = Vector2(-105, -245)
 texture = ExtResource("12_dnpcy")
 
 [node name="DoorsAndWindows" type="Node2D" parent="."]
-modulate = Color(1, 1, 1, 0.796078)
 
 [node name="MidCheckeredWindow" parent="DoorsAndWindows" instance=ExtResource("11_r8ndk")]
 position = Vector2(-210, -49)

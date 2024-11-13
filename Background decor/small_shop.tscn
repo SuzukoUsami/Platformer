@@ -1,0 +1,93 @@
+[gd_scene load_steps=11 format=3 uid="uid://ds0237x2jwuiy"]
+
+[ext_resource type="Texture2D" uid="uid://cfwlceqb58xpo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomMid.png" id="1_dtjt2"]
+[ext_resource type="Texture2D" uid="uid://bp3mqwox23w4v" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomLeft.png" id="2_m7q73"]
+[ext_resource type="Texture2D" uid="uid://c84dvli5flej1" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomRight.png" id="3_sy4bp"]
+[ext_resource type="Texture2D" uid="uid://j02e7w4nhi34" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeMidLeft.png" id="4_o8jk8"]
+[ext_resource type="Texture2D" uid="uid://535eq4q8hs6g" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeMidRight.png" id="5_4jgf6"]
+[ext_resource type="Texture2D" uid="uid://uqebtj8y5n0n" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeige.png" id="6_bfgfx"]
+[ext_resource type="Texture2D" uid="uid://tdu78m4arm7o" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeAlt2.png" id="7_udlr8"]
+[ext_resource type="Texture2D" uid="uid://bpw1wbyxi0i1x" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/awningGreenRed.png" id="8_ba7b8"]
+[ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="9_ucfvw"]
+[ext_resource type="Texture2D" uid="uid://dmlnhi04c2wo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLow.png" id="10_slg4o"]
+
+[node name="SmallShop" type="Node2D"]
+
+[node name="Building" type="Node2D" parent="."]
+
+[node name="HouseBeigeBottomMid" type="Sprite2D" parent="Building"]
+position = Vector2(35, -35)
+texture = ExtResource("1_dtjt2")
+
+[node name="HouseBeigeBottomLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-105, -35)
+texture = ExtResource("2_m7q73")
+
+[node name="HouseBeigeBottomRight" type="Sprite2D" parent="Building"]
+position = Vector2(175, -35)
+texture = ExtResource("3_sy4bp")
+
+[node name="HouseBeigeBottomMid2" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -35)
+texture = ExtResource("1_dtjt2")
+
+[node name="HouseBeigeBottomMid3" type="Sprite2D" parent="Building"]
+position = Vector2(105, -35)
+texture = ExtResource("1_dtjt2")
+
+[node name="HouseBeigeMidLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-105, -105)
+texture = ExtResource("4_o8jk8")
+
+[node name="HouseBeigeMidRight" type="Sprite2D" parent="Building"]
+position = Vector2(175, -105)
+texture = ExtResource("5_4jgf6")
+
+[node name="HouseBeige" type="Sprite2D" parent="Building"]
+position = Vector2(35, -105)
+texture = ExtResource("6_bfgfx")
+
+[node name="HouseBeigeAlt2" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -105)
+texture = ExtResource("7_udlr8")
+
+[node name="HouseBeigeAlt3" type="Sprite2D" parent="Building"]
+position = Vector2(105, -105)
+texture = ExtResource("7_udlr8")
+flip_h = true
+
+[node name="Roof" type="Node2D" parent="."]
+
+[node name="AwningGreenRed" type="Sprite2D" parent="Roof"]
+position = Vector2(-105, -154)
+texture = ExtResource("8_ba7b8")
+
+[node name="AwningGreenRed2" type="Sprite2D" parent="Roof"]
+position = Vector2(-35, -154)
+texture = ExtResource("8_ba7b8")
+
+[node name="AwningGreenRed3" type="Sprite2D" parent="Roof"]
+position = Vector2(35, -154)
+texture = ExtResource("8_ba7b8")
+
+[node name="AwningGreenRed4" type="Sprite2D" parent="Roof"]
+position = Vector2(105, -154)
+texture = ExtResource("8_ba7b8")
+
+[node name="AwningGreenRed5" type="Sprite2D" parent="Roof"]
+position = Vector2(175, -154)
+scale = Vector2(1, 1)
+texture = ExtResource("8_ba7b8")
+
+[node name="DoorsAndWindows" type="Node2D" parent="."]
+
+[node name="ClosedDoor2" parent="DoorsAndWindows" instance=ExtResource("9_ucfvw")]
+position = Vector2(35, 0)
+
+[node name="WindowLow2" type="Sprite2D" parent="DoorsAndWindows"]
+position = Vector2(140, -91)
+texture = ExtResource("10_slg4o")
+
+[node name="WindowLow" type="Sprite2D" parent="DoorsAndWindows"]
+position = Vector2(-70, -91)
+texture = ExtResource("10_slg4o")

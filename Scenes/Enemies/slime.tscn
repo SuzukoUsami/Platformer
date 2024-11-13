@@ -37,6 +37,7 @@ autoplay = "walk"
 frame_progress = 0.518299
 
 [node name="HitboxComponent" type="Area2D" parent="."]
+visible = false
 position = Vector2(-1, -0.25)
 script = ExtResource("5_7hskp")
 instant_death = false

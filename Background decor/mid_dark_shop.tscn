@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bsjdtscp7iyvd"]
+[gd_scene load_steps=14 format=3 uid="uid://bsjdtscp7iyvd"]
 
 [ext_resource type="Texture2D" uid="uid://c2bypidl8nivk" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseDarkBottomLeft.png" id="1_vyscx"]
 [ext_resource type="Texture2D" uid="uid://b20lv67e6nu1u" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseDarkBottomMid.png" id="2_jaqyv"]
@@ -12,6 +12,9 @@
 [ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="10_h4xns"]
 [ext_resource type="Texture2D" uid="uid://d2yx0wg5yhi1r" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLowCheckered.png" id="11_f33iv"]
 [ext_resource type="Texture2D" uid="uid://mx5jkqeu72ph" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLowOpen.png" id="12_0v8dp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tes47"]
+size = Vector2(280, 4)
 
 [node name="MidDarkShop" type="Node2D"]
 
@@ -127,3 +130,11 @@ texture = ExtResource("11_f33iv")
 position = Vector2(-59, -78)
 scale = Vector2(0.9, 0.9)
 texture = ExtResource("12_0v8dp")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -327)
+shape = SubResource("RectangleShape2D_tes47")
+one_way_collision = true

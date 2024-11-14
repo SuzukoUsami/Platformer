@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ds0237x2jwuiy"]
+[gd_scene load_steps=12 format=3 uid="uid://ds0237x2jwuiy"]
 
 [ext_resource type="Texture2D" uid="uid://cfwlceqb58xpo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomMid.png" id="1_dtjt2"]
 [ext_resource type="Texture2D" uid="uid://bp3mqwox23w4v" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomLeft.png" id="2_m7q73"]
@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bpw1wbyxi0i1x" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/awningGreenRed.png" id="8_ba7b8"]
 [ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="9_ucfvw"]
 [ext_resource type="Texture2D" uid="uid://dmlnhi04c2wo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLow.png" id="10_slg4o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kevko"]
+size = Vector2(350, 6.5)
 
 [node name="SmallShop" type="Node2D"]
 
@@ -76,7 +79,6 @@ texture = ExtResource("8_ba7b8")
 
 [node name="AwningGreenRed5" type="Sprite2D" parent="Roof"]
 position = Vector2(175, -154)
-scale = Vector2(1, 1)
 texture = ExtResource("8_ba7b8")
 
 [node name="DoorsAndWindows" type="Node2D" parent="."]
@@ -91,3 +93,11 @@ texture = ExtResource("10_slg4o")
 [node name="WindowLow" type="Sprite2D" parent="DoorsAndWindows"]
 position = Vector2(-70, -91)
 texture = ExtResource("10_slg4o")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(37, -186)
+shape = SubResource("RectangleShape2D_kevko")
+one_way_collision = true

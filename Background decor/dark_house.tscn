@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c6arr8ns6cibp"]
+[gd_scene load_steps=19 format=3 uid="uid://c6arr8ns6cibp"]
 
 [ext_resource type="Texture2D" uid="uid://b2nwilihgd513" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseDark.png" id="1_uttmg"]
 [ext_resource type="Texture2D" uid="uid://lredg5d7yoxs" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseDarkAlt2.png" id="2_fhegp"]
@@ -17,6 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://conj81f3jf2h8" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowCheckered.png" id="15_yqd7c"]
 [ext_resource type="PackedScene" uid="uid://lrwudx0er4p5" path="res://Background decor/Doors and windows/closed_door_3.tscn" id="16_fwg0d"]
 [ext_resource type="Texture2D" uid="uid://d2yx0wg5yhi1r" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLowCheckered.png" id="17_ekp1y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jm3sn"]
+size = Vector2(351, 6)
 
 [node name="DarkHouse" type="Node2D"]
 
@@ -228,3 +231,10 @@ texture = ExtResource("14_utdpy")
 modulate = Color(0.333333, 0.380392, 0.45098, 0.882353)
 position = Vector2(-70, -504)
 texture = ExtResource("12_p44jn")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(34.5, -486)
+shape = SubResource("RectangleShape2D_jm3sn")
+one_way_collision = true

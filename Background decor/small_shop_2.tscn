@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://pnyqbiswvjej"]
+[gd_scene load_steps=11 format=3 uid="uid://pnyqbiswvjej"]
 
 [ext_resource type="Texture2D" uid="uid://cfwlceqb58xpo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomMid.png" id="1_8pk1e"]
 [ext_resource type="Texture2D" uid="uid://bp3mqwox23w4v" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeBottomLeft.png" id="2_lnhsa"]
@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://bj4txk1mh5jir" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/awningGreen.png" id="7_hwan2"]
 [ext_resource type="PackedScene" uid="uid://b8bo7jqpcopt5" path="res://Background decor/Doors and windows/door_with_window_1.tscn" id="8_f55cy"]
 [ext_resource type="Texture2D" uid="uid://d2yx0wg5yhi1r" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLowCheckered.png" id="9_urnnl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v23pf"]
+size = Vector2(210, 3)
 
 [node name="SmallShop2" type="Node2D"]
 
@@ -64,22 +67,32 @@ texture = ExtResource("7_hwan2")
 position = Vector2(105, -224)
 texture = ExtResource("7_hwan2")
 
-[node name="DoorsAndWindows" type="Node2D" parent="."]
+[node name="Other" type="Node2D" parent="."]
 
-[node name="DoorWithWindow1" parent="." instance=ExtResource("8_f55cy")]
+[node name="DoorsAndWindows" type="Node2D" parent="Other"]
+
+[node name="DoorWithWindow1" parent="Other" instance=ExtResource("8_f55cy")]
 position = Vector2(7, 0)
 
-[node name="WindowLowCheckered" type="Sprite2D" parent="."]
+[node name="WindowLowCheckered" type="Sprite2D" parent="Other"]
 position = Vector2(-14, -168)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("9_urnnl")
 
-[node name="WindowLowCheckered2" type="Sprite2D" parent="."]
+[node name="WindowLowCheckered2" type="Sprite2D" parent="Other"]
 position = Vector2(84, -168)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("9_urnnl")
 
-[node name="WindowLowCheckered3" type="Sprite2D" parent="."]
+[node name="WindowLowCheckered3" type="Sprite2D" parent="Other"]
 position = Vector2(84, -84)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("9_urnnl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(35, -257.5)
+shape = SubResource("RectangleShape2D_v23pf")
+one_way_collision = true

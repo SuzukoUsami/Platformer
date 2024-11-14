@@ -15,6 +15,7 @@
 	- more bouncy on the bouncy spring when down button is pressed,
 	- menu can be clickable with the controller,
 	- chimney smoke particles,
+	- chimney secret room,
 
  ### fix:
 	- loading when no save file is present,- fire worm can't shoot player when above him,

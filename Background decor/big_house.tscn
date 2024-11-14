@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c02t47nqofu1b"]
+[gd_scene load_steps=18 format=3 uid="uid://c02t47nqofu1b"]
 
 [ext_resource type="Texture2D" uid="uid://uqebtj8y5n0n" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeige.png" id="1_41v45"]
 [ext_resource type="Texture2D" uid="uid://tdu78m4arm7o" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseBeigeAlt2.png" id="2_4k0fi"]
@@ -16,6 +16,9 @@
 [ext_resource type="Texture2D" uid="uid://dr08t4cggo376" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/chimney.png" id="12_xbgnt"]
 [ext_resource type="Texture2D" uid="uid://dfu0rnp6ps8ns" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/roofRedMid.png" id="13_qit3n"]
 [ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="14_hn8be"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khe1n"]
+size = Vector2(630.5, 9)
 
 [node name="BigHouse" type="Node2D"]
 
@@ -274,7 +277,15 @@ texture = ExtResource("12_5a8k1")
 [node name="ClosedDoor2" parent="DoorsAndWindows" instance=ExtResource("14_hn8be")]
 position = Vector2(35, 0)
 
-[node name="Chimney" type="Sprite2D" parent="."]
+[node name="Chimney" type="Sprite2D" parent="DoorsAndWindows"]
 modulate = Color(1, 1, 1, 0.94902)
 position = Vector2(245, -420)
 texture = ExtResource("12_xbgnt")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(35.25, -415)
+shape = SubResource("RectangleShape2D_khe1n")
+one_way_collision = true

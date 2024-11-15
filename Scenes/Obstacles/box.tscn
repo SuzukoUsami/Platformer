@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://hqsa7eie3hyq"]
+
+[ext_resource type="Texture2D" uid="uid://d2mer3cyqvxym" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/boxAlt.png" id="1_838th"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rnuw8"]
+size = Vector2(70, 70)
+
+[node name="Box" type="Sprite2D"]
+position = Vector2(0, -35)
+texture = ExtResource("1_838th")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_rnuw8")

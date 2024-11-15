@@ -4,7 +4,7 @@
 	- character walking particles,
 	- music,
 	- sound effects -> killing an enemy, fireworm shooting, player dmg and heal, luceg, coin pick up,
-	- short story,
+	- short story, NPC?
 	- 10/15 min of levels content,
 	- 5 levels,
 	- supported platforms: pc, mobile, web!,

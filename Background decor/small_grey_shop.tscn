@@ -1,0 +1,122 @@
+[gd_scene load_steps=16 format=3 uid="uid://cnwh35e7oqe2"]
+
+[ext_resource type="Texture2D" uid="uid://bus5me2k1osdg" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayBottomRight.png" id="1_6b6rc"]
+[ext_resource type="Texture2D" uid="uid://dartdh6xk4gew" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayBottomMid.png" id="2_aud8s"]
+[ext_resource type="Texture2D" uid="uid://dncuebei2g11a" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayBottomLeft.png" id="3_ov02s"]
+[ext_resource type="Texture2D" uid="uid://dcygn752ngwes" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayTopLeft.png" id="4_p40wd"]
+[ext_resource type="Texture2D" uid="uid://dcuku5amtlmjb" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayTopRight.png" id="5_v17lc"]
+[ext_resource type="Texture2D" uid="uid://d3rf1dp41d1f" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayTopMid.png" id="6_ye6rp"]
+[ext_resource type="Texture2D" uid="uid://bs1dins1lj2sm" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayMidLeft.png" id="7_g1w4j"]
+[ext_resource type="Texture2D" uid="uid://dgpsl4p5wepku" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGrayMidRight.png" id="8_0yy6d"]
+[ext_resource type="Texture2D" uid="uid://b8h26ow05swvp" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/houseGray.png" id="9_bi3q1"]
+[ext_resource type="Texture2D" uid="uid://bpw1wbyxi0i1x" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/awningGreenRed.png" id="10_mfy7b"]
+[ext_resource type="Texture2D" uid="uid://1raq2ecsinhn" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/roofYellowTopMid.png" id="11_5rjvs"]
+[ext_resource type="Texture2D" uid="uid://conj81f3jf2h8" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowCheckered.png" id="12_hfx8n"]
+[ext_resource type="PackedScene" uid="uid://b0tb3nm1ooi8t" path="res://Background decor/Doors and windows/closed_door_2.tscn" id="13_s6wjv"]
+[ext_resource type="Texture2D" uid="uid://dmlnhi04c2wo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLow.png" id="14_e8p7e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_urlai"]
+size = Vector2(210, 2)
+
+[node name="SmallGreyShop" type="Node2D"]
+
+[node name="Building" type="Node2D" parent="."]
+
+[node name="HouseGrayBottomRight" type="Sprite2D" parent="Building"]
+position = Vector2(105, -35)
+texture = ExtResource("1_6b6rc")
+
+[node name="HouseGrayBottomMid" type="Sprite2D" parent="Building"]
+position = Vector2(35, -35)
+texture = ExtResource("2_aud8s")
+
+[node name="HouseGrayBottomLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -35)
+texture = ExtResource("3_ov02s")
+
+[node name="HouseGrayTopLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -105)
+texture = ExtResource("4_p40wd")
+
+[node name="HouseGrayTopRight" type="Sprite2D" parent="Building"]
+position = Vector2(105, -105)
+texture = ExtResource("5_v17lc")
+
+[node name="HouseGrayTopMid" type="Sprite2D" parent="Building"]
+position = Vector2(35, -105)
+texture = ExtResource("6_ye6rp")
+
+[node name="HouseGrayTopLeft2" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -294)
+texture = ExtResource("4_p40wd")
+
+[node name="HouseGrayTopRight2" type="Sprite2D" parent="Building"]
+position = Vector2(105, -294)
+texture = ExtResource("5_v17lc")
+
+[node name="HouseGrayTopMid2" type="Sprite2D" parent="Building"]
+position = Vector2(35, -294)
+texture = ExtResource("6_ye6rp")
+
+[node name="HouseGrayMidLeft" type="Sprite2D" parent="Building"]
+position = Vector2(-35, -224)
+texture = ExtResource("7_g1w4j")
+
+[node name="HouseGrayMidRight" type="Sprite2D" parent="Building"]
+position = Vector2(105, -224)
+texture = ExtResource("8_0yy6d")
+
+[node name="HouseGray" type="Sprite2D" parent="Building"]
+position = Vector2(35, -224)
+texture = ExtResource("9_bi3q1")
+
+[node name="Roof" type="Node2D" parent="."]
+
+[node name="AwningGreenRed" type="Sprite2D" parent="Roof"]
+position = Vector2(-35, -154)
+texture = ExtResource("10_mfy7b")
+
+[node name="AwningGreenRed2" type="Sprite2D" parent="Roof"]
+position = Vector2(35, -154)
+texture = ExtResource("10_mfy7b")
+
+[node name="AwningGreenRed3" type="Sprite2D" parent="Roof"]
+position = Vector2(105, -154)
+texture = ExtResource("10_mfy7b")
+
+[node name="RoofYellowTopMid" type="Sprite2D" parent="Roof"]
+position = Vector2(-35, -364)
+texture = ExtResource("11_5rjvs")
+
+[node name="RoofYellowTopMid2" type="Sprite2D" parent="Roof"]
+position = Vector2(35, -364)
+texture = ExtResource("11_5rjvs")
+
+[node name="RoofYellowTopMid3" type="Sprite2D" parent="Roof"]
+position = Vector2(105, -364)
+texture = ExtResource("11_5rjvs")
+
+[node name="Other" type="Node2D" parent="."]
+
+[node name="WindowCheckered" type="Sprite2D" parent="Other"]
+position = Vector2(-14, -280)
+texture = ExtResource("12_hfx8n")
+
+[node name="WindowCheckered2" type="Sprite2D" parent="Other"]
+position = Vector2(84, -280)
+texture = ExtResource("12_hfx8n")
+
+[node name="ClosedDoor2" parent="Other" instance=ExtResource("13_s6wjv")]
+position = Vector2(84, 0)
+
+[node name="WindowLow" type="Sprite2D" parent="Other"]
+position = Vector2(-14, -77)
+texture = ExtResource("14_e8p7e")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(35, -398)
+shape = SubResource("RectangleShape2D_urlai")
+one_way_collision = true

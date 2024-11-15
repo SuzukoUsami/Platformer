@@ -115,14 +115,6 @@ texture = ExtResource("4_rkgkj")
 position = Vector2(315, -455)
 texture = ExtResource("5_ice6e")
 
-[node name="HouseGrayMidLeft11" type="Sprite2D" parent="Building"]
-position = Vector2(245, -455)
-texture = ExtResource("4_rkgkj")
-
-[node name="HouseGrayMidRight10" type="Sprite2D" parent="Building"]
-position = Vector2(315, -455)
-texture = ExtResource("5_ice6e")
-
 [node name="HouseGrayAlt" type="Sprite2D" parent="Building"]
 position = Vector2(105, -105)
 texture = ExtResource("6_2ruta")

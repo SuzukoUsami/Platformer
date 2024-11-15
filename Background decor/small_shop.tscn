@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dmlnhi04c2wo" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/windowLow.png" id="10_slg4o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kevko"]
-size = Vector2(350, 6.5)
+size = Vector2(350, 3.25)
 
 [node name="SmallShop" type="Node2D"]
 
@@ -98,6 +98,6 @@ texture = ExtResource("10_slg4o")
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(37, -186)
+position = Vector2(37, -187.625)
 shape = SubResource("RectangleShape2D_kevko")
 one_way_collision = true

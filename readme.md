@@ -16,6 +16,7 @@
 	- menu can be clickable with the controller,
 	- chimney smoke particles,
 	- chimney secret room,
+	- hold arrow down key to jump off the thin platform,
 
  ### fix:
 	- loading when no save file is present,- fire worm can't shoot player when above him,

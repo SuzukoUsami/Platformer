@@ -47,4 +47,4 @@
 	- ability/something to hint where traps are,
 	- shops,
 	- coyote effect,
-	
+	- bridge is slighty moving while walking on it,

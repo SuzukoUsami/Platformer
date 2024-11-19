@@ -120,3 +120,8 @@ collision_layer = 4
 position = Vector2(35, -398)
 shape = SubResource("RectangleShape2D_urlai")
 one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(35, -188)
+shape = SubResource("RectangleShape2D_urlai")
+one_way_collision = true

@@ -15,7 +15,6 @@
 	- more bouncy on the bouncy spring when down button is pressed,
 	- menu can be clickable with the controller,
 	- chimney smoke particles,
-	- chimney secret room,
 	- hold arrow down key to jump off the thin platform,
 
  ### fix:
@@ -48,3 +47,4 @@
 	- shops,
 	- coyote effect,
 	- bridge is slighty moving while walking on it,
+	- chimney secret room,

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://du5n0dmjvsucj"]
+[gd_scene load_steps=38 format=3 uid="uid://du5n0dmjvsucj"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_d4uvr"]
 [ext_resource type="PackedScene" uid="uid://bsk4n0tds5w5g" path="res://Scenes/Items/door.tscn" id="2_sp7u6"]
@@ -18,11 +18,13 @@
 [ext_resource type="Texture2D" uid="uid://bh5q3diqmwdbl" path="res://graphics/Platformer Art Deluxe/Base pack/Items/plant.png" id="13_a3gc2"]
 [ext_resource type="PackedScene" uid="uid://btocub16d250h" path="res://Background decor/small_house.tscn" id="13_ub3xb"]
 [ext_resource type="PackedScene" uid="uid://dhfc3akob2jd3" path="res://Background decor/mid_grey_house.tscn" id="14_w03p4"]
+[ext_resource type="PackedScene" uid="uid://cchnl4qdhjndv" path="res://Background decor/small_dark_shop.tscn" id="15_q6tkl"]
 [ext_resource type="PackedScene" uid="uid://cnwh35e7oqe2" path="res://Background decor/small_grey_shop.tscn" id="15_qqg0w"]
 [ext_resource type="PackedScene" uid="uid://hqsa7eie3hyq" path="res://Scenes/Obstacles/box.tscn" id="19_desaa"]
 [ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="20_5n3ya"]
 [ext_resource type="Texture2D" uid="uid://bd2kjuotcesyr" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/box.png" id="20_gnqpj"]
 [ext_resource type="Texture2D" uid="uid://gxq8nga2b05u" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/signExit.png" id="21_i5yel"]
+[ext_resource type="Texture2D" uid="uid://lqwtbwhsux25" path="res://graphics/Platformer Art Deluxe/Base pack/Tiles/boxEmpty.png" id="21_vf1oj"]
 [ext_resource type="Texture2D" uid="uid://bclvpuvprp7o0" path="res://graphics/Platformer Art Deluxe/Mushroom expansion/PNG/bush.png" id="23_02of0"]
 [ext_resource type="Texture2D" uid="uid://5oh18t1nypob" path="res://graphics/Platformer Art Deluxe/Buildings expansion/Tiles/rockMossAlt.png" id="23_las71"]
 [ext_resource type="Texture2D" uid="uid://b7x3wc8ifrt1h" path="res://graphics/Platformer Art Deluxe/Base pack/Items/bush.png" id="24_13eun"]
@@ -148,6 +150,9 @@ position = Vector2(1190, 423)
 
 [node name="SmallGreyShop" parent="Decor/Buildings" index="10" instance=ExtResource("15_qqg0w")]
 position = Vector2(5530, 422)
+
+[node name="SmallDarkShop" parent="Decor/Buildings" index="11" instance=ExtResource("15_q6tkl")]
+position = Vector2(840, 423)
 
 [node name="Door" parent="Decor" index="1" instance=ExtResource("2_sp7u6")]
 position = Vector2(6755, 368)
@@ -320,22 +325,29 @@ position = Vector2(5771, 315)
 [node name="Box7" parent="Decor/Other" index="8" instance=ExtResource("19_desaa")]
 position = Vector2(2730, 385)
 
-[node name="Box8" parent="Decor/Other" index="9" instance=ExtResource("19_desaa")]
+[node name="Box12" parent="Decor/Other" index="9" instance=ExtResource("19_desaa")]
+position = Vector2(735, 388)
+
+[node name="Box13" parent="Decor/Other" index="10" instance=ExtResource("19_desaa")]
+position = Vector2(1015, 199)
+texture = ExtResource("21_vf1oj")
+
+[node name="Box8" parent="Decor/Other" index="11" instance=ExtResource("19_desaa")]
 position = Vector2(3532, -37)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("20_gnqpj")
 
-[node name="Box11" parent="Decor/Other" index="10" instance=ExtResource("19_desaa")]
+[node name="Box11" parent="Decor/Other" index="12" instance=ExtResource("19_desaa")]
 position = Vector2(5422, 176)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("20_gnqpj")
 
-[node name="Box9" parent="Decor/Other" index="11" instance=ExtResource("19_desaa")]
+[node name="Box9" parent="Decor/Other" index="13" instance=ExtResource("19_desaa")]
 position = Vector2(2418.5, 194.5)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("20_gnqpj")
 
-[node name="Box10" parent="Decor/Other" index="12" instance=ExtResource("19_desaa")]
+[node name="Box10" parent="Decor/Other" index="14" instance=ExtResource("19_desaa")]
 position = Vector2(2418.5, 117.5)
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("20_gnqpj")
@@ -425,4 +437,4 @@ texture = ExtResource("35_qmgxr")
 position = Vector2(2849, 150)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(3035, -345)
+position = Vector2(3683, -267)

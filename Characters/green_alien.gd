@@ -20,20 +20,21 @@ func _ready():
 
 
 func _process(_delta):
-	#if Input.is_action_pressed("right") and is_on_floor() or Input.is_action_pressed("left") and is_on_floor():
-		#animation.play("walk")
-	#elif Input.is_action_just_released("right") ands_action_pressed("right is_on_floor() or Input.is_action_just_released("left") and is_on_floor():
-		#animation.play("idle")
 	
-	if Input.is_action_pressed("right") and is_on_floor_only() or Input.is_action_pressed("left") and is_on_floor_only():
+	var go_right = Input.is_action_pressed("right")
+	var stop_right = Input.is_action_just_released("right")
+	var go_left = Input.is_action_pressed("left")
+	var stop_left = Input.is_action_just_released("left")
+	var on_floor = is_on_floor_only()
+	
+	if go_right and on_floor or go_left and on_floor:
 		animation.play("walk")
-	elif Input.is_action_just_released("right") and is_on_floor_only() or Input.is_action_just_released("left") and is_on_floor_only():
+	elif stop_right and on_floor or stop_left and on_floor:
 		animation.play("idle")
 		
-
-	if Input.is_action_just_pressed("right"):
+	if go_right:
 		animation.set_flip_h(false)
-	elif Input.is_action_just_pressed("left"):
+	elif go_left:
 		animation.set_flip_h(true)
 
 func hit_player():
@@ -58,15 +59,27 @@ func bounce(bounce_factor):
 
 func _physics_process(delta):
 	
+	var go_right = Input.is_action_pressed("right")
+	var go_left = Input.is_action_pressed("left")
+	var on_floor = is_on_floor_only()
+	var go_down = Input.is_action_pressed("down")
+	var jump = Input.is_action_pressed("up")
+	
+	
+	
 	# Add the gravity.
-	if Input.is_action_pressed("down") and not is_on_floor():
+
+	if go_down and not on_floor:
 		velocity.y += gravity * delta * fall_acceleration
-		animation.play()
+		animation.play("down")
 	else:
 		velocity.y += gravity * delta
+		#animation.play("jump")
+
 
 	# Handle Jump.
-	if Input.is_action_pressed("up") and is_on_floor():
+
+	if jump and on_floor:
 		velocity.y = jump_speed
 		animation.play("jump")
 	

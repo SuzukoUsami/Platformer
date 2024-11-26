@@ -44,7 +44,7 @@ metadata/auto_move = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 material = ExtResource("2_wr7pp")
 sprite_frames = SubResource("SpriteFrames_jyeqj")
-animation = &"walk"
+animation = &"hidden"
 autoplay = "walk"
 
 [node name="HitboxComponent" type="Area2D" parent="."]

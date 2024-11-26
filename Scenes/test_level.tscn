@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cunavtlc8gsbb"]
+
+[ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ospor"]
+[ext_resource type="PackedScene" uid="uid://dw4pir05774al" path="res://Scenes/Traps/spikes.tscn" id="2_8vutm"]
+[ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="3_1583l"]
+[ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="4_c6wdx"]
+
+[node name="TestLevel" instance=ExtResource("1_ospor")]
+
+[node name="TileMap" parent="Platforms" index="0"]
+layer_0/tile_data = PackedInt32Array(524296, 262144, 3, 524295, 262144, 3, 524294, 262144, 3, 524293, 262144, 3, 524292, 262144, 3, 524291, 262144, 3, 524290, 262144, 3, 524289, 262144, 3, 524288, 262144, 3, 589823, 262144, 3, 589822, 262144, 3, 524297, 262144, 3, 524298, 262144, 3, 524299, 262144, 3, 524300, 262144, 3, 524301, 262144, 3, 524302, 262144, 3, 524303, 262144, 3, 524304, 262144, 3, 524305, 262144, 3, 524306, 262144, 3, 524307, 262144, 3, 524308, 262144, 3, 524309, 262144, 3, 524310, 262144, 3, 524311, 262144, 3, 524312, 262144, 3, 524313, 262144, 3, 393231, 131072, 3, 393232, 131072, 3, 393233, 131072, 3, 393230, 0, 0, 393235, 262144, 6, 393234, 131072, 3)
+
+[node name="Spikes" parent="Traps" index="0" instance=ExtResource("2_8vutm")]
+position = Vector2(150, 527)
+
+[node name="Spikes2" parent="Traps" index="1" instance=ExtResource("2_8vutm")]
+position = Vector2(7, 527)
+
+[node name="Spikes3" parent="Traps" index="2" instance=ExtResource("2_8vutm")]
+position = Vector2(316, 527)
+
+[node name="Spring" parent="Traps" index="3" instance=ExtResource("3_1583l")]
+position = Vector2(642, 531)
+
+[node name="Slime" parent="Enemies/Slimes" index="0" instance=ExtResource("4_c6wdx")]
+position = Vector2(1059, 408)
+
+[node name="GreenAlien" parent="Player" index="0"]
+position = Vector2(758, 441)

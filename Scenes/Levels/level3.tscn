@@ -437,4 +437,4 @@ texture = ExtResource("35_qmgxr")
 position = Vector2(2849, 150)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(3683, -267)
+position = Vector2(-4, 358)

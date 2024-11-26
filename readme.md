@@ -9,7 +9,7 @@
 	- 5 levels,
 	- supported platforms: pc, mobile, web!,
 	- controller support,
-	- portals: itch.io, game jolt, new grounds, kongregate,
+	- portals: itch.io, game jolt, new grounds, kongregate, crazy games,
 	- checkpoints,
 	- when player is in the air disable walking animation,
 	- more bouncy on the bouncy spring when down button is pressed,

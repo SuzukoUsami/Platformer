@@ -1,10 +1,14 @@
-[gd_scene load_steps=19 format=3 uid="uid://c6vbh08828p0p"]
+[gd_scene load_steps=23 format=3 uid="uid://c6vbh08828p0p"]
 
 [ext_resource type="Shader" path="res://Characters/green_alien.gdshader" id="1_ci8un"]
 [ext_resource type="Script" path="res://Characters/green_alien.gd" id="1_xi45j"]
 [ext_resource type="Texture2D" uid="uid://xtx56wgxg3fj" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk01.png" id="2_atbmk"]
 [ext_resource type="Texture2D" uid="uid://tju50ymw3cdn" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk02.png" id="3_1v8eu"]
+[ext_resource type="Texture2D" uid="uid://7wb6hhhhqvnq" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen_hurt.png" id="3_3b1rg"]
+[ext_resource type="Texture2D" uid="uid://bliu1bo4clh6y" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen_duck.png" id="3_i7l62"]
+[ext_resource type="Texture2D" uid="uid://bduymlhywnur7" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen.png" id="4_cxvv0"]
 [ext_resource type="Texture2D" uid="uid://crd23pbja5ynh" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk03.png" id="4_f2itl"]
+[ext_resource type="Texture2D" uid="uid://dfut5lhlyj5ni" path="res://graphics/Platformer Art Deluxe/Extra animations and enemies/Alien sprites/alienGreen_jump.png" id="4_rgrdl"]
 [ext_resource type="Texture2D" uid="uid://dehtjy2p75apl" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk04.png" id="5_ca0gr"]
 [ext_resource type="Texture2D" uid="uid://dnm4d7xp6c5pd" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk05.png" id="6_yee0q"]
 [ext_resource type="Texture2D" uid="uid://d4fk7y3l3rsle" path="res://graphics/Platformer Art Deluxe/Base pack/Player/p1_walk/PNG/p1_walk06.png" id="7_dtixt"]
@@ -21,6 +25,38 @@ shader_parameter/progress = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q57uv"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_i7l62")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("3_3b1rg")
+}],
+"loop": false,
+"name": &"hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_cxvv0")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 3.0,
+"texture": ExtResource("4_rgrdl")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("9_1762u")
@@ -55,7 +91,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_sr7du")
 }],
-"loop": true,
+"loop": false,
 "name": &"walk",
 "speed": 20.0
 }]
@@ -105,8 +141,7 @@ script = ExtResource("1_xi45j")
 material = SubResource("ShaderMaterial_b2xjp")
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_q57uv")
-animation = &"walk"
-frame_progress = 0.855232
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(0, -25)

@@ -13,16 +13,22 @@ var jump_speed = -550.0
 var fall_acceleration = 2
 var vulnerability: bool = true
 
+
 func _ready():
 	$CanvasLayer.visible = true
 	$CanvasLayer/AnimationPlayer.play("reveal")
 
 
 func _process(_delta):
-	if Input.is_action_pressed("right") or Input.is_action_pressed("left"):
+	#if Input.is_action_pressed("right") and is_on_floor() or Input.is_action_pressed("left") and is_on_floor():
+		#animation.play("walk")
+	#elif Input.is_action_just_released("right") ands_action_pressed("right is_on_floor() or Input.is_action_just_released("left") and is_on_floor():
+		#animation.play("idle")
+	
+	if Input.is_action_pressed("right") and is_on_floor_only() or Input.is_action_pressed("left") and is_on_floor_only():
 		animation.play("walk")
-	elif Input.is_action_just_released("right") or Input.is_action_just_released("left"):
-		animation.stop()
+	elif Input.is_action_just_released("right") and is_on_floor_only() or Input.is_action_just_released("left") and is_on_floor_only():
+		animation.play("idle")
 		
 
 	if Input.is_action_just_pressed("right"):
@@ -33,9 +39,9 @@ func _process(_delta):
 func hit_player():
 	if vulnerability:
 		vulnerability = false
+		$VulnerabilityTimer.start()
 		Globals.health -= 1
 		knockback()
-		$VulnerabilityTimer.start()
 		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
 		$HitShaderTimer.start()
 		
@@ -55,12 +61,15 @@ func _physics_process(delta):
 	# Add the gravity.
 	if Input.is_action_pressed("down") and not is_on_floor():
 		velocity.y += gravity * delta * fall_acceleration
+		animation.play()
 	else:
 		velocity.y += gravity * delta
 
 	# Handle Jump.
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = jump_speed
+		animation.play("jump")
+	
 	
 	# Get the input direction.
 	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
@@ -83,3 +92,4 @@ func _on_hit_shader_timer_timeout():
 
 func _on_vulnerability_timer_timeout():
 	vulnerability = true
+	

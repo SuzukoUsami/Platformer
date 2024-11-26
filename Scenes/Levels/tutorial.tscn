@@ -1105,7 +1105,7 @@ position = Vector2(5763, -711)
 position = Vector2(5082, -711)
 
 [node name="GreenAlien" parent="Player" index="0"]
-position = Vector2(252, -43)
+position = Vector2(226, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
 position = Vector2(-20, -743)

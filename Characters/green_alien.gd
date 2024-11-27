@@ -20,28 +20,30 @@ func _ready():
 
 
 func _process(_delta):
-	
-	var go_right = Input.is_action_pressed("right")
-	var stop_right = Input.is_action_just_released("right")
-	var go_left = Input.is_action_pressed("left")
-	var stop_left = Input.is_action_just_released("left")
-	var on_floor = is_on_floor_only()
-	
-	if go_right and on_floor or go_left and on_floor:
-		animation.play("walk")
-	elif stop_right and on_floor or stop_left and on_floor:
-		animation.play("idle")
-		
-	if go_right:
-		animation.set_flip_h(false)
-	elif go_left:
-		animation.set_flip_h(true)
+	pass
+	#var go_right = Input.is_action_pressed("right")
+	#var stop_right = Input.is_action_just_released("right")
+	#var go_left = Input.is_action_pressed("left")
+	#var stop_left = Input.is_action_just_released("left")
+	#var on_floor = is_on_floor_only()
+	#
+	#if go_right and on_floor or go_left and on_floor:
+		#animation.play("walk")
+	##elif stop_right and on_floor or stop_left and on_floor:
+	#else:
+		#animation.play("idle")
+		#
+	#if go_right:
+		#animation.set_flip_h(false)
+	#elif go_left:
+		#animation.set_flip_h(true)
 
 func hit_player():
 	if vulnerability:
 		vulnerability = false
 		$VulnerabilityTimer.start()
-		Globals.health -= 1
+		animation.play("hurt")
+		Globals.health -= 0 #Remember to change!!!
 		knockback()
 		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
 		$HitShaderTimer.start()
@@ -64,6 +66,23 @@ func _physics_process(delta):
 	var on_floor = is_on_floor_only()
 	var go_down = Input.is_action_pressed("down")
 	var jump = Input.is_action_pressed("up")
+
+
+	var stop_right = Input.is_action_just_released("right")
+
+	var stop_left = Input.is_action_just_released("left")
+
+	
+	if go_right and on_floor or go_left and on_floor:
+		animation.play("walk")
+	elif stop_right and on_floor or stop_left and on_floor:
+	#else:
+		animation.play("idle")
+
+		
+	
+	
+	
 	
 	
 	
@@ -85,12 +104,19 @@ func _physics_process(delta):
 	
 	
 	# Get the input direction.
-	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
-		var direction = Input.get_axis("left", "right")
+	var direction = Input.get_axis("left", "right")
+	if direction > 0:
 		velocity.x = clamp(velocity.x + direction * speed, -max_speed, max_speed)
+		animation.set_flip_h(false)
+	elif direction < 0:
+		velocity.x = clamp(velocity.x + direction * speed, -max_speed, max_speed)
+		animation.set_flip_h(true)
 	else:
 		velocity.x *= 0.8
-		pass
+		
+	if velocity.x >= -16 and velocity.x <= 16 and velocity.y == 0:
+		animation.play("idle")
+		
 	
 	Globals.player_position = global_position
 	move_and_slide()

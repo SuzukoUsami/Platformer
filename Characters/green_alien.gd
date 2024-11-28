@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const ACCELERATION = 800
 const FRICTION = 500
-const MAX_SPEED = 120
+const MAX_SPEED = 200
 enum {IDLE, WALK}
 var state = IDLE
 
@@ -20,11 +20,18 @@ var animTree_state_keys = [
 	"walk"
 ]
 
+var vulnerability: bool = true
+
+func _ready():
+	$CanvasLayer.visible = true
+	$CanvasLayer/AnimationPlayer.play("reveal")
+
+
 func _physics_process(delta):
 	move(delta)
 	animate()
-	
-	
+
+
 func move(delta):
 	var input_vector = Input.get_vector("left", "right", "up", "down")
 	if input_vector == Vector2.ZERO:
@@ -50,6 +57,28 @@ func animate() -> void:
 	state_machine.travel(animTree_state_keys[state])
 	animationTree.set(blend_pos_paths[state], blend_position)
 
+
+func hit_player():
+	if vulnerability:
+		vulnerability = false
+		$VulnerabilityTimer.start()
+		#animation.play("hurt")
+		Globals.health -= 0 #REMEMBER to change!!!
+		#knockback()
+		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
+		$HitShaderTimer.start()
+		
+	if Globals.health < 1:
+		$CollisionPolygon2D.queue_free()
+
+
+func _on_hit_shader_timer_timeout():
+	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)
+
+
+func _on_vulnerability_timer_timeout():
+	vulnerability = true
+	
 
 
 
@@ -81,7 +110,7 @@ func animate() -> void:
 	#if vulnerability:
 		#vulnerability = false
 		#$VulnerabilityTimer.start()
-		#animation.play("hurt")
+		##animation.play("hurt")
 		#Globals.health -= 0 #Remember to change!!!
 		#knockback()
 		#$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)

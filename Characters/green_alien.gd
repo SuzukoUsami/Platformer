@@ -4,7 +4,6 @@ extends CharacterBody2D
 
 # Vertical impulse applied to the character upon bouncing over a mob in meters per second.
 @export var bounce_impulse = 16
-
 @export var knockback_power: int = 4000
 
 var speed = 40
@@ -21,22 +20,7 @@ func _ready():
 
 func _process(_delta):
 	pass
-	#var go_right = Input.is_action_pressed("right")
-	#var stop_right = Input.is_action_just_released("right")
-	#var go_left = Input.is_action_pressed("left")
-	#var stop_left = Input.is_action_just_released("left")
-	#var on_floor = is_on_floor_only()
-	#
-	#if go_right and on_floor or go_left and on_floor:
-		#animation.play("walk")
-	##elif stop_right and on_floor or stop_left and on_floor:
-	#else:
-		#animation.play("idle")
-		#
-	#if go_right:
-		#animation.set_flip_h(false)
-	#elif go_left:
-		#animation.set_flip_h(true)
+
 
 func hit_player():
 	if vulnerability:
@@ -66,10 +50,7 @@ func _physics_process(delta):
 	var on_floor = is_on_floor_only()
 	var go_down = Input.is_action_pressed("down")
 	var jump = Input.is_action_pressed("up")
-
-
 	var stop_right = Input.is_action_just_released("right")
-
 	var stop_left = Input.is_action_just_released("left")
 
 	
@@ -79,13 +60,7 @@ func _physics_process(delta):
 	#else:
 		animation.play("idle")
 
-		
-	
-	
-	
-	
-	
-	
+
 	# Add the gravity.
 
 	if go_down and not on_floor:
@@ -113,10 +88,13 @@ func _physics_process(delta):
 		animation.set_flip_h(true)
 	else:
 		velocity.x *= 0.8
+	
+	#print_debug(velocity.y)
 		
 	if velocity.x >= -16 and velocity.x <= 16 and velocity.y == 0:
+		print_debug("KITKU")
 		animation.play("idle")
-		
+
 	
 	Globals.player_position = global_position
 	move_and_slide()

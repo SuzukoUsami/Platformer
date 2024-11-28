@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cunavtlc8gsbb"]
+[gd_scene load_steps=6 format=3 uid="uid://cunavtlc8gsbb"]
 
 [ext_resource type="PackedScene" uid="uid://ghfglfl03ro1" path="res://Scenes/level.tscn" id="1_ospor"]
 [ext_resource type="PackedScene" uid="uid://dw4pir05774al" path="res://Scenes/Traps/spikes.tscn" id="2_8vutm"]
 [ext_resource type="PackedScene" uid="uid://dy1torvkvge6h" path="res://Scenes/Traps/spring.tscn" id="3_1583l"]
 [ext_resource type="PackedScene" uid="uid://drhv7l1r7i6hp" path="res://Scenes/Enemies/slime.tscn" id="4_c6wdx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4g1d4"]
+size = Vector2(47.5, 1096)
 
 [node name="TestLevel" instance=ExtResource("1_ospor")]
 
@@ -27,3 +30,15 @@ position = Vector2(1059, 408)
 
 [node name="GreenAlien" parent="Player" index="0"]
 position = Vector2(758, 441)
+
+[node name="PlayerInvisibleWalls" parent="." index="8"]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="0"]
+position = Vector2(-156.25, 161)
+shape = SubResource("RectangleShape2D_4g1d4")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="PlayerInvisibleWalls" index="1"]
+position = Vector2(1835, 156)
+shape = SubResource("RectangleShape2D_4g1d4")

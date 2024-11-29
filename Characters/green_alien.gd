@@ -1,12 +1,15 @@
 extends CharacterBody2D
 
 const ACCELERATION = 800
-const FRICTION = 500
-const MAX_SPEED = 200
+const FRICTION = 400
+const MAX_SPEED = 300
 const FALL_ACCELERATION = 2
-const JUMP_SPEED = -550
+const JUMP_SPEED = -650
 enum {IDLE, WALK}
 var state = IDLE
+
+@export var bounce_impulse: int = 16
+@export var knockback_power: int = 4000
 
 @onready var animationTree = $AnimationTree
 @onready var state_machine = animationTree["parameters/playback"]
@@ -34,8 +37,9 @@ func _ready():
 
 func _physics_process(delta):
 	move(delta)
+	go_down(delta)
+	handle_jump()
 	animate()
-
 
 func move(delta):
 	var input_vector = Input.get_vector("left", "right", "up", "down")
@@ -62,36 +66,16 @@ func animate() -> void:
 	state_machine.travel(animTree_state_keys[state])
 	animationTree.set(blend_pos_paths[state], blend_position)
 
-
 # Add the gravity.
 func go_down(delta):
 	if Input.is_action_pressed("down") and not is_on_floor:
 		velocity.y += gravity * delta * FALL_ACCELERATION
 	else:
 		velocity.y += gravity * delta
-		
 
 func handle_jump():
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = JUMP_SPEED
-
-	#if go_down and not on_floor:
-		#velocity.y += gravity * delta * fall_acceleration
-		#animation.play("down")
-	#else:
-		#velocity.y += gravity * delta
-		##animation.play("jump")
-#
-#
-	## Handle Jump.
-#
-	#if jump and on_floor:
-		#velocity.y = jump_speed
-		#animation.play("jump")
-
-
-
-
 
 func hit_player():
 	if vulnerability:
@@ -106,10 +90,8 @@ func hit_player():
 	if Globals.health < 1:
 		$CollisionPolygon2D.queue_free()
 
-
 func _on_hit_shader_timer_timeout():
 	$AnimatedSprite2D.material.set_shader_parameter("progress", 0)
-
 
 func _on_vulnerability_timer_timeout():
 	vulnerability = true

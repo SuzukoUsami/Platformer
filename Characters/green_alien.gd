@@ -3,6 +3,8 @@ extends CharacterBody2D
 const ACCELERATION = 800
 const FRICTION = 500
 const MAX_SPEED = 200
+const FALL_ACCELERATION = 2
+const JUMP_SPEED = -550
 enum {IDLE, WALK}
 var state = IDLE
 
@@ -21,6 +23,9 @@ var animTree_state_keys = [
 ]
 
 var vulnerability: bool = true
+
+# Get the gravity from the project settings so you can sync with rigid body nodes.
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _ready():
 	$CanvasLayer.visible = true
@@ -58,12 +63,42 @@ func animate() -> void:
 	animationTree.set(blend_pos_paths[state], blend_position)
 
 
+# Add the gravity.
+func go_down(delta):
+	if Input.is_action_pressed("down") and not is_on_floor:
+		velocity.y += gravity * delta * FALL_ACCELERATION
+	else:
+		velocity.y += gravity * delta
+		
+
+func handle_jump():
+	if Input.is_action_pressed("up") and is_on_floor():
+		velocity.y = JUMP_SPEED
+
+	#if go_down and not on_floor:
+		#velocity.y += gravity * delta * fall_acceleration
+		#animation.play("down")
+	#else:
+		#velocity.y += gravity * delta
+		##animation.play("jump")
+#
+#
+	## Handle Jump.
+#
+	#if jump and on_floor:
+		#velocity.y = jump_speed
+		#animation.play("jump")
+
+
+
+
+
 func hit_player():
 	if vulnerability:
 		vulnerability = false
 		$VulnerabilityTimer.start()
 		#animation.play("hurt")
-		Globals.health -= 0 #REMEMBER to change!!!
+		Globals.health -= 1 #REMEMBER to change!!!
 		#knockback()
 		$AnimatedSprite2D.material.set_shader_parameter("progress", 0.5)
 		$HitShaderTimer.start()

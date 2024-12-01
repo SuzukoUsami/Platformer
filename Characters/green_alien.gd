@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const ACCELERATION = 800
-const FRICTION = 400
-const MAX_SPEED = 300
+const ACCELERATION = 600
+const FRICTION = 600
+const MAX_SPEED = 460
 const FALL_ACCELERATION = 2
 const JUMP_SPEED = -650
 enum {IDLE, WALK}
@@ -76,6 +76,15 @@ func go_down(delta):
 func handle_jump():
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = JUMP_SPEED
+
+func knockback():
+	var knockback_direction = Vector2(velocity.normalized().x * knockback_power, JUMP_SPEED * 0.8)
+	velocity = knockback_direction
+
+#func knockback():
+	#var knockback_direction = Vector2(velocity.normalized().x * -knockback_power, jump_speed * .8)
+	#velocity = knockback_direction
+
 
 func hit_player():
 	if vulnerability:
